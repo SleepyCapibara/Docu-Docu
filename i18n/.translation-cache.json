@@ -1,0 +1,1589 @@
+{
+  "version": 1,
+  "entries": {
+    "mdx:faq/coralogix-data-plane-credentials.mdx:uk": {
+      "sourceHash": "e8e9c4bdd5869ca189d59bc58ba786c078bd685da8b6ffcaa872c97c8698f6f4",
+      "updatedAt": "2026-06-14T11:32:31.775Z"
+    },
+    "mdx:faq/email-notifications.mdx:uk": {
+      "sourceHash": "fefd7bc6a25ab8ac5d9c0abb1bac0219245df881e56069c56dfe2e472a8e8bd6",
+      "updatedAt": "2026-06-14T11:32:31.776Z"
+    },
+    "mdx:product/threat-detection-marketplace/active-threats.mdx:uk": {
+      "sourceHash": "4f800c78cd93d70009fd7d93edf5d0edc296b1f5e83b4f5be8bd793b52f03f1b",
+      "updatedAt": "2026-06-14T11:32:31.777Z"
+    },
+    "mdx:product/threat-detection-marketplace/search.mdx:uk": {
+      "sourceHash": "805398239b60a7a8de55fe3aadcda72da89ef7f5d7a4111867aad53ab8d9423e",
+      "updatedAt": "2026-06-14T11:32:31.778Z"
+    },
+    "mdx:release-notes/v6.1.8.mdx:uk": {
+      "sourceHash": "2b0bd36167fb3f064adbd8fe87c32a2bbc61fdc3a97b391669e6ea5501fb6a99",
+      "updatedAt": "2026-06-14T11:32:31.778Z"
+    },
+    "mdx:release-notes/v6.2.0.mdx:uk": {
+      "sourceHash": "8f90137b8c57fe6bd67aac454c75d19f544a205c0ef2335657e4dd8eca7a6377",
+      "updatedAt": "2026-06-14T11:32:31.779Z"
+    },
+    "json:code.json:uk:SOC Prime Platform": {
+      "sourceHash": "e6c5e5eb11c1a6712f1c818f9194e1e13d3ebfe4ec5c06d62d2c7629de6badfc",
+      "updatedAt": "2026-06-14T11:32:31.779Z"
+    },
+    "json:code.json:uk:Product Docs": {
+      "sourceHash": "6c27b650a77a3a4d83fe9203abf735719e4ce7d03f7173f204aad0da1dbfe392",
+      "updatedAt": "2026-06-14T11:32:31.779Z"
+    },
+    "json:code.json:uk:FAQs": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.779Z"
+    },
+    "json:code.json:uk:Release Notes": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.779Z"
+    },
+    "json:code.json:uk:homepage.meta.description": {
+      "sourceHash": "9abfd6df712ade947c5f11a62fb5b99df354b96508c49540885a3a728fa980c9",
+      "updatedAt": "2026-06-14T11:32:31.779Z"
+    },
+    "json:code.json:uk:homepage.section.title": {
+      "sourceHash": "4af27f1cb27fea5878c05a13c04a1be8907a77efedfac8322d7e2664d87ae91f",
+      "updatedAt": "2026-06-14T11:32:31.779Z"
+    },
+    "json:code.json:uk:homepage.section.subtitle": {
+      "sourceHash": "c0928b8db5e8d4e4484ff1313c4c607feb9b56c78b226484ae9ae33a36dce72e",
+      "updatedAt": "2026-06-14T11:32:31.779Z"
+    },
+    "json:code.json:uk:homepage.feature.tdm.badge": {
+      "sourceHash": "fb9ef894175c327470f768d95ca7bee65e19853a0eaace3805f8a7b8a12270da",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.tdm.title": {
+      "sourceHash": "879af45231e409aad8d9ca0b7805e2787474c2303dc86f8e48dc42690ac918cd",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.tdm.description": {
+      "sourceHash": "148907b6e1ff98f7106550671342735dde1afd39efd863853afbe511e6bcf90f",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.tdm.linkLabel": {
+      "sourceHash": "030ae651ad4ab8df397ee26b19f4704c1d8295505d9130032f0072074cf7455f",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.faq.badge": {
+      "sourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.faq.title": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.faq.description": {
+      "sourceHash": "bb920b9a127f5163beb961a7dcc8c6cd0e2d1d725efd4fccc3782f89085ff491",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.faq.linkLabel": {
+      "sourceHash": "5bd2c44564c8ceb99fef2267748254425dee0693a7761761dfbc8cba409b0bd1",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.rn.badge": {
+      "sourceHash": "22e2bada8f1c65cd83f4ba976f0027c5dd7cb81d5d2199cd1b0130792841eef4",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.rn.title": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.rn.description": {
+      "sourceHash": "2585395bdcb29b4bc794286904dc2f72f1b0a7c983c5c65cd6fe15da4d5943b2",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:homepage.feature.rn.linkLabel": {
+      "sourceHash": "f8c47d92212e4db04b212f98916ca6e7d83483aeb853df1b05d6eec47909790a",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.ErrorPageContent.title": {
+      "sourceHash": "61f8a32b0a81f1e879969b34d4c92824acda7eb932c4c11a85d54e3c85b6d0f6",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.BackToTopButton.buttonAriaLabel": {
+      "sourceHash": "2ae71ffa6c1c05aabbbb0202c976de8442a3ff7999579ef396591f664e35564f",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.archive.title": {
+      "sourceHash": "66f4804ee23ddc092d1bae43cb88186aa541187fff7c1cc8a4aa17e59a9f4123",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.archive.description": {
+      "sourceHash": "66f4804ee23ddc092d1bae43cb88186aa541187fff7c1cc8a4aa17e59a9f4123",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.paginator.navAriaLabel": {
+      "sourceHash": "b61fc99000ea4a88f4d7fdbf30df4c1075697699bc7fa932093fb8e1681e0821",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.paginator.newerEntries": {
+      "sourceHash": "61d6ff4e7f3c0d2193f3906b90c3bce8609ae9245d2888df70b47cb2db6ed145",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.paginator.olderEntries": {
+      "sourceHash": "62f32f746e40653407ebd56403069598f35654c0f56725c3fccfca50055a4425",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.post.paginator.navAriaLabel": {
+      "sourceHash": "57501fdeec3bc10bd5384d5d73e680e9b6965f394d6c394cc3fca1d867c81c7b",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.post.paginator.newerPost": {
+      "sourceHash": "7f4508940737b4ac10bad9e9fb6457857ccf23a455c5e06bf65fcb5e3076f02d",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.post.paginator.olderPost": {
+      "sourceHash": "99bac119057d1a323bb46f4eeaf8bcca2c0b75f9eba0066d58ebe53a3e27edc5",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.tags.tagsPageLink": {
+      "sourceHash": "ddd5e2896e5e184a2be17fec4ee2b1a0af90547814c0d98b781d7bb03d71cdf4",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.colorToggle.ariaLabel.mode.system": {
+      "sourceHash": "16f679ba1b28616fd0901d22fa3fec46c3cbf3e64914936e9a65523df314a8d6",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.colorToggle.ariaLabel.mode.light": {
+      "sourceHash": "a6ea4833bc3f883c067eadc432de158f4426e857a0c1551d393221feeaeedd49",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.colorToggle.ariaLabel.mode.dark": {
+      "sourceHash": "ddf377084a3224274c6c493e76e9b62155269645c64aaca8c091e6f88981430a",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.colorToggle.ariaLabel": {
+      "sourceHash": "246c76dc4b28163373d94ef84c0234aadcc7f399733f4e7191f9aa03f15c51c1",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.breadcrumbs.navAriaLabel": {
+      "sourceHash": "73667278486b9c9d3958f9449418af7d1caac4e1db5a70209b6d0bad7d9e301e",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.paginator.navAriaLabel": {
+      "sourceHash": "758061873727938c87007174dc0a69949cb7c7e423ece886c92f4c0bce246b70",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.paginator.previous": {
+      "sourceHash": "a57b08a480b822a0a572b993391c292ede593bf8000b406675b180bbb16260fa",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.paginator.next": {
+      "sourceHash": "1ff57a29d7c9d11bdf61c1b80f2b289b44c1ea844824d4b94a0d52b6ba5fc858",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.tagDocListPageTitle.nDocsTagged": {
+      "sourceHash": "e96ecd09ae1cc3713db6979a647a1d33b1da812601f6136ae7307f3d548f64e7",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.tagDocListPageTitle": {
+      "sourceHash": "c68823366823b04059138ebbf8a6f330b3061c68e4a6746bfda5c01a90c7fca2",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.versionBadge.label": {
+      "sourceHash": "17fd56e2079a80830455bc785fc5357e37314cb694beaafc8f5420309b5f363f",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.versions.unreleasedVersionLabel": {
+      "sourceHash": "b48f344a3282972ccb109fe37d7ecb9eb7e44ffeca3e8615210b2790609d7478",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.versions.unmaintainedVersionLabel": {
+      "sourceHash": "6d35df058a3b2344b5638b5d58fa820ddc8ac1952138c3bb7c18d66869f968f2",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.versions.latestVersionSuggestionLabel": {
+      "sourceHash": "63e9c46b1e49202c69eb4dd5703dc8a6977806591c4cdc9041c23ee797c475a6",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.versions.latestVersionLinkLabel": {
+      "sourceHash": "5fe87164c1923b3c7cd59758a7e03610c6a95b3c9ad8cb45ab86911fd463962d",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.common.editThisPage": {
+      "sourceHash": "a9029e19d5b3d36d8ede9c51ff2e147eddf9c6fa41a8cdfd5dbf6ceb7eb72a8f",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.common.headingLinkTitle": {
+      "sourceHash": "f514688566aaa11baf503cbe4e995001bc42d27b1ba9a6256417f1dc616b2c77",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.lastUpdated.atDate": {
+      "sourceHash": "e8a6241baffbcb8293b3bfc1f8dd635d84a548cf70e443f761721186a189fcbc",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.lastUpdated.byUser": {
+      "sourceHash": "75f117172ea53ec05b9920645ff22d75fdefd058f6a796ffb3e36d9ae5bb1d9b",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.lastUpdated.lastUpdatedAtBy": {
+      "sourceHash": "2c6781f3ea27ef3fa439d05bfa217a586a6651f5e4f76659dd8d8417685d12a2",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.navbar.mobileVersionsDropdown.label": {
+      "sourceHash": "f89ea27036ac1d3174e2160a4d291d006ad6f85d466726ba04760beec0940c24",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.NotFound.title": {
+      "sourceHash": "cb2f00d1e554baf96001ddb5e22ee63a8053fd3f8b6cad8acd74504af0dadb52",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.tags.tagsListLabel": {
+      "sourceHash": "865658f888f2c50229acf31c7f4f412dfe4412ada982c4591a67b0774d45bd02",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.admonition.caution": {
+      "sourceHash": "3cf083c28255868b5f464f8ed39b1db95aee54b99b8670a2dbb556a580e9d5da",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.admonition.danger": {
+      "sourceHash": "123fd666aa39d376690cfa6570426d3585c188b291bc87acf47b84e3fe822102",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.admonition.info": {
+      "sourceHash": "06271baf49532c879aa3c58b48671884bcc858f09197412d682750496c33e1e1",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.admonition.note": {
+      "sourceHash": "edb465624291e4053c6c5ea4b7eb320dec773e10a57d26b95dcf0564f8e310f8",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.admonition.tip": {
+      "sourceHash": "97380187a878903ffe722b7bfd8d8ba92457ef77de0216cfe9261c72c2b87397",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.admonition.warning": {
+      "sourceHash": "4bd9354bb652233497a0f42647464b81b83a83654fcf1511263a5d0120d74c91",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.AnnouncementBar.closeButtonAriaLabel": {
+      "sourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.sidebar.navAriaLabel": {
+      "sourceHash": "d031de661e73af4296b4caae3412af713493579e09ad5098bfc6ccbbd242570f",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.DocSidebarItem.expandCategoryAriaLabel": {
+      "sourceHash": "71f45a1e41f1adf06edfe1ec5b1fe962419d2f7e822347ef83eb50171e71bf0c",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.DocSidebarItem.collapseCategoryAriaLabel": {
+      "sourceHash": "cae152c6b5e750b2c2410ab2117ad3fc2f5e828a935e26429b853060741e9b1c",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.IconExternalLink.ariaLabel": {
+      "sourceHash": "32cf938ba30d6f4b4e7d18f9f5f75023a60450747b7b64f934d91231063fff80",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.NavBar.navAriaLabel": {
+      "sourceHash": "eb814be3ca3b78c0734c560518be2a03e8d8f6e7e26447224cc7c7b105e1193e",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.navbar.mobileLanguageDropdown.label": {
+      "sourceHash": "318655cea4bd2096fbfad433d7c019bac40750d1a456fc34d366df41fcc77197",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.NotFound.p1": {
+      "sourceHash": "887e4838ffa96692b36cf413d531e20c92958b4a45fb3cc2448f913e8301b8e7",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.NotFound.p2": {
+      "sourceHash": "0cf882ed2315a80023d3a3f5d4621ae38d0d2f9a3e2ebf12e364c515c41ff175",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.TOCCollapsible.toggleButtonLabel": {
+      "sourceHash": "b5658fc8edda24f9c94eabac9e536e0a18e3055a8ca255f9d1b8f256ea02a6cc",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.post.readMore": {
+      "sourceHash": "83b794145c0cc3f560cb6dfb6b5bcf7afac4dba15e5c6dbc54d103dae029fec6",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.post.readMoreLabel": {
+      "sourceHash": "23698aca02aba4c2e5376eac758e654fda555250c8251a869089843f262a7a49",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.post.readingTime.plurals": {
+      "sourceHash": "7c21f68b3dc6cbcba3288d06578945132ca07ec8ec0dc2c97d428c124f997bbe",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.CodeBlock.copy": {
+      "sourceHash": "e21f935f11d7e966dbbae78da9daa378fe8142a14e7c0cd7434183005faa6c5c",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.CodeBlock.copied": {
+      "sourceHash": "8d525e5f158b9afe05f3122af363ac67763bdc4e1395b46597b320c289766ce3",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.CodeBlock.copyButtonAriaLabel": {
+      "sourceHash": "f0437b8953e1d58a2d791ebdea9a92985b7afe296ffd50bf936e4372cb1ed900",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.CodeBlock.wordWrapToggle": {
+      "sourceHash": "ecd0f38a04446721e9a09b1994bae262fe43d2d47b050870a2d3b1d9e9a11a6b",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.breadcrumbs.home": {
+      "sourceHash": "11d58b08de98e05930a7f73b5f5d75367e4a58ac27335a420d55583cb16ad1ff",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.sidebar.collapseButtonTitle": {
+      "sourceHash": "aab31cde23ba9783050a754575b80c05e0e799b1542990b24b4b4bde2327e37e",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.sidebar.collapseButtonAriaLabel": {
+      "sourceHash": "aab31cde23ba9783050a754575b80c05e0e799b1542990b24b4b4bde2327e37e",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.sidebar.navAriaLabel": {
+      "sourceHash": "b2b5561fa18f91f78a39879dc0754b3ebbb96818c8b1a41d725294ce8824d54d",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+      "sourceHash": "fe1e984bf7134dc98302ff4d77c4f057b8474a73471687071a068c69b4111a84",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+      "sourceHash": "e35c6e48aa36ab346557173fd941f671e096ebe9d4b56b93d7a20e7ed20c821a",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+      "sourceHash": "64cbd960a7108dbb48fad79b5dd4ce88e9fc0101bad61398b2043af6c6e19b55",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+      "sourceHash": "88b7f9ea5cd759be53282f3f31785be35e10ae6652e145a7000baffe8b655a4b",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+      "sourceHash": "135a99f6883a321de00bd366e719f1c31fbdbb975f4e461138f920be3a6e424a",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.sidebar.expandButtonTitle": {
+      "sourceHash": "37a5d6485e109bf695382308d0e2cd33913c3e5f7e9ab990e8f1a5f4287b2c6a",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.sidebar.expandButtonAriaLabel": {
+      "sourceHash": "37a5d6485e109bf695382308d0e2cd33913c3e5f7e9ab990e8f1a5f4287b2c6a",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.post.plurals": {
+      "sourceHash": "9c1684210f2697c7676fc3e5b67cb83cbd2eb89f0f18014a785fa27afeaba5e2",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.tagTitle": {
+      "sourceHash": "4b684216376becf33ff139e258b4650835aa502cc55cbcf444611782b8a6da1b",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.author.pageTitle": {
+      "sourceHash": "132604694eabf6fb2d9e7958d35ae5b9629ffddd390400d937a95c000fb3ccf7",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.authorsList.pageTitle": {
+      "sourceHash": "2c00c9aaa72c717ad6d901a09c4d698a68b2e9740be3769e0af7d6bd85d72d5d",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.authorsList.viewAll": {
+      "sourceHash": "d0dab631990f4d2d6859d5f7c7d79117ed7469a631961a3230f9715bf5dd1108",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.blog.author.noPosts": {
+      "sourceHash": "b3f63de13395eb1c6cf884622917882221dfcfc7c58a8e286b46d0433b4494cf",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.contentVisibility.unlistedBanner.title": {
+      "sourceHash": "4f54b4aacd7e0cd8bcb8116db30626c600d4886f9592865febea2f45a5c53c4d",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.contentVisibility.unlistedBanner.message": {
+      "sourceHash": "82d7237b996e2775bec45ee494bb7320745c4ca45ab0f768f488aa6d8287e02a",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.contentVisibility.draftBanner.title": {
+      "sourceHash": "62cf6a8479e41bc03ea338c903338e56cbbd6cd2134aaab6c3e8c0fe943e0e39",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.contentVisibility.draftBanner.message": {
+      "sourceHash": "ee94fd3e7c9290cbfb5a9a7a57c344f74bb11c0b9895c80e989b32c6e1c21c49",
+      "updatedAt": "2026-06-14T11:32:31.780Z"
+    },
+    "json:code.json:uk:theme.docs.DocCard.categoryDescription.plurals": {
+      "sourceHash": "d4a87d6b454caf524fbc1f9ec4b20fa83ab81c622dd21bae2a6df389a1fd4c8e",
+      "updatedAt": "2026-06-14T11:32:31.781Z"
+    },
+    "json:code.json:uk:theme.ErrorPageContent.tryAgain": {
+      "sourceHash": "d8b8392e2c542950ca64867168e4ef87d4ad606882d5898f826b51c6d553988f",
+      "updatedAt": "2026-06-14T11:32:31.781Z"
+    },
+    "json:code.json:uk:theme.common.skipToMainContent": {
+      "sourceHash": "c887f134c26ea8310e1fb4bd6fbab7b640393bd1b556e62691c7a442be92ec2a",
+      "updatedAt": "2026-06-14T11:32:31.781Z"
+    },
+    "json:code.json:uk:theme.tags.tagsPageTitle": {
+      "sourceHash": "1331275bc537b4c2bf1e46f7275677967515342e30b572e6852fa6f51b831fe8",
+      "updatedAt": "2026-06-14T11:32:31.781Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:uk:logo.alt": {
+      "sourceHash": "dd829cd6f671c4c08308ec5bbb04a9b72b0b9636d6f8ca686987d3a4d6886d79",
+      "updatedAt": "2026-06-14T11:32:31.781Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:uk:item.label.Product Docs": {
+      "sourceHash": "6c27b650a77a3a4d83fe9203abf735719e4ce7d03f7173f204aad0da1dbfe392",
+      "updatedAt": "2026-06-14T11:32:31.781Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:uk:item.label.FAQs": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.781Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:uk:item.label.Release Notes": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.781Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:uk:item.label.SOC Prime": {
+      "sourceHash": "dd829cd6f671c4c08308ec5bbb04a9b72b0b9636d6f8ca686987d3a4d6886d79",
+      "updatedAt": "2026-06-14T11:32:31.781Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.title.Documentation": {
+      "sourceHash": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.title.SOC Prime": {
+      "sourceHash": "dd829cd6f671c4c08308ec5bbb04a9b72b0b9636d6f8ca686987d3a4d6886d79",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.title.Community": {
+      "sourceHash": "bb501d7877eb7ddbd40baf7990e8058212e8140a2e6ceaaf2d54a6412b770bfd",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.Product Docs": {
+      "sourceHash": "6c27b650a77a3a4d83fe9203abf735719e4ce7d03f7173f204aad0da1dbfe392",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.FAQs": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.Release Notes": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.Website": {
+      "sourceHash": "b5a229ac8becc6035511f432ca6018f581f0627233eada6ae8e12b505d44af7f",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.Help Center": {
+      "sourceHash": "a78cebc44214256ba361dcee3f1cc1408e55ea6940c65067615abd4fdcc2d788",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.Threat Detection Marketplace": {
+      "sourceHash": "879af45231e409aad8d9ca0b7805e2787474c2303dc86f8e48dc42690ac918cd",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.GitHub": {
+      "sourceHash": "f911e414cf6bdfc595532ab166b5ba0f63d73c021452fcdacbda363dda6ad8fb",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.Discord": {
+      "sourceHash": "053bc65874ad6098e58c41c57b378a2f36b0220e5e0b46722245e6c2f796818c",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.LinkedIn": {
+      "sourceHash": "dd84425b72da12c6c828339ce814342daceac705b50d42e377e1acebf8f2320b",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.YouTube": {
+      "sourceHash": "fb7accfff8c6f8ea9b03c91ee5576d0d08080e9ba35918d801aaeb6020dbc88c",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.Facebook": {
+      "sourceHash": "d41f5b4977ee05c6b61b3b5f054784628f5cd1cbe06a82a5484d1e6de6eefe85",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.X": {
+      "sourceHash": "4b68ab3847feda7d6c62c1fbcbeebfa35eab7351ed5e78f4ddadea5df64b8015",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:link.item.label.Bluesky": {
+      "sourceHash": "4ed485c7140118607118ad9ad616ab9c026bef5efa0b0218cbf312188959d451",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:uk:copyright": {
+      "sourceHash": "b35744145de049c60dedae653211a38a2313968b07d4426c94821535ff473e7f",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-plugin-content-docs/current.json:uk:version.label": {
+      "sourceHash": "1ff57a29d7c9d11bdf61c1b80f2b289b44c1ea844824d4b94a0d52b6ba5fc858",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-plugin-content-docs/current.json:uk:sidebar.productSidebar.category.Threat Detection Marketplace": {
+      "sourceHash": "879af45231e409aad8d9ca0b7805e2787474c2303dc86f8e48dc42690ac918cd",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "json:docusaurus-plugin-content-docs/current.json:uk:sidebar.productSidebar.category.Threat Detection Marketplace.link.generated-index.description": {
+      "sourceHash": "2ef16d8e5a2f9815578ec064210cf8a9418ae718e8f65dff638fbe22a18e4502",
+      "updatedAt": "2026-06-14T11:32:31.782Z"
+    },
+    "mdx:faq/coralogix-data-plane-credentials.mdx:es": {
+      "sourceHash": "e8e9c4bdd5869ca189d59bc58ba786c078bd685da8b6ffcaa872c97c8698f6f4",
+      "updatedAt": "2026-06-14T11:32:31.783Z"
+    },
+    "mdx:faq/email-notifications.mdx:es": {
+      "sourceHash": "fefd7bc6a25ab8ac5d9c0abb1bac0219245df881e56069c56dfe2e472a8e8bd6",
+      "updatedAt": "2026-06-14T11:32:31.784Z"
+    },
+    "mdx:product/threat-detection-marketplace/active-threats.mdx:es": {
+      "sourceHash": "4f800c78cd93d70009fd7d93edf5d0edc296b1f5e83b4f5be8bd793b52f03f1b",
+      "updatedAt": "2026-06-14T11:32:31.784Z"
+    },
+    "mdx:product/threat-detection-marketplace/search.mdx:es": {
+      "sourceHash": "805398239b60a7a8de55fe3aadcda72da89ef7f5d7a4111867aad53ab8d9423e",
+      "updatedAt": "2026-06-14T11:32:31.784Z"
+    },
+    "mdx:release-notes/v6.1.8.mdx:es": {
+      "sourceHash": "2b0bd36167fb3f064adbd8fe87c32a2bbc61fdc3a97b391669e6ea5501fb6a99",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "mdx:release-notes/v6.2.0.mdx:es": {
+      "sourceHash": "8f90137b8c57fe6bd67aac454c75d19f544a205c0ef2335657e4dd8eca7a6377",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:SOC Prime Platform": {
+      "sourceHash": "e6c5e5eb11c1a6712f1c818f9194e1e13d3ebfe4ec5c06d62d2c7629de6badfc",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:Product Docs": {
+      "sourceHash": "6c27b650a77a3a4d83fe9203abf735719e4ce7d03f7173f204aad0da1dbfe392",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:FAQs": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:Release Notes": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.meta.description": {
+      "sourceHash": "9abfd6df712ade947c5f11a62fb5b99df354b96508c49540885a3a728fa980c9",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.section.title": {
+      "sourceHash": "4af27f1cb27fea5878c05a13c04a1be8907a77efedfac8322d7e2664d87ae91f",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.section.subtitle": {
+      "sourceHash": "c0928b8db5e8d4e4484ff1313c4c607feb9b56c78b226484ae9ae33a36dce72e",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.tdm.badge": {
+      "sourceHash": "fb9ef894175c327470f768d95ca7bee65e19853a0eaace3805f8a7b8a12270da",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.tdm.title": {
+      "sourceHash": "879af45231e409aad8d9ca0b7805e2787474c2303dc86f8e48dc42690ac918cd",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.tdm.description": {
+      "sourceHash": "148907b6e1ff98f7106550671342735dde1afd39efd863853afbe511e6bcf90f",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.tdm.linkLabel": {
+      "sourceHash": "030ae651ad4ab8df397ee26b19f4704c1d8295505d9130032f0072074cf7455f",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.faq.badge": {
+      "sourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.faq.title": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.faq.description": {
+      "sourceHash": "bb920b9a127f5163beb961a7dcc8c6cd0e2d1d725efd4fccc3782f89085ff491",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.faq.linkLabel": {
+      "sourceHash": "5bd2c44564c8ceb99fef2267748254425dee0693a7761761dfbc8cba409b0bd1",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.rn.badge": {
+      "sourceHash": "22e2bada8f1c65cd83f4ba976f0027c5dd7cb81d5d2199cd1b0130792841eef4",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.rn.title": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.rn.description": {
+      "sourceHash": "2585395bdcb29b4bc794286904dc2f72f1b0a7c983c5c65cd6fe15da4d5943b2",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:homepage.feature.rn.linkLabel": {
+      "sourceHash": "f8c47d92212e4db04b212f98916ca6e7d83483aeb853df1b05d6eec47909790a",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.ErrorPageContent.title": {
+      "sourceHash": "61f8a32b0a81f1e879969b34d4c92824acda7eb932c4c11a85d54e3c85b6d0f6",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.BackToTopButton.buttonAriaLabel": {
+      "sourceHash": "2ae71ffa6c1c05aabbbb0202c976de8442a3ff7999579ef396591f664e35564f",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.blog.archive.title": {
+      "sourceHash": "66f4804ee23ddc092d1bae43cb88186aa541187fff7c1cc8a4aa17e59a9f4123",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.blog.archive.description": {
+      "sourceHash": "66f4804ee23ddc092d1bae43cb88186aa541187fff7c1cc8a4aa17e59a9f4123",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.blog.paginator.navAriaLabel": {
+      "sourceHash": "b61fc99000ea4a88f4d7fdbf30df4c1075697699bc7fa932093fb8e1681e0821",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.blog.paginator.newerEntries": {
+      "sourceHash": "61d6ff4e7f3c0d2193f3906b90c3bce8609ae9245d2888df70b47cb2db6ed145",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.blog.paginator.olderEntries": {
+      "sourceHash": "62f32f746e40653407ebd56403069598f35654c0f56725c3fccfca50055a4425",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.blog.post.paginator.navAriaLabel": {
+      "sourceHash": "57501fdeec3bc10bd5384d5d73e680e9b6965f394d6c394cc3fca1d867c81c7b",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.blog.post.paginator.newerPost": {
+      "sourceHash": "7f4508940737b4ac10bad9e9fb6457857ccf23a455c5e06bf65fcb5e3076f02d",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.blog.post.paginator.olderPost": {
+      "sourceHash": "99bac119057d1a323bb46f4eeaf8bcca2c0b75f9eba0066d58ebe53a3e27edc5",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.tags.tagsPageLink": {
+      "sourceHash": "ddd5e2896e5e184a2be17fec4ee2b1a0af90547814c0d98b781d7bb03d71cdf4",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.colorToggle.ariaLabel.mode.system": {
+      "sourceHash": "16f679ba1b28616fd0901d22fa3fec46c3cbf3e64914936e9a65523df314a8d6",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.colorToggle.ariaLabel.mode.light": {
+      "sourceHash": "a6ea4833bc3f883c067eadc432de158f4426e857a0c1551d393221feeaeedd49",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.colorToggle.ariaLabel.mode.dark": {
+      "sourceHash": "ddf377084a3224274c6c493e76e9b62155269645c64aaca8c091e6f88981430a",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.colorToggle.ariaLabel": {
+      "sourceHash": "246c76dc4b28163373d94ef84c0234aadcc7f399733f4e7191f9aa03f15c51c1",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.breadcrumbs.navAriaLabel": {
+      "sourceHash": "73667278486b9c9d3958f9449418af7d1caac4e1db5a70209b6d0bad7d9e301e",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.paginator.navAriaLabel": {
+      "sourceHash": "758061873727938c87007174dc0a69949cb7c7e423ece886c92f4c0bce246b70",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.paginator.previous": {
+      "sourceHash": "a57b08a480b822a0a572b993391c292ede593bf8000b406675b180bbb16260fa",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.paginator.next": {
+      "sourceHash": "1ff57a29d7c9d11bdf61c1b80f2b289b44c1ea844824d4b94a0d52b6ba5fc858",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.tagDocListPageTitle.nDocsTagged": {
+      "sourceHash": "e96ecd09ae1cc3713db6979a647a1d33b1da812601f6136ae7307f3d548f64e7",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.tagDocListPageTitle": {
+      "sourceHash": "c68823366823b04059138ebbf8a6f330b3061c68e4a6746bfda5c01a90c7fca2",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.versionBadge.label": {
+      "sourceHash": "17fd56e2079a80830455bc785fc5357e37314cb694beaafc8f5420309b5f363f",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.versions.unreleasedVersionLabel": {
+      "sourceHash": "b48f344a3282972ccb109fe37d7ecb9eb7e44ffeca3e8615210b2790609d7478",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.versions.unmaintainedVersionLabel": {
+      "sourceHash": "6d35df058a3b2344b5638b5d58fa820ddc8ac1952138c3bb7c18d66869f968f2",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.versions.latestVersionSuggestionLabel": {
+      "sourceHash": "63e9c46b1e49202c69eb4dd5703dc8a6977806591c4cdc9041c23ee797c475a6",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.docs.versions.latestVersionLinkLabel": {
+      "sourceHash": "5fe87164c1923b3c7cd59758a7e03610c6a95b3c9ad8cb45ab86911fd463962d",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.common.editThisPage": {
+      "sourceHash": "a9029e19d5b3d36d8ede9c51ff2e147eddf9c6fa41a8cdfd5dbf6ceb7eb72a8f",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.common.headingLinkTitle": {
+      "sourceHash": "f514688566aaa11baf503cbe4e995001bc42d27b1ba9a6256417f1dc616b2c77",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.lastUpdated.atDate": {
+      "sourceHash": "e8a6241baffbcb8293b3bfc1f8dd635d84a548cf70e443f761721186a189fcbc",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.lastUpdated.byUser": {
+      "sourceHash": "75f117172ea53ec05b9920645ff22d75fdefd058f6a796ffb3e36d9ae5bb1d9b",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.lastUpdated.lastUpdatedAtBy": {
+      "sourceHash": "2c6781f3ea27ef3fa439d05bfa217a586a6651f5e4f76659dd8d8417685d12a2",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.navbar.mobileVersionsDropdown.label": {
+      "sourceHash": "f89ea27036ac1d3174e2160a4d291d006ad6f85d466726ba04760beec0940c24",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.NotFound.title": {
+      "sourceHash": "cb2f00d1e554baf96001ddb5e22ee63a8053fd3f8b6cad8acd74504af0dadb52",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.tags.tagsListLabel": {
+      "sourceHash": "865658f888f2c50229acf31c7f4f412dfe4412ada982c4591a67b0774d45bd02",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.admonition.caution": {
+      "sourceHash": "3cf083c28255868b5f464f8ed39b1db95aee54b99b8670a2dbb556a580e9d5da",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.admonition.danger": {
+      "sourceHash": "123fd666aa39d376690cfa6570426d3585c188b291bc87acf47b84e3fe822102",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.admonition.info": {
+      "sourceHash": "06271baf49532c879aa3c58b48671884bcc858f09197412d682750496c33e1e1",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.admonition.note": {
+      "sourceHash": "edb465624291e4053c6c5ea4b7eb320dec773e10a57d26b95dcf0564f8e310f8",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.admonition.tip": {
+      "sourceHash": "97380187a878903ffe722b7bfd8d8ba92457ef77de0216cfe9261c72c2b87397",
+      "updatedAt": "2026-06-14T11:32:31.785Z"
+    },
+    "json:code.json:es:theme.admonition.warning": {
+      "sourceHash": "4bd9354bb652233497a0f42647464b81b83a83654fcf1511263a5d0120d74c91",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.AnnouncementBar.closeButtonAriaLabel": {
+      "sourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.blog.sidebar.navAriaLabel": {
+      "sourceHash": "d031de661e73af4296b4caae3412af713493579e09ad5098bfc6ccbbd242570f",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.DocSidebarItem.expandCategoryAriaLabel": {
+      "sourceHash": "71f45a1e41f1adf06edfe1ec5b1fe962419d2f7e822347ef83eb50171e71bf0c",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.DocSidebarItem.collapseCategoryAriaLabel": {
+      "sourceHash": "cae152c6b5e750b2c2410ab2117ad3fc2f5e828a935e26429b853060741e9b1c",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.IconExternalLink.ariaLabel": {
+      "sourceHash": "32cf938ba30d6f4b4e7d18f9f5f75023a60450747b7b64f934d91231063fff80",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.NavBar.navAriaLabel": {
+      "sourceHash": "eb814be3ca3b78c0734c560518be2a03e8d8f6e7e26447224cc7c7b105e1193e",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.navbar.mobileLanguageDropdown.label": {
+      "sourceHash": "318655cea4bd2096fbfad433d7c019bac40750d1a456fc34d366df41fcc77197",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.NotFound.p1": {
+      "sourceHash": "887e4838ffa96692b36cf413d531e20c92958b4a45fb3cc2448f913e8301b8e7",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.NotFound.p2": {
+      "sourceHash": "0cf882ed2315a80023d3a3f5d4621ae38d0d2f9a3e2ebf12e364c515c41ff175",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.TOCCollapsible.toggleButtonLabel": {
+      "sourceHash": "b5658fc8edda24f9c94eabac9e536e0a18e3055a8ca255f9d1b8f256ea02a6cc",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.blog.post.readMore": {
+      "sourceHash": "83b794145c0cc3f560cb6dfb6b5bcf7afac4dba15e5c6dbc54d103dae029fec6",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.blog.post.readMoreLabel": {
+      "sourceHash": "23698aca02aba4c2e5376eac758e654fda555250c8251a869089843f262a7a49",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.blog.post.readingTime.plurals": {
+      "sourceHash": "7c21f68b3dc6cbcba3288d06578945132ca07ec8ec0dc2c97d428c124f997bbe",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.CodeBlock.copy": {
+      "sourceHash": "e21f935f11d7e966dbbae78da9daa378fe8142a14e7c0cd7434183005faa6c5c",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.CodeBlock.copied": {
+      "sourceHash": "8d525e5f158b9afe05f3122af363ac67763bdc4e1395b46597b320c289766ce3",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.CodeBlock.copyButtonAriaLabel": {
+      "sourceHash": "f0437b8953e1d58a2d791ebdea9a92985b7afe296ffd50bf936e4372cb1ed900",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.CodeBlock.wordWrapToggle": {
+      "sourceHash": "ecd0f38a04446721e9a09b1994bae262fe43d2d47b050870a2d3b1d9e9a11a6b",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.docs.breadcrumbs.home": {
+      "sourceHash": "11d58b08de98e05930a7f73b5f5d75367e4a58ac27335a420d55583cb16ad1ff",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.docs.sidebar.collapseButtonTitle": {
+      "sourceHash": "aab31cde23ba9783050a754575b80c05e0e799b1542990b24b4b4bde2327e37e",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.docs.sidebar.collapseButtonAriaLabel": {
+      "sourceHash": "aab31cde23ba9783050a754575b80c05e0e799b1542990b24b4b4bde2327e37e",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.docs.sidebar.navAriaLabel": {
+      "sourceHash": "b2b5561fa18f91f78a39879dc0754b3ebbb96818c8b1a41d725294ce8824d54d",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+      "sourceHash": "fe1e984bf7134dc98302ff4d77c4f057b8474a73471687071a068c69b4111a84",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+      "sourceHash": "e35c6e48aa36ab346557173fd941f671e096ebe9d4b56b93d7a20e7ed20c821a",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+      "sourceHash": "64cbd960a7108dbb48fad79b5dd4ce88e9fc0101bad61398b2043af6c6e19b55",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+      "sourceHash": "88b7f9ea5cd759be53282f3f31785be35e10ae6652e145a7000baffe8b655a4b",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+      "sourceHash": "135a99f6883a321de00bd366e719f1c31fbdbb975f4e461138f920be3a6e424a",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.docs.sidebar.expandButtonTitle": {
+      "sourceHash": "37a5d6485e109bf695382308d0e2cd33913c3e5f7e9ab990e8f1a5f4287b2c6a",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.docs.sidebar.expandButtonAriaLabel": {
+      "sourceHash": "37a5d6485e109bf695382308d0e2cd33913c3e5f7e9ab990e8f1a5f4287b2c6a",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.blog.post.plurals": {
+      "sourceHash": "9c1684210f2697c7676fc3e5b67cb83cbd2eb89f0f18014a785fa27afeaba5e2",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.blog.tagTitle": {
+      "sourceHash": "4b684216376becf33ff139e258b4650835aa502cc55cbcf444611782b8a6da1b",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.blog.author.pageTitle": {
+      "sourceHash": "132604694eabf6fb2d9e7958d35ae5b9629ffddd390400d937a95c000fb3ccf7",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.blog.authorsList.pageTitle": {
+      "sourceHash": "2c00c9aaa72c717ad6d901a09c4d698a68b2e9740be3769e0af7d6bd85d72d5d",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.blog.authorsList.viewAll": {
+      "sourceHash": "d0dab631990f4d2d6859d5f7c7d79117ed7469a631961a3230f9715bf5dd1108",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.blog.author.noPosts": {
+      "sourceHash": "b3f63de13395eb1c6cf884622917882221dfcfc7c58a8e286b46d0433b4494cf",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.contentVisibility.unlistedBanner.title": {
+      "sourceHash": "4f54b4aacd7e0cd8bcb8116db30626c600d4886f9592865febea2f45a5c53c4d",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.contentVisibility.unlistedBanner.message": {
+      "sourceHash": "82d7237b996e2775bec45ee494bb7320745c4ca45ab0f768f488aa6d8287e02a",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.contentVisibility.draftBanner.title": {
+      "sourceHash": "62cf6a8479e41bc03ea338c903338e56cbbd6cd2134aaab6c3e8c0fe943e0e39",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.contentVisibility.draftBanner.message": {
+      "sourceHash": "ee94fd3e7c9290cbfb5a9a7a57c344f74bb11c0b9895c80e989b32c6e1c21c49",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.docs.DocCard.categoryDescription.plurals": {
+      "sourceHash": "d4a87d6b454caf524fbc1f9ec4b20fa83ab81c622dd21bae2a6df389a1fd4c8e",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.ErrorPageContent.tryAgain": {
+      "sourceHash": "d8b8392e2c542950ca64867168e4ef87d4ad606882d5898f826b51c6d553988f",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.common.skipToMainContent": {
+      "sourceHash": "c887f134c26ea8310e1fb4bd6fbab7b640393bd1b556e62691c7a442be92ec2a",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:code.json:es:theme.tags.tagsPageTitle": {
+      "sourceHash": "1331275bc537b4c2bf1e46f7275677967515342e30b572e6852fa6f51b831fe8",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:es:logo.alt": {
+      "sourceHash": "dd829cd6f671c4c08308ec5bbb04a9b72b0b9636d6f8ca686987d3a4d6886d79",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:es:item.label.Product Docs": {
+      "sourceHash": "6c27b650a77a3a4d83fe9203abf735719e4ce7d03f7173f204aad0da1dbfe392",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:es:item.label.FAQs": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:es:item.label.Release Notes": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:es:item.label.SOC Prime": {
+      "sourceHash": "dd829cd6f671c4c08308ec5bbb04a9b72b0b9636d6f8ca686987d3a4d6886d79",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.title.Documentation": {
+      "sourceHash": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.title.SOC Prime": {
+      "sourceHash": "dd829cd6f671c4c08308ec5bbb04a9b72b0b9636d6f8ca686987d3a4d6886d79",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.title.Community": {
+      "sourceHash": "bb501d7877eb7ddbd40baf7990e8058212e8140a2e6ceaaf2d54a6412b770bfd",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.Product Docs": {
+      "sourceHash": "6c27b650a77a3a4d83fe9203abf735719e4ce7d03f7173f204aad0da1dbfe392",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.FAQs": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.Release Notes": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.Website": {
+      "sourceHash": "b5a229ac8becc6035511f432ca6018f581f0627233eada6ae8e12b505d44af7f",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.Help Center": {
+      "sourceHash": "a78cebc44214256ba361dcee3f1cc1408e55ea6940c65067615abd4fdcc2d788",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.Threat Detection Marketplace": {
+      "sourceHash": "879af45231e409aad8d9ca0b7805e2787474c2303dc86f8e48dc42690ac918cd",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.GitHub": {
+      "sourceHash": "f911e414cf6bdfc595532ab166b5ba0f63d73c021452fcdacbda363dda6ad8fb",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.Discord": {
+      "sourceHash": "053bc65874ad6098e58c41c57b378a2f36b0220e5e0b46722245e6c2f796818c",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.LinkedIn": {
+      "sourceHash": "dd84425b72da12c6c828339ce814342daceac705b50d42e377e1acebf8f2320b",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.YouTube": {
+      "sourceHash": "fb7accfff8c6f8ea9b03c91ee5576d0d08080e9ba35918d801aaeb6020dbc88c",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.Facebook": {
+      "sourceHash": "d41f5b4977ee05c6b61b3b5f054784628f5cd1cbe06a82a5484d1e6de6eefe85",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.X": {
+      "sourceHash": "4b68ab3847feda7d6c62c1fbcbeebfa35eab7351ed5e78f4ddadea5df64b8015",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:link.item.label.Bluesky": {
+      "sourceHash": "4ed485c7140118607118ad9ad616ab9c026bef5efa0b0218cbf312188959d451",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:es:copyright": {
+      "sourceHash": "b35744145de049c60dedae653211a38a2313968b07d4426c94821535ff473e7f",
+      "updatedAt": "2026-06-14T11:32:31.786Z"
+    },
+    "json:docusaurus-plugin-content-docs/current.json:es:version.label": {
+      "sourceHash": "1ff57a29d7c9d11bdf61c1b80f2b289b44c1ea844824d4b94a0d52b6ba5fc858",
+      "updatedAt": "2026-06-14T11:32:31.787Z"
+    },
+    "json:docusaurus-plugin-content-docs/current.json:es:sidebar.productSidebar.category.Threat Detection Marketplace": {
+      "sourceHash": "879af45231e409aad8d9ca0b7805e2787474c2303dc86f8e48dc42690ac918cd",
+      "updatedAt": "2026-06-14T11:32:31.787Z"
+    },
+    "json:docusaurus-plugin-content-docs/current.json:es:sidebar.productSidebar.category.Threat Detection Marketplace.link.generated-index.description": {
+      "sourceHash": "2ef16d8e5a2f9815578ec064210cf8a9418ae718e8f65dff638fbe22a18e4502",
+      "updatedAt": "2026-06-14T11:32:31.787Z"
+    },
+    "mdx:faq/coralogix-data-plane-credentials.mdx:ko": {
+      "sourceHash": "e8e9c4bdd5869ca189d59bc58ba786c078bd685da8b6ffcaa872c97c8698f6f4",
+      "updatedAt": "2026-06-14T11:32:31.788Z"
+    },
+    "mdx:faq/email-notifications.mdx:ko": {
+      "sourceHash": "fefd7bc6a25ab8ac5d9c0abb1bac0219245df881e56069c56dfe2e472a8e8bd6",
+      "updatedAt": "2026-06-14T11:32:31.788Z"
+    },
+    "mdx:product/threat-detection-marketplace/active-threats.mdx:ko": {
+      "sourceHash": "4f800c78cd93d70009fd7d93edf5d0edc296b1f5e83b4f5be8bd793b52f03f1b",
+      "updatedAt": "2026-06-14T11:32:31.789Z"
+    },
+    "mdx:product/threat-detection-marketplace/search.mdx:ko": {
+      "sourceHash": "805398239b60a7a8de55fe3aadcda72da89ef7f5d7a4111867aad53ab8d9423e",
+      "updatedAt": "2026-06-14T11:32:31.789Z"
+    },
+    "mdx:release-notes/v6.1.8.mdx:ko": {
+      "sourceHash": "2b0bd36167fb3f064adbd8fe87c32a2bbc61fdc3a97b391669e6ea5501fb6a99",
+      "updatedAt": "2026-06-14T11:32:31.789Z"
+    },
+    "mdx:release-notes/v6.2.0.mdx:ko": {
+      "sourceHash": "8f90137b8c57fe6bd67aac454c75d19f544a205c0ef2335657e4dd8eca7a6377",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:SOC Prime Platform": {
+      "sourceHash": "e6c5e5eb11c1a6712f1c818f9194e1e13d3ebfe4ec5c06d62d2c7629de6badfc",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:Product Docs": {
+      "sourceHash": "6c27b650a77a3a4d83fe9203abf735719e4ce7d03f7173f204aad0da1dbfe392",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:FAQs": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:Release Notes": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.meta.description": {
+      "sourceHash": "9abfd6df712ade947c5f11a62fb5b99df354b96508c49540885a3a728fa980c9",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.section.title": {
+      "sourceHash": "4af27f1cb27fea5878c05a13c04a1be8907a77efedfac8322d7e2664d87ae91f",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.section.subtitle": {
+      "sourceHash": "c0928b8db5e8d4e4484ff1313c4c607feb9b56c78b226484ae9ae33a36dce72e",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.tdm.badge": {
+      "sourceHash": "fb9ef894175c327470f768d95ca7bee65e19853a0eaace3805f8a7b8a12270da",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.tdm.title": {
+      "sourceHash": "879af45231e409aad8d9ca0b7805e2787474c2303dc86f8e48dc42690ac918cd",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.tdm.description": {
+      "sourceHash": "148907b6e1ff98f7106550671342735dde1afd39efd863853afbe511e6bcf90f",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.tdm.linkLabel": {
+      "sourceHash": "030ae651ad4ab8df397ee26b19f4704c1d8295505d9130032f0072074cf7455f",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.faq.badge": {
+      "sourceHash": "be91940b79f469101df9a50544b6873aa5509a12f1f93f1cb5e3be3990d344b3",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.faq.title": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.faq.description": {
+      "sourceHash": "bb920b9a127f5163beb961a7dcc8c6cd0e2d1d725efd4fccc3782f89085ff491",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.faq.linkLabel": {
+      "sourceHash": "5bd2c44564c8ceb99fef2267748254425dee0693a7761761dfbc8cba409b0bd1",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.rn.badge": {
+      "sourceHash": "22e2bada8f1c65cd83f4ba976f0027c5dd7cb81d5d2199cd1b0130792841eef4",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.rn.title": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.rn.description": {
+      "sourceHash": "2585395bdcb29b4bc794286904dc2f72f1b0a7c983c5c65cd6fe15da4d5943b2",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:homepage.feature.rn.linkLabel": {
+      "sourceHash": "f8c47d92212e4db04b212f98916ca6e7d83483aeb853df1b05d6eec47909790a",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.ErrorPageContent.title": {
+      "sourceHash": "61f8a32b0a81f1e879969b34d4c92824acda7eb932c4c11a85d54e3c85b6d0f6",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.BackToTopButton.buttonAriaLabel": {
+      "sourceHash": "2ae71ffa6c1c05aabbbb0202c976de8442a3ff7999579ef396591f664e35564f",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.archive.title": {
+      "sourceHash": "66f4804ee23ddc092d1bae43cb88186aa541187fff7c1cc8a4aa17e59a9f4123",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.archive.description": {
+      "sourceHash": "66f4804ee23ddc092d1bae43cb88186aa541187fff7c1cc8a4aa17e59a9f4123",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.paginator.navAriaLabel": {
+      "sourceHash": "b61fc99000ea4a88f4d7fdbf30df4c1075697699bc7fa932093fb8e1681e0821",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.paginator.newerEntries": {
+      "sourceHash": "61d6ff4e7f3c0d2193f3906b90c3bce8609ae9245d2888df70b47cb2db6ed145",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.paginator.olderEntries": {
+      "sourceHash": "62f32f746e40653407ebd56403069598f35654c0f56725c3fccfca50055a4425",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.post.paginator.navAriaLabel": {
+      "sourceHash": "57501fdeec3bc10bd5384d5d73e680e9b6965f394d6c394cc3fca1d867c81c7b",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.post.paginator.newerPost": {
+      "sourceHash": "7f4508940737b4ac10bad9e9fb6457857ccf23a455c5e06bf65fcb5e3076f02d",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.post.paginator.olderPost": {
+      "sourceHash": "99bac119057d1a323bb46f4eeaf8bcca2c0b75f9eba0066d58ebe53a3e27edc5",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.tags.tagsPageLink": {
+      "sourceHash": "ddd5e2896e5e184a2be17fec4ee2b1a0af90547814c0d98b781d7bb03d71cdf4",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.colorToggle.ariaLabel.mode.system": {
+      "sourceHash": "16f679ba1b28616fd0901d22fa3fec46c3cbf3e64914936e9a65523df314a8d6",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.colorToggle.ariaLabel.mode.light": {
+      "sourceHash": "a6ea4833bc3f883c067eadc432de158f4426e857a0c1551d393221feeaeedd49",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.colorToggle.ariaLabel.mode.dark": {
+      "sourceHash": "ddf377084a3224274c6c493e76e9b62155269645c64aaca8c091e6f88981430a",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.colorToggle.ariaLabel": {
+      "sourceHash": "246c76dc4b28163373d94ef84c0234aadcc7f399733f4e7191f9aa03f15c51c1",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.breadcrumbs.navAriaLabel": {
+      "sourceHash": "73667278486b9c9d3958f9449418af7d1caac4e1db5a70209b6d0bad7d9e301e",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.paginator.navAriaLabel": {
+      "sourceHash": "758061873727938c87007174dc0a69949cb7c7e423ece886c92f4c0bce246b70",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.paginator.previous": {
+      "sourceHash": "a57b08a480b822a0a572b993391c292ede593bf8000b406675b180bbb16260fa",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.paginator.next": {
+      "sourceHash": "1ff57a29d7c9d11bdf61c1b80f2b289b44c1ea844824d4b94a0d52b6ba5fc858",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.tagDocListPageTitle.nDocsTagged": {
+      "sourceHash": "e96ecd09ae1cc3713db6979a647a1d33b1da812601f6136ae7307f3d548f64e7",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.tagDocListPageTitle": {
+      "sourceHash": "c68823366823b04059138ebbf8a6f330b3061c68e4a6746bfda5c01a90c7fca2",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.versionBadge.label": {
+      "sourceHash": "17fd56e2079a80830455bc785fc5357e37314cb694beaafc8f5420309b5f363f",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.versions.unreleasedVersionLabel": {
+      "sourceHash": "b48f344a3282972ccb109fe37d7ecb9eb7e44ffeca3e8615210b2790609d7478",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.versions.unmaintainedVersionLabel": {
+      "sourceHash": "6d35df058a3b2344b5638b5d58fa820ddc8ac1952138c3bb7c18d66869f968f2",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.versions.latestVersionSuggestionLabel": {
+      "sourceHash": "63e9c46b1e49202c69eb4dd5703dc8a6977806591c4cdc9041c23ee797c475a6",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.versions.latestVersionLinkLabel": {
+      "sourceHash": "5fe87164c1923b3c7cd59758a7e03610c6a95b3c9ad8cb45ab86911fd463962d",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.common.editThisPage": {
+      "sourceHash": "a9029e19d5b3d36d8ede9c51ff2e147eddf9c6fa41a8cdfd5dbf6ceb7eb72a8f",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.common.headingLinkTitle": {
+      "sourceHash": "f514688566aaa11baf503cbe4e995001bc42d27b1ba9a6256417f1dc616b2c77",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.lastUpdated.atDate": {
+      "sourceHash": "e8a6241baffbcb8293b3bfc1f8dd635d84a548cf70e443f761721186a189fcbc",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.lastUpdated.byUser": {
+      "sourceHash": "75f117172ea53ec05b9920645ff22d75fdefd058f6a796ffb3e36d9ae5bb1d9b",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.lastUpdated.lastUpdatedAtBy": {
+      "sourceHash": "2c6781f3ea27ef3fa439d05bfa217a586a6651f5e4f76659dd8d8417685d12a2",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.navbar.mobileVersionsDropdown.label": {
+      "sourceHash": "f89ea27036ac1d3174e2160a4d291d006ad6f85d466726ba04760beec0940c24",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.NotFound.title": {
+      "sourceHash": "cb2f00d1e554baf96001ddb5e22ee63a8053fd3f8b6cad8acd74504af0dadb52",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.tags.tagsListLabel": {
+      "sourceHash": "865658f888f2c50229acf31c7f4f412dfe4412ada982c4591a67b0774d45bd02",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.admonition.caution": {
+      "sourceHash": "3cf083c28255868b5f464f8ed39b1db95aee54b99b8670a2dbb556a580e9d5da",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.admonition.danger": {
+      "sourceHash": "123fd666aa39d376690cfa6570426d3585c188b291bc87acf47b84e3fe822102",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.admonition.info": {
+      "sourceHash": "06271baf49532c879aa3c58b48671884bcc858f09197412d682750496c33e1e1",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.admonition.note": {
+      "sourceHash": "edb465624291e4053c6c5ea4b7eb320dec773e10a57d26b95dcf0564f8e310f8",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.admonition.tip": {
+      "sourceHash": "97380187a878903ffe722b7bfd8d8ba92457ef77de0216cfe9261c72c2b87397",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.admonition.warning": {
+      "sourceHash": "4bd9354bb652233497a0f42647464b81b83a83654fcf1511263a5d0120d74c91",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.AnnouncementBar.closeButtonAriaLabel": {
+      "sourceHash": "7d9eb7acb13e24625c404401d8e88b2350e32162455885f18276cf802f7701ed",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.sidebar.navAriaLabel": {
+      "sourceHash": "d031de661e73af4296b4caae3412af713493579e09ad5098bfc6ccbbd242570f",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.DocSidebarItem.expandCategoryAriaLabel": {
+      "sourceHash": "71f45a1e41f1adf06edfe1ec5b1fe962419d2f7e822347ef83eb50171e71bf0c",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.DocSidebarItem.collapseCategoryAriaLabel": {
+      "sourceHash": "cae152c6b5e750b2c2410ab2117ad3fc2f5e828a935e26429b853060741e9b1c",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.IconExternalLink.ariaLabel": {
+      "sourceHash": "32cf938ba30d6f4b4e7d18f9f5f75023a60450747b7b64f934d91231063fff80",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.NavBar.navAriaLabel": {
+      "sourceHash": "eb814be3ca3b78c0734c560518be2a03e8d8f6e7e26447224cc7c7b105e1193e",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.navbar.mobileLanguageDropdown.label": {
+      "sourceHash": "318655cea4bd2096fbfad433d7c019bac40750d1a456fc34d366df41fcc77197",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.NotFound.p1": {
+      "sourceHash": "887e4838ffa96692b36cf413d531e20c92958b4a45fb3cc2448f913e8301b8e7",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.NotFound.p2": {
+      "sourceHash": "0cf882ed2315a80023d3a3f5d4621ae38d0d2f9a3e2ebf12e364c515c41ff175",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.TOCCollapsible.toggleButtonLabel": {
+      "sourceHash": "b5658fc8edda24f9c94eabac9e536e0a18e3055a8ca255f9d1b8f256ea02a6cc",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.post.readMore": {
+      "sourceHash": "83b794145c0cc3f560cb6dfb6b5bcf7afac4dba15e5c6dbc54d103dae029fec6",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.post.readMoreLabel": {
+      "sourceHash": "23698aca02aba4c2e5376eac758e654fda555250c8251a869089843f262a7a49",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.post.readingTime.plurals": {
+      "sourceHash": "7c21f68b3dc6cbcba3288d06578945132ca07ec8ec0dc2c97d428c124f997bbe",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.CodeBlock.copy": {
+      "sourceHash": "e21f935f11d7e966dbbae78da9daa378fe8142a14e7c0cd7434183005faa6c5c",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.CodeBlock.copied": {
+      "sourceHash": "8d525e5f158b9afe05f3122af363ac67763bdc4e1395b46597b320c289766ce3",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.CodeBlock.copyButtonAriaLabel": {
+      "sourceHash": "f0437b8953e1d58a2d791ebdea9a92985b7afe296ffd50bf936e4372cb1ed900",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.CodeBlock.wordWrapToggle": {
+      "sourceHash": "ecd0f38a04446721e9a09b1994bae262fe43d2d47b050870a2d3b1d9e9a11a6b",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.breadcrumbs.home": {
+      "sourceHash": "11d58b08de98e05930a7f73b5f5d75367e4a58ac27335a420d55583cb16ad1ff",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.sidebar.collapseButtonTitle": {
+      "sourceHash": "aab31cde23ba9783050a754575b80c05e0e799b1542990b24b4b4bde2327e37e",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.sidebar.collapseButtonAriaLabel": {
+      "sourceHash": "aab31cde23ba9783050a754575b80c05e0e799b1542990b24b4b4bde2327e37e",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.sidebar.navAriaLabel": {
+      "sourceHash": "b2b5561fa18f91f78a39879dc0754b3ebbb96818c8b1a41d725294ce8824d54d",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.sidebar.closeSidebarButtonAriaLabel": {
+      "sourceHash": "fe1e984bf7134dc98302ff4d77c4f057b8474a73471687071a068c69b4111a84",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
+      "sourceHash": "e35c6e48aa36ab346557173fd941f671e096ebe9d4b56b93d7a20e7ed20c821a",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
+      "sourceHash": "64cbd960a7108dbb48fad79b5dd4ce88e9fc0101bad61398b2043af6c6e19b55",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.navbar.mobileDropdown.collapseButton.expandAriaLabel": {
+      "sourceHash": "88b7f9ea5cd759be53282f3f31785be35e10ae6652e145a7000baffe8b655a4b",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.navbar.mobileDropdown.collapseButton.collapseAriaLabel": {
+      "sourceHash": "135a99f6883a321de00bd366e719f1c31fbdbb975f4e461138f920be3a6e424a",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.sidebar.expandButtonTitle": {
+      "sourceHash": "37a5d6485e109bf695382308d0e2cd33913c3e5f7e9ab990e8f1a5f4287b2c6a",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.docs.sidebar.expandButtonAriaLabel": {
+      "sourceHash": "37a5d6485e109bf695382308d0e2cd33913c3e5f7e9ab990e8f1a5f4287b2c6a",
+      "updatedAt": "2026-06-14T11:32:31.790Z"
+    },
+    "json:code.json:ko:theme.blog.post.plurals": {
+      "sourceHash": "9c1684210f2697c7676fc3e5b67cb83cbd2eb89f0f18014a785fa27afeaba5e2",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.blog.tagTitle": {
+      "sourceHash": "4b684216376becf33ff139e258b4650835aa502cc55cbcf444611782b8a6da1b",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.blog.author.pageTitle": {
+      "sourceHash": "132604694eabf6fb2d9e7958d35ae5b9629ffddd390400d937a95c000fb3ccf7",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.blog.authorsList.pageTitle": {
+      "sourceHash": "2c00c9aaa72c717ad6d901a09c4d698a68b2e9740be3769e0af7d6bd85d72d5d",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.blog.authorsList.viewAll": {
+      "sourceHash": "d0dab631990f4d2d6859d5f7c7d79117ed7469a631961a3230f9715bf5dd1108",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.blog.author.noPosts": {
+      "sourceHash": "b3f63de13395eb1c6cf884622917882221dfcfc7c58a8e286b46d0433b4494cf",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.contentVisibility.unlistedBanner.title": {
+      "sourceHash": "4f54b4aacd7e0cd8bcb8116db30626c600d4886f9592865febea2f45a5c53c4d",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.contentVisibility.unlistedBanner.message": {
+      "sourceHash": "82d7237b996e2775bec45ee494bb7320745c4ca45ab0f768f488aa6d8287e02a",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.contentVisibility.draftBanner.title": {
+      "sourceHash": "62cf6a8479e41bc03ea338c903338e56cbbd6cd2134aaab6c3e8c0fe943e0e39",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.contentVisibility.draftBanner.message": {
+      "sourceHash": "ee94fd3e7c9290cbfb5a9a7a57c344f74bb11c0b9895c80e989b32c6e1c21c49",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.docs.DocCard.categoryDescription.plurals": {
+      "sourceHash": "d4a87d6b454caf524fbc1f9ec4b20fa83ab81c622dd21bae2a6df389a1fd4c8e",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.ErrorPageContent.tryAgain": {
+      "sourceHash": "d8b8392e2c542950ca64867168e4ef87d4ad606882d5898f826b51c6d553988f",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.common.skipToMainContent": {
+      "sourceHash": "c887f134c26ea8310e1fb4bd6fbab7b640393bd1b556e62691c7a442be92ec2a",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:code.json:ko:theme.tags.tagsPageTitle": {
+      "sourceHash": "1331275bc537b4c2bf1e46f7275677967515342e30b572e6852fa6f51b831fe8",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:ko:logo.alt": {
+      "sourceHash": "dd829cd6f671c4c08308ec5bbb04a9b72b0b9636d6f8ca686987d3a4d6886d79",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:ko:item.label.Product Docs": {
+      "sourceHash": "6c27b650a77a3a4d83fe9203abf735719e4ce7d03f7173f204aad0da1dbfe392",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:ko:item.label.FAQs": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:ko:item.label.Release Notes": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/navbar.json:ko:item.label.SOC Prime": {
+      "sourceHash": "dd829cd6f671c4c08308ec5bbb04a9b72b0b9636d6f8ca686987d3a4d6886d79",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.title.Documentation": {
+      "sourceHash": "c205924de0fe636ccdde4ed616fef66f75b78e98b03620637965c033fd161141",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.title.SOC Prime": {
+      "sourceHash": "dd829cd6f671c4c08308ec5bbb04a9b72b0b9636d6f8ca686987d3a4d6886d79",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.title.Community": {
+      "sourceHash": "bb501d7877eb7ddbd40baf7990e8058212e8140a2e6ceaaf2d54a6412b770bfd",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.Product Docs": {
+      "sourceHash": "6c27b650a77a3a4d83fe9203abf735719e4ce7d03f7173f204aad0da1dbfe392",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.FAQs": {
+      "sourceHash": "9856b7433f842da2093b956811286d51860e05ae3904dc40b36dc709ea298884",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.Release Notes": {
+      "sourceHash": "bd4702c187a9a655880be010957d7688c186852ddb6252d52bda2e299649cb9d",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.Website": {
+      "sourceHash": "b5a229ac8becc6035511f432ca6018f581f0627233eada6ae8e12b505d44af7f",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.Help Center": {
+      "sourceHash": "a78cebc44214256ba361dcee3f1cc1408e55ea6940c65067615abd4fdcc2d788",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.Threat Detection Marketplace": {
+      "sourceHash": "879af45231e409aad8d9ca0b7805e2787474c2303dc86f8e48dc42690ac918cd",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.GitHub": {
+      "sourceHash": "f911e414cf6bdfc595532ab166b5ba0f63d73c021452fcdacbda363dda6ad8fb",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.Discord": {
+      "sourceHash": "053bc65874ad6098e58c41c57b378a2f36b0220e5e0b46722245e6c2f796818c",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.LinkedIn": {
+      "sourceHash": "dd84425b72da12c6c828339ce814342daceac705b50d42e377e1acebf8f2320b",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.YouTube": {
+      "sourceHash": "fb7accfff8c6f8ea9b03c91ee5576d0d08080e9ba35918d801aaeb6020dbc88c",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.Facebook": {
+      "sourceHash": "d41f5b4977ee05c6b61b3b5f054784628f5cd1cbe06a82a5484d1e6de6eefe85",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.X": {
+      "sourceHash": "4b68ab3847feda7d6c62c1fbcbeebfa35eab7351ed5e78f4ddadea5df64b8015",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:link.item.label.Bluesky": {
+      "sourceHash": "4ed485c7140118607118ad9ad616ab9c026bef5efa0b0218cbf312188959d451",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-theme-classic/footer.json:ko:copyright": {
+      "sourceHash": "b35744145de049c60dedae653211a38a2313968b07d4426c94821535ff473e7f",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-plugin-content-docs/current.json:ko:version.label": {
+      "sourceHash": "1ff57a29d7c9d11bdf61c1b80f2b289b44c1ea844824d4b94a0d52b6ba5fc858",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-plugin-content-docs/current.json:ko:sidebar.productSidebar.category.Threat Detection Marketplace": {
+      "sourceHash": "879af45231e409aad8d9ca0b7805e2787474c2303dc86f8e48dc42690ac918cd",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    },
+    "json:docusaurus-plugin-content-docs/current.json:ko:sidebar.productSidebar.category.Threat Detection Marketplace.link.generated-index.description": {
+      "sourceHash": "2ef16d8e5a2f9815578ec064210cf8a9418ae718e8f65dff638fbe22a18e4502",
+      "updatedAt": "2026-06-14T11:32:31.791Z"
+    }
+  }
+}

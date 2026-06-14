@@ -1,0 +1,176 @@
+---
+sidebar_position: 1
+title: Active Threats en Threat Detection Marketplace
+sidebar_label: Active Threats
+description: Utilice Active Threats en el Threat Detection Marketplace de SOC Prime para descubrir CTI en tiempo real y revisar detecciones, flujos de ataque y contexto de amenazas enriquecido con IA en cuestión de minutos.
+keywords: [Active Threats, Threat Detection Marketplace, CTI, MITRE ATT&CK, detections, SOC Prime]
+authors:
+  - Eugene
+original_author: Eugene
+last_update:
+  date: 2026-05-18
+  author: Eugene
+display_date: Actualizado hace más de 3 semanas
+---
+
+import DocAuthors from '@site/src/components/DocAuthors';
+
+# Active Threats
+
+<DocAuthors authors={["Eugene"]} date="Actualizado hace más de 3 semanas" />
+
+Esta guía proporciona instrucciones paso a paso para utilizar Active Threats en Threat Detection Marketplace, incluida la detección de amenazas que proporcionan CTI en tiempo real y la revisión de información detallada sobre amenazas, detecciones y contexto enriquecido con IA, lo que permite a los equipos de seguridad identificar y abordar amenazas en cuestión de minutos.
+
+## Acceso a Active Threats
+
+1. Acceda a su cuenta de SOC Prime y navegue hasta Threat Detection Marketplace.
+2. Asegúrese de estar en el módulo Active Threats: Active Threats actúa como página de inicio de Threat Detection Marketplace.
+
+## Paneles de visualización
+
+En la parte superior de la página, los usuarios pueden encontrar paneles que muestran métricas actuales sobre amenazas activas. La vista está contraída de forma predeterminada. Para expandir la vista, seleccione el botón View Dashboard.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/01.png)
+
+Los paneles presentan lo siguiente:
+
+Nota: Si no hay actualizaciones relevantes durante alguna(s) semana(s) del calendario, la(s) columna(s) correspondiente(s) no será(n) visible(s) en el gráfico.
+
+- Top 3 Techniques Used: Una lista de las técnicas MITRE ATT&CK más comunes en amenazas recientes, que ayuda a priorizar las tácticas de mitigación.
+- Top 3 Active Actors: Los tres actores de amenazas más activos en el último período, que proporcionan información sobre patrones y tácticas de adversarios.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/02.png)
+
+## Feed de Active Threats
+
+El feed de Active Threats muestra una lista de las noticias de amenazas identificadas más recientemente, con las amenazas más nuevas en la parte superior.
+
+Utilice la barra de búsqueda en la parte superior para encontrar rápidamente las noticias que necesite. Introduzca una consulta en lenguaje natural. El sistema procesa su solicitud, muestra las noticias relacionadas y genera un resumen basado en los artículos de origen relevantes. Seleccione Research in Uncoder para ver el texto completo del resumen y explorar los detalles de las amenazas relevantes para su consulta.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/03.png)
+
+Cada mosaico de noticia contiene la siguiente información sobre la amenaza:
+
+Nota: Si hay varias opciones para Threat Type, Affected Industry o Affected Geography, se muestra la primera opción, seguida del número de opciones adicionales entre corchetes. Pase el cursor sobre el campo correspondiente para ver todas las opciones.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/04.png)
+
+El mosaico Threat of the Month incluye AI Summary, Attack Flow, Detections y Simulations, junto con contadores que muestran el número de elementos disponibles en cada sección. Haga clic en cualquier sección del mosaico para ir directamente al área correspondiente en la página de detalles de Threat of the Month.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/05.png)
+
+## Página de noticia de Active Threats
+
+Al seleccionar una noticia de amenaza, será redirigido a la página que contiene la información detallada y accionable sobre la amenaza.
+
+La parte superior de la página incluye:
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/06.png)
+
+Esta etiqueta se aplica si al menos una regla tiene al menos una traducción de tipo Query.
+
+Alert: Señal activada por una regla que indica actividad que debe revisarse o escalarse.
+
+Esta etiqueta se aplica si al menos una regla tiene al menos una traducción de tipo Alert.
+
+ETL: Etapa del pipeline de datos: extraer, normalizar y cargar telemetría.
+
+Esta etiqueta se aplica si al menos una regla está definida con `sigma type: IOC`.
+
+AIDR: Puerta de enlace de protección GenAI que ejecuta comprobaciones de reglas/similitud/código/ML/LLM para detectar y bloquear la inyección de prompts y contenido dañino antes de que llegue a las aplicaciones de IA.
+
+Esta etiqueta se aplica si al menos una regla tiene una traducción Semgrep.
+
+Share: Seleccione el botón Share para compartir la noticia.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/07.png)
+
+A la izquierda, cuatro pestañas proporcionan información detallada sobre la amenaza. Cambie entre las pestañas para explorar los detalles disponibles.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/08.png)
+
+## AI Summary
+
+La pestaña AI Summary proporciona una vista de alto nivel del contexto de la amenaza. Utilice esta pestaña para evaluar rápidamente la relevancia de la amenaza y las acciones de respuesta iniciales. Así es como utilizar cada sección:
+
+- Summary: Revise el resumen generado por IA para comprender las características principales de la amenaza.
+- Investigation: Esta sección contiene acciones recomendadas para investigar la amenaza.
+- Mitigation: Esta sección contiene acciones recomendadas para mitigar la amenaza según las mejores prácticas de seguridad. Utilícela como referencia rápida para implementar medidas defensivas.
+- Response: Esta sección contiene acciones de respuesta recomendadas para minimizar los riesgos de la amenaza. Utilícela como referencia rápida para implementar medidas defensivas.
+
+A la derecha, la pestaña AI Summary muestra los siguientes atributos de la amenaza:
+
+- Actor description
+- Associated groups
+
+- Sub(technique) description
+- Related tactics
+
+- Tool description
+- Associated software
+
+Nota: Es posible que algunos atributos de amenaza no se muestren, según la disponibilidad de datos.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/09.png)
+
+## Attack Flow
+
+Esta pestaña proporciona una visualización generada por IA de la actividad del adversario que ayuda a comprender mejor cómo opera la amenaza y a seguir las secuencias de comportamientos que emplean los adversarios para alcanzar sus objetivos. La visualización de la amenaza se presenta en formatos de diagrama y matriz.
+
+Para ver la representación en diagrama, seleccione la pestaña Flow. Puede hacer lo siguiente:
+
+- Arrastrar y soltar los bloques
+- Abrir la visualización en pantalla completa
+- Cambiar la escala
+- Volver al punto de inicio
+- Exportar la visualización como MMD
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/10.png)
+
+Para ver la representación en matriz, seleccione la pestaña Matrix. Puede hacer lo siguiente:
+
+- Abrir la visualización en pantalla completa
+- Volver al punto de inicio
+- Exportar la visualización como MMD
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/11.png)
+
+## Detections
+
+Esta pestaña proporciona la lista de detecciones que pueden identificar la amenaza seleccionada. Las detecciones se agrupan en las siguientes categorías:
+
+- Behavior Rules: Detecciones creadas por expertos humanos.
+- IOC Queries: Consultas IOC generadas automáticamente mediante los algoritmos propietarios de SOC Prime.
+- AI Rules: Detecciones creadas por los modelos de IA de SOC Prime.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/12.png)
+
+Pase el cursor sobre el mosaico de la regla para ver si la regla ya se ha implementado.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/13.png)
+
+Las Behavior Rules pueden incluir referencias clave sobre la amenaza. Para acceder a los enlaces, pase el cursor sobre el mosaico de la regla, seleccione External Research y haga clic en los enlaces para profundizar en el contexto.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/14.png)
+
+Para explorar los detalles de la detección, pase el cursor sobre el mosaico de detección, haga clic en el botón View y será redirigido a la página de regla/consulta con las siguientes pestañas:
+
+- Detection Intelligence: Proporciona inteligencia de amenazas y metadatos relevantes, incluidos enlaces multimedia, cronología de amenazas, falsos positivos, configuración de auditoría y recomendaciones de triaje, resúmenes cortos y completos, árboles de decisión, binarios, etiquetas y datos de cobertura MITRE ATT&CK.
+- Detection Code: Muestra el código de la regla/consulta convertible al formato de lenguaje disponible de SIEM, EDR y Data Lake para ejecutar posteriormente una regla/consulta en su entorno.
+- Validation: La pestaña está disponible solo para AI Rules y representa la simulación de actividad maliciosa que la regla está destinada a detectar.
+
+## Simulations
+
+Esta pestaña proporciona la lista de simulaciones de actividad maliciosa que las AI Rules están destinadas a detectar. Pase el cursor sobre el mosaico de la regla y seleccione el botón View para ver los detalles de la simulación.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/15.png)
+
+En la parte inferior de la página, puede ver amenazas relacionadas, si las hay. Haga clic en View all active threats para volver al feed de Active Threats.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/active-threats/16.png)
+
+## Mejores prácticas para utilizar Active Threats
+
+1. Monitorizar con regularidad: Revise el feed con regularidad para mantenerse al día sobre nuevas amenazas, vulnerabilidades y actividad de actores de amenazas.
+2. Priorizar según la relevancia de la amenaza: Utilice la información específica por sector y geografía para evaluar la relevancia de cada amenaza para su organización.
+3. Implementar reglas de detección: Aplique reglas de detección de la pestaña Detections para habilitar el monitorizado inmediato de amenazas activas.

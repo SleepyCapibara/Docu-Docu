@@ -1,0 +1,114 @@
+---
+sidebar_position: 3
+title: SOC Prime Platform 릴리스 노트 6.1.8
+description: SOC Prime Platform 6.1.8 릴리스 노트 — Coralogix용 ECS 번역, QRadar CEP Custom, Google SecOps WIF, 쿠키 동의, Active Threats 정렬 및 번역 수정.
+keywords: [SOC Prime, release notes, 6.1.8, Coralogix, QRadar, Google SecOps, Active Threats]
+authors:
+  - Nataliia Pukaliak
+original_author: Nataliia Pukaliak
+last_update:
+  date: 2026-04-14
+  author: Nataliia Pukaliak
+display_date: 2026년 4월 14일
+---
+
+import DocAuthors from '@site/src/components/DocAuthors';
+
+# SOC Prime Platform 제품 릴리스 노트 6.1.8
+
+<DocAuthors authors={["Nataliia Pukaliak"]} date="2026년 4월 14일" />
+
+2026년 4월 14일
+
+© 2026 SOC Prime Inc.
+
+All rights reserved. This product and documentation related are protected by copyright and distributed under licenses restricting their use, copying, distribution, and decompilation. No part of this product or documentation related may be reproduced in any form or by any means without the prior written authorization of SOC Prime. While every precaution has been taken in the preparation of this book, SOC Prime assumes no responsibility for errors or omissions. This publication and features described herein are subject to change without notice.
+
+---
+
+## Coralogix
+
+최신 SOC Prime 릴리스에서 Coralogix Alert 및 Coralogix Query에 대한 대체 번역 `ECS`를 추가했습니다. 이제 `ECS` 대체 번역을 선택할 수 있습니다.
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/01.png)
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/02.png)
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/03.png)
+
+## QRadar
+
+QRadar Query에 대한 대체 번역 `CEP Custom`을 추가했습니다. 이제 `CEP Custom` 대체 번역을 선택할 수 있습니다.
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/04.png)
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/05.png)
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/06.png)
+
+---
+
+최신 릴리스에서 GDPR 및 PECR 요구 사항 준수를 위해 모든 SOC Prime 웹 속성에 쿠키 동의 메커니즘을 구현했습니다. 사용자는 동의 배너를 통해 쿠키를 수락하거나 거부할 수 있으며, 기본 설정을 관리할 수도 있습니다. 전용 Cookie Preferences 패널에서 모든 쿠키 카테고리를 확인하고 토글 컨트롤을 사용하여 설정을 사용자 지정할 수 있습니다.
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/07.png)
+
+---
+
+키 없는 인증 기반의 새로운 WIF 통합을 Google SecOps에 구현했습니다. 이 업데이트에 따라 Data Plane 설정에 새 옵션이 추가되어 사용자가 Cloud Chronicle API with WIF 환경 유형을 선택하고, Data Plane이 사용될 위치를 선택한 다음 필요한 매개변수를 구성할 수 있습니다.
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/08.png)
+
+---
+
+최신 SOC Prime 릴리스에서 명확성과 사용성을 향상시키기 위해 Platform UI에 상당한 개선을 적용했습니다.
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/09.png)
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/10.png)
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/11.png)
+
+---
+
+## Active Threats 업데이트
+
+탐지 정렬 방식을 개선하여 Active Threats 모듈을 향상했습니다. Active Threat 세부 정보 페이지를 열고 Detections 탭으로 이동하면 모든 하위 탭(Behavior Rules, IOC Queries, AI Rules)의 탐지가 날짜순으로 정렬되며, 가장 최신 항목이 상단에 표시됩니다.
+
+![제품 스크린샷](/img/docs/release-notes/v6.1.8/12.png)
+
+---
+
+최신 릴리스에서 Attack Detective의 Scan 및 Data Audit PDF 보고서에 시각적 개선을 적용하여 읽기, 탐색 및 중요한 결과 식별이 더 쉬워졌습니다.
+
+- Scan PDF 보고서의 정렬 기능을 향상하여 가장 중요하고 가장 활발한 탐지를 식별하기 쉽게 했습니다. 탐지는 심각도 수준(Critical → Low)별로 정렬되며, 각 심각도 수준 내에서는 히트 수가 높은 순에서 낮은 순으로 정렬됩니다.
+- 가독성을 높이기 위해 Data Audit PDF 보고서에 시각적 구분선을 추가하여 이벤트 간 구분이 더 쉬워졌습니다.
+
+---
+
+특정 플랫폼에서 더 정확한 번역을 보장하기 위해 여러 개선 사항을 도입했습니다.
+
+## Elastic
+
+Elastic Stack Detection Rule (Lucene) 형식으로의 번역 품질을 향상시키기 위해 `case id`가 없을 때 `reference` 필드가 비어 있도록 했습니다.
+
+## Crowdstrike
+
+`keyword` 값을 큰따옴표(`"`)로 묶어 Crowdstrike keyword 번역 문제를 해결했습니다.
+
+## Tanium
+
+`\\` 이스케이프 처리를 개선하여 Tanium Query 번역 품질을 향상했습니다.
+
+---
+
+- Detection Rule 페이지의 Detection Code 탭에서 드릴다운한 후 AI 작업을 실행할 때 New 모드에서 에디터의 콘텐츠가 인식되지 않던 문제를 수정했습니다.
+- Uncoder AI에서 Revoke 버튼을 클릭할 때 Rule successfully revoked 메시지 대신 Publish this content? 팝업이 잘못 표시되던 문제를 해결했습니다.
+
+- Attack Detective Scan Setup 및 Two-Factor Authentication Setup 페이지의 문구와 텍스트 일관성을 개선했습니다.
+- 선 배치 알고리즘을 조정하여 Attack Flow의 커넥터 선 동작을 개선했습니다.
+- Uncoder AI에서 Active Threats Search 작업 결과를 볼 때 사이드 메뉴가 부분적으로 잘려 보이던 문제를 수정했습니다.
+- Advanced Search에서 대량 작업을 위해 탐지를 선택할 때 Translate To 버튼이 표시되지 않던 문제를 수정했습니다.
+- Uncoder AI의 Generate, Translate, Improve 탭 밑줄이 잘못 표시되던 문제를 해결했습니다.
+- Detection Rule 페이지의 작은 Relation Graph 가시성을 개선하기 위해 확대/축소 수준을 조정했습니다.
+- Lists 페이지에서 Unlock all Premium rules 옵션이 드롭다운 경계 밖에 표시되던 문제를 수정했습니다.
+- Attack Detective의 DEMO Audits에 대해 세 점 메뉴의 작업 버튼을 차단했으며, 해당 작업의 툴팁이 잘못 배치되던 문제를 수정했습니다.

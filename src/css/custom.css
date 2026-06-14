@@ -1,30 +1,234 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Global Docusaurus theme overrides.
+ * Imports the design system and maps tokens to Infima variables.
  */
 
-/* You can override the default Infima variables here. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import './design-system.css';
+
+/* ── Infima / Docusaurus variable mapping (light) ──────────────────── */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: var(--docu-color-brand-500);
+  --ifm-color-primary-dark: var(--docu-color-brand-600);
+  --ifm-color-primary-darker: var(--docu-color-brand-700);
+  --ifm-color-primary-darkest: var(--docu-color-brand-800);
+  --ifm-color-primary-light: var(--docu-color-brand-400);
+  --ifm-color-primary-lighter: var(--docu-color-brand-300);
+  --ifm-color-primary-lightest: var(--docu-color-brand-100);
+
+  --ifm-background-color: var(--docu-color-bg);
+  --ifm-background-surface-color: var(--docu-color-bg-elevated);
+  --ifm-font-color-base: var(--docu-color-text);
+  --ifm-font-color-secondary: var(--docu-color-text-muted);
+
+  --ifm-font-family-base: var(--docu-font-sans);
+  --ifm-font-family-monospace: var(--docu-font-mono);
+  --ifm-heading-font-weight: var(--docu-font-bold);
+  --ifm-line-height-base: var(--docu-leading-normal);
+
+  --ifm-global-border-width: 1px;
+  --ifm-global-radius: var(--docu-radius-md);
+  --ifm-global-shadow-lw: var(--docu-shadow-sm);
+  --ifm-global-shadow-md: var(--docu-shadow-md);
+  --ifm-global-shadow-tl: var(--docu-shadow-lg);
+
+  --ifm-link-color: var(--docu-color-brand-500);
+  --ifm-link-hover-color: var(--docu-color-brand-600);
+  --ifm-link-decoration: none;
+  --ifm-link-hover-decoration: underline;
+
+  --ifm-navbar-background-color: var(--docu-color-bg-elevated);
+  --ifm-navbar-shadow: var(--docu-shadow-sm);
+  --ifm-navbar-height: var(--docu-navbar-height);
+  --ifm-navbar-link-color: var(--docu-color-text-muted);
+  --ifm-navbar-link-hover-color: var(--docu-color-brand-500);
+
+  --ifm-footer-background-color: var(--docu-color-brand-900);
+  --ifm-footer-color: rgba(248, 250, 252, 0.8);
+  --ifm-footer-link-color: rgba(248, 250, 252, 0.9);
+  --ifm-footer-link-hover-color: var(--docu-color-accent-400);
+  --ifm-footer-title-color: #ffffff;
+
+  --ifm-menu-color: var(--docu-color-text-muted);
+  --ifm-menu-color-active: var(--docu-color-brand-500);
+  --ifm-menu-color-background-active: var(--docu-color-brand-50);
+  --ifm-menu-color-background-hover: var(--docu-color-bg-muted);
+
+  --ifm-toc-link-color: var(--docu-color-text-muted);
+  --ifm-toc-border-color: var(--docu-color-border);
+
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-code-background: var(--docu-color-bg-muted);
+  --ifm-code-border-radius: var(--docu-radius-sm);
+
+  --ifm-table-border-color: var(--docu-color-border);
+  --ifm-table-stripe-background: var(--docu-color-bg-muted);
+  --ifm-table-head-background: var(--docu-color-bg-muted);
+
+  --ifm-hr-border-color: var(--docu-color-border);
+
+  --ifm-button-border-radius: var(--docu-radius-lg);
+  --ifm-button-padding-horizontal: var(--docu-space-6);
+  --ifm-button-padding-vertical: var(--docu-space-3);
+
+  --docusaurus-highlighted-code-line-bg: rgba(26, 111, 212, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* ── Infima / Docusaurus variable mapping (dark) ───────────────────── */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: var(--docu-color-accent-400);
+  --ifm-color-primary-dark: var(--docu-color-accent-500);
+  --ifm-color-primary-darker: var(--docu-color-accent-600);
+  --ifm-color-primary-darkest: #0e7490;
+  --ifm-color-primary-light: #67e8f9;
+  --ifm-color-primary-lighter: #a5f3fc;
+  --ifm-color-primary-lightest: #cffafe;
+
+  --ifm-background-color: var(--docu-color-bg);
+  --ifm-background-surface-color: var(--docu-color-bg-elevated);
+  --ifm-font-color-base: var(--docu-color-text);
+  --ifm-font-color-secondary: var(--docu-color-text-muted);
+
+  --ifm-link-color: var(--docu-color-accent-400);
+  --ifm-link-hover-color: var(--docu-color-accent-500);
+
+  --ifm-navbar-background-color: var(--docu-color-bg-elevated);
+  --ifm-navbar-shadow: 0 1px 0 var(--docu-color-border);
+  --ifm-navbar-link-color: var(--docu-color-text-muted);
+  --ifm-navbar-link-hover-color: var(--docu-color-accent-400);
+
+  --ifm-footer-background-color: #060a14;
+  --ifm-footer-color: var(--docu-color-text-muted);
+  --ifm-footer-link-color: var(--docu-color-text-muted);
+  --ifm-footer-link-hover-color: var(--docu-color-accent-400);
+  --ifm-footer-title-color: var(--docu-color-text);
+
+  --ifm-menu-color: var(--docu-color-text-muted);
+  --ifm-menu-color-active: var(--docu-color-accent-400);
+  --ifm-menu-color-background-active: rgba(34, 211, 238, 0.1);
+  --ifm-menu-color-background-hover: var(--docu-color-surface-hover);
+
+  --ifm-code-background: var(--docu-color-bg-muted);
+
+  --docusaurus-highlighted-code-line-bg: rgba(34, 211, 238, 0.12);
+}
+
+/* ── Global polish ─────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.navbar {
+  border-bottom: 1px solid var(--docu-color-border);
+  backdrop-filter: blur(12px);
+}
+
+.navbar__title {
+  font-weight: var(--docu-font-semibold);
+}
+
+.navbar__link {
+  font-weight: var(--docu-font-medium);
+  transition: color var(--docu-transition-fast);
+}
+
+.navbar__link--active {
+  font-weight: var(--docu-font-semibold);
+}
+
+/* Docs sidebar */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--docu-color-border) !important;
+}
+
+.menu__link {
+  border-radius: var(--docu-radius-md);
+  transition:
+    background-color var(--docu-transition-fast),
+    color var(--docu-transition-fast);
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  font-weight: var(--docu-font-semibold);
+}
+
+/* Docs content */
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  color: var(--docu-color-text);
+}
+
+.markdown h2 {
+  border-bottom: 1px solid var(--docu-color-border);
+  padding-bottom: var(--docu-space-3);
+}
+
+.markdown table {
+  border-radius: var(--docu-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--docu-shadow-sm);
+}
+
+/* Pagination */
+.pagination-nav__link {
+  border: 1px solid var(--docu-color-border);
+  border-radius: var(--docu-radius-lg);
+  transition:
+    border-color var(--docu-transition-base),
+    box-shadow var(--docu-transition-base);
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: var(--docu-shadow-md);
+}
+
+/* Breadcrumbs */
+.breadcrumbs__link {
+  border-radius: var(--docu-radius-sm);
+}
+
+/* Admonitions */
+.alert {
+  border-radius: var(--docu-radius-lg);
+  border-left-width: 4px;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--docu-color-border);
+}
+
+.footer__title {
+  font-weight: var(--docu-font-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: var(--docu-text-sm);
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: var(--docu-radius-lg) !important;
+}
+
+/* TOC */
+.table-of-contents__link {
+  transition: color var(--docu-transition-fast);
+}
+
+.table-of-contents__link--active {
+  font-weight: var(--docu-font-semibold);
+}
+
+/* Hero override for Docusaurus default hero class */
+.hero--primary {
+  --ifm-hero-background-color: transparent;
+  --ifm-hero-text-color: var(--docu-color-text-inverse);
 }

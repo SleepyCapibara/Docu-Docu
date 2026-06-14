@@ -1,0 +1,22 @@
+{
+  "logo.alt": {
+    "message": "SOC Prime",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Product Docs": {
+    "message": "Документація продукту",
+    "description": "Navbar item with label Product Docs"
+  },
+  "item.label.FAQs": {
+    "message": "Запитання та відповіді",
+    "description": "Navbar item with label FAQs"
+  },
+  "item.label.Release Notes": {
+    "message": "Примітки до випуску",
+    "description": "Navbar item with label Release Notes"
+  },
+  "item.label.SOC Prime": {
+    "message": "SOC Prime",
+    "description": "Navbar item with label SOC Prime"
+  }
+}

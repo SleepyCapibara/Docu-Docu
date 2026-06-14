@@ -1,0 +1,70 @@
+{
+  "link.title.Documentation": {
+    "message": "Документація",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.SOC Prime": {
+    "message": "SOC Prime",
+    "description": "The title of the footer links column with title=SOC Prime in the footer"
+  },
+  "link.title.Community": {
+    "message": "Спільнота",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.Product Docs": {
+    "message": "Документація продукту",
+    "description": "The label of footer link with label=Product Docs linking to /docs/product/threat-detection-marketplace/active-threats"
+  },
+  "link.item.label.FAQs": {
+    "message": "Запитання та відповіді",
+    "description": "The label of footer link with label=FAQs linking to /docs/faq/coralogix-data-plane-credentials"
+  },
+  "link.item.label.Release Notes": {
+    "message": "Примітки до випуску",
+    "description": "The label of footer link with label=Release Notes linking to /docs/release-notes/v6.2.0"
+  },
+  "link.item.label.Website": {
+    "message": "Вебсайт",
+    "description": "The label of footer link with label=Website linking to https://socprime.com/"
+  },
+  "link.item.label.Help Center": {
+    "message": "Центр допомоги",
+    "description": "The label of footer link with label=Help Center linking to https://help.socprime.com/"
+  },
+  "link.item.label.Threat Detection Marketplace": {
+    "message": "Threat Detection Marketplace",
+    "description": "The label of footer link with label=Threat Detection Marketplace linking to https://tdm.socprime.com/"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/socprime"
+  },
+  "link.item.label.Discord": {
+    "message": "Discord",
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/Cj76AjsSzd"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/soc-prime"
+  },
+  "link.item.label.YouTube": {
+    "message": "YouTube",
+    "description": "The label of footer link with label=YouTube linking to https://www.youtube.com/@socprime6652"
+  },
+  "link.item.label.Facebook": {
+    "message": "Facebook",
+    "description": "The label of footer link with label=Facebook linking to https://www.facebook.com/socprime"
+  },
+  "link.item.label.X": {
+    "message": "X",
+    "description": "The label of footer link with label=X linking to https://twitter.com/SOC_Prime"
+  },
+  "link.item.label.Bluesky": {
+    "message": "Bluesky",
+    "description": "The label of footer link with label=Bluesky linking to https://bsky.app/profile/socprime.com"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 SOC Prime, Inc. SOC Prime, SOC Prime Logo and Threat Detection Marketplace are registered trademarks of SOC Prime, Inc.",
+    "description": "The footer copyright"
+  }
+}

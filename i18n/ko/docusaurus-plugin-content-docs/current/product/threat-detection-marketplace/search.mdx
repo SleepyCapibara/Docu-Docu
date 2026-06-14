@@ -1,0 +1,659 @@
+---
+sidebar_position: 2
+title: Threat Detection Marketplace에서 검색
+sidebar_label: Search
+description: Standard, Lucene, Light search로 SOC Prime Threat Detection Marketplace를 검색하세요. 필터 및 검색 프로필을 적용하고, 결과를 정렬하며, 탐지 규칙을 관리합니다.
+keywords: [Search, Threat Detection Marketplace, Sigma rules, Lucene, search profile, filters, SOC Prime]
+authors:
+  - Sergey Bayrachny
+original_author: Sergey Bayrachny
+last_update:
+  date: 2026-06-08
+  author: Sergey Bayrachny
+display_date: 이번 주 업데이트
+---
+
+import DocAuthors from '@site/src/components/DocAuthors';
+
+# Search
+
+Search Types | Applying Search Profiles | Sorting and filtering | Understanding rule details
+
+<DocAuthors authors={["Sergey Bayrachny"]} date="이번 주 업데이트" />
+
+- Standard
+- Lucene
+- Light Search
+
+- Save Filters As Search Profile
+- Filters
+
+- Hiding in Search Results
+- Hunt
+- Marking a Rule as Deployed
+
+- Add to List
+- Fork to my Repo
+- Hide in Search Results
+- Mark as Deployed
+- Translate To
+- Delete
+
+Search에서는 Threat Detection Marketplace(TDM), 세계 최대 규모의 탐지 규칙 및 헌팅 쿼리 컬렉션을 탐색할 수 있습니다.
+
+각 콘텐츠는 처음에 사이버 방어의 공통 언어인 Sigma로 작성된 다음, 다양한 SIEM, EDR, XDR의 네이티브 형식으로 자동 번역됩니다. Sigma 규칙은 MITRE ATT&CK®에 매핑되고 관련 위협에 대한 인텔리전스로 보강됩니다.
+
+탐지 규칙은 주요 세부 정보와 함께 목록으로 순위가 매겨져 표시됩니다. Sigma 규칙을 탐색, 검색 및 필터링할 수 있습니다.
+
+조직의 [Dashboard](https://help.socprime.com/en/articles/5820372-dashboard), [Log Source Coverage](https://help.socprime.com/en/articles/5820378-log-source-coverage), [MITRE ATT&CK Coverage](https://help.socprime.com/en/articles/5820381-mitre-att-ck-coverage)에서 정확한 인사이트를 확보하려면 규칙을 수동으로 다운로드하고 설치한 경우 배포됨으로 표시하세요. 규칙을 배포됨으로 표시하려면 Detection Code 탭으로 이동하여 오른쪽 작업 메뉴에서 체크 표시 아이콘을 클릭하세요. 자세한 내용은 이 섹션을 참조하세요.
+
+규칙 검색, 사용자 지정 및 배포를 자동화하려면 다음 기능 및 모듈을 설정하세요.
+
+- [Search Profile](https://help.socprime.com/en/articles/6261210-search-profiles)
+- [Custom Field Mapping](https://help.socprime.com/en/articles/6261215-custom-field-mapping)
+- [Data Planes](https://help.socprime.com/en/articles/6261097-data-planes)
+- [Automation](https://help.socprime.com/en/articles/6261236-automation-getting-started)
+- [API](https://help.socprime.com/en/articles/6265791-api)
+
+Search 페이지에 액세스하려면 Threat Detection Marketplace로 이동하여 Search 탭을 선택하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/01.png)
+
+## Search Bar
+
+---
+
+검색 바는 페이지 왼쪽 상단에 있습니다. Standard, Lucene, Light 세 가지 검색 모드 중에서 선택할 수 있습니다.
+
+### Standard
+
+이 모드는 기본적으로 활성화됩니다. Threat Detection Marketplace의 모든 콘텐츠에서 표준 전체 텍스트 검색을 수행합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/02.png)
+
+쿼리 입력을 시작하면 제안이 나타납니다. 제안 중 하나를 선택하거나 입력을 완료한 다음 돋보기 아이콘을 클릭하거나 Enter(Windows)/Return(Mac)을 누르세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/03.png)
+
+제안된 결과는 다음 속성의 일치를 기반으로 할 수 있습니다.
+
+- Configs for alternative translations
+- Log source products
+- Event IDs
+- Sigma type
+
+Search는 현재 검색 결과에 대한 핵심 통계를 표시합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/04.png)
+
+### Lucene
+
+이 모드를 활성화하려면 Standard 옆의 위쪽 화살표를 클릭하고 드롭다운에서 Lucene 옵션을 선택하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/05.png)
+
+Lucene 구문을 사용하여 정교한 쿼리를 작성하세요. 콘텐츠를 필터링하고, 다양한 논리 연산자를 사용하여 검색어를 결합하는 등 다양한 작업을 수행할 수 있습니다. Lucene 사용에 대한 자세한 내용은 Lucene 레이블 오른쪽의 물음표 아이콘을 선택하세요. 사용 가능한 모든 필드와 해당 유형 및 가능한 값 목록을 보려면 이 가이드의 [Lucene](https://help.socprime.com/en/articles/6265772-lucene-syntax) 섹션으로 이동하세요.
+
+### Light Search
+
+이 모드를 활성화하려면 Standard 옆의 위쪽 화살표를 클릭하고 드롭다운에서 Light Search 옵션을 선택하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/06.png)
+
+Light Search를 사용하면 자연어 쿼리를 입력하여 탐지를 찾을 수 있으며, 시스템이 이를 해석하고 알려진 별칭 및 대체 참조로 보강하여 검색이 모든 관련 변형과 일치하도록 합니다. 예를 들어 행위자 이름 APT28을 입력하면 시스템이 Fancy Bear, Pawn Storm과 같은 알려진 별칭으로 쿼리를 자동 확장합니다.
+
+AI Boost 토글을 켜면 Open AI의 GPT에서 관련 키워드로 검색을 강화할 수 있습니다. AI Boost 사용 시 검색이 외부 서비스로 전송되므로 민감한 데이터를 입력하지 마세요.
+
+## Repository Selection
+
+---
+
+세 가지 사용 가능한 저장소에서 탐지를 검색할 수 있습니다. 검색 바 아래의 해당 버튼을 선택하세요. 기본적으로 Platform Repos 옵션이 선택됩니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/07.png)
+
+- SOC Prime: SOC Prime 사내 팀이 작성한 콘텐츠
+- Threat Bounty: Threat Bounty Program 개발자가 작성한 콘텐츠
+- SigmaHQ: GitHub의 오픈 소스 SigmaHQ 프로젝트에서 가져온 콘텐츠
+- Microsoft Sentinel: GitHub의 Azure-Sentinel 프로젝트에서 가져온 Microsoft Sentinel용 콘텐츠
+
+기본적으로 선택한 유형의 모든 저장소 콘텐츠가 표시됩니다. 특정 저장소의 콘텐츠만 보고 검색하려면 드롭다운에서 선택하고 Apply를 클릭하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/08.png)
+
+TDM에 게시된 콘텐츠와 동일한 방식으로 사용자 지정 저장소의 콘텐츠를 검색하고 필터링할 수 있습니다. 또한 해당 메타데이터가 사용자 지정 콘텐츠에 존재하는 경우에만 필터링이 작동합니다.
+
+## Search Profile
+
+---
+
+드롭다운 메뉴에서 Search Profile을 선택하면 회사 인프라, 실제 로그 소스 및 관련 MITRE ATT&CK 매개변수와 일치하는 결과를 즉시 얻을 수 있습니다.
+
+Search Profiles 페이지에서 프로필이 Default on Search로 표시된 경우 Advanced Search를 열 때 이 프로필이 구성된 매개변수와 함께 자동으로 적용됩니다.
+
+Search Profile을 사용하지 않으려면 None 옵션을 선택하세요. 아직 Search Profile이 구성되지 않은 경우 None이 기본적으로 적용됩니다. 드롭다운 메뉴에서 Create New Profile을 선택하여 새 Search Profile을 만들거나 연필 아이콘을 선택하여 프로필 설정을 편집하세요. 자세한 내용은 [Search Profiles](https://help.socprime.com/en/articles/6261210-search-profiles) 섹션을 참조하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/09.png)
+
+## Sorting
+
+---
+
+기본적으로 Recommended 정렬이 적용됩니다. Sigma 규칙은 다른 사이버 보안 전문가에게 관련성이 높은 최신 고품질 콘텐츠를 우선시하는 권장 알고리즘을 기반으로 순위가 매겨집니다.
+
+다른 정렬 옵션을 적용할 수 있습니다.
+
+- Microsoft: 다른 사이버 보안 전문가에게 관련성이 높은 최신 고품질 Microsoft Sentinel 콘텐츠를 우선시하는 권장 알고리즘을 기반으로 순위가 매겨짐
+- Google SecOps: 다른 사이버 보안 전문가에게 관련성이 높은 최신 고품질 Google SecOps 콘텐츠를 우선시하는 권장 알고리즘을 기반으로 순위가 매겨짐
+- Top-Rated Alerts: 가장 심각한 악성 활동을 탐지하는 가장 신뢰할 수 있는 행동 기반 Alerts 및 Queries
+- Name: 이름별로 정렬된 콘텐츠
+- Type: 유형별로 정렬된 콘텐츠(YARA Rules, Snort rules, Content Pack, Query, Alert, Red tests, Premium App, Playbook, Config)
+- Views: 조회수별로 정렬된 콘텐츠
+- Downloads: 다운로드 수별로 정렬된 콘텐츠
+- Released: 출시일별로 정렬된 콘텐츠
+- Updated: 업데이트일별로 정렬된 콘텐츠
+- Severity: 심각도별로 정렬된 콘텐츠
+
+또한 선택한 정렬 옵션 이름 옆의 녹색 화살표를 클릭하여 내림차순(가장 관련성 높은 항목 먼저)과 오름차순(가장 관련성 낮은 항목 먼저) 순서를 전환할 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/10.png)
+
+## Filter Panel
+
+---
+
+필터를 사용하면 검색 결과를 좁혀 조직에 관련된 항목만 볼 수 있습니다.
+
+기본적으로 Filter Panel이 확장됩니다. 숨기려면 Hide Filters 아이콘을 클릭하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/11.png)
+
+패널을 다시 표시하려면 Show Filters 아이콘을 클릭하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/12.png)
+
+필터를 더 추가하려면 왼쪽 하단의 More Expert Filters를 클릭하고 사용하려는 필터 옆의 확인란을 설정하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/13.png)
+
+선택한 필터가 Filter Panel에 나타납니다. 패널에서 필터를 제거하려면 More Expert Filters를 클릭하고 해당 필터 옆의 확인란을 해제하세요.
+
+### Save Filters As Search Profile
+
+---
+
+탐지 검색에 대한 필터를 선택하면 선택한 필터 세트를 Search Profile로 저장할 수 있습니다. 이를 통해 저장된 Search Profile을 적용하여 향후 검색에서 동일한 필터를 재사용할 수 있습니다.
+
+필터를 Search Profile로 저장하려면:
+
+선택한 모든 필터를 제거하려면 Clear를 선택하세요. 특정 필터를 제거하려면 해당 필터 옆의 X 아이콘을 선택하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/14.png)
+
+모달에서 Profile Name을 입력하고 Save를 클릭하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/15.png)
+
+참고: Content Availability 필터는 현재 검색에만 적용되며 Search Profile로 저장되지 않습니다.
+
+필터를 Search Profile로 저장한 후 왼쪽의 Search Profile 드롭다운에서 이 프로필을 선택할 수 있습니다. 프로필을 편집하려면 드롭다운의 연필 아이콘을 클릭하세요.
+
+Search Profile에 대한 자세한 내용은 [이 기사](https://help.socprime.com/en/articles/6261210-search-profiles)를 참조하세요.
+
+### Filters
+
+---
+
+### Role and Platform
+
+계정 설정 또는 온보딩 중에 지정한 전문 역할 및 보안 솔루션을 기반으로 콘텐츠를 검색하려면 이 필터를 활성화하세요.
+
+Gear 아이콘을 클릭하여 Role and Platform 설정을 편집하세요. 이 필터 설정에 대한 자세한 내용은 [Role and Platform](https://help.socprime.com/en/articles/6259871-role-and-platform) 섹션을 참조하세요.
+
+### Content Availability
+
+특정 가용성 상태의 콘텐츠를 보려면 이 필터를 적용하세요. 참고: 이 필터는 Old Model Enterprise 플랜과 관련이 없습니다.
+
+- Free Access: 무료 구독 플랜에서 바로 사용할 수 있는 Sigma 규칙, 예: GitHub의 오픈 소스 SigmaHQ 저장소 또는 Corelight와 함께 개발된 Sigma 규칙
+- Promo: 프로모션의 일부로 무료로 사용할 수 있는 Sigma 규칙
+- Unlocked: 팀의 Premium Sigma rule 잔액으로 잠금 해제된 Sigma 규칙
+
+- Premium: 팀의 Premium 잔액으로 잠금 해제할 수 있는 Sigma 규칙. 새 모델 Enterprise 플랜 사용자는 구독의 일부로 미리 정의된 잔액을 받습니다.
+- Wait to Unlock: 대기 시간이 지나면 잠금 해제할 수 있게 되는 새로 출시된 프리미엄 Sigma 규칙(플랜에 따라 다름)
+- Enterprise Only: Content Packs 및 Premium Apps
+
+참고: 이 필터는 Platform Repos에서 탐지를 검색할 때만 적용할 수 있습니다.
+
+### Detection Type
+
+탐지가 생성된 방식별로 필터링합니다.
+
+- Human-Written Behavior Rules: 인간 전문가가 만든 탐지.
+- Auto-Generated IOC Queries: 특정 위협 또는 공격과 관련된 모든 IOC 쿼리로, 위협 보고서를 기반으로 SOC Prime 알고리즘을 사용하여 자동 생성됩니다.
+- AI-Generated Rules: SOC Prime AI 모델이 만든 모든 탐지.
+
+참고: 이 필터는 Platform Repos에서 탐지를 검색할 때만 적용할 수 있습니다.
+
+### Platform
+
+보안 플랫폼에 대한 번역이 있거나 필요한 특정 네이티브 형식으로 번역된 Sigma 규칙만 보려면 이 필터를 사용하세요.
+
+이 필터가 필요한 경우:
+
+- 일부 Sigma 규칙에는 현재 특정 보안 플랫폼 형식으로 번역을 생성하는 것이 기술적으로 불가능한 탐지 로직 또는 필수 로그 소스가 포함됩니다.
+- Sigma 규칙에는 두 가지 유형이 있습니다. 실시간 탐지용 Alerts(오탐이 거의 없음)와 위협 헌팅용 Queries(인프라에 맞게 튜닝하지 않으면 노이즈가 많을 수 있음). Query 유형의 Sigma 규칙을 기반으로 Alerts용 규칙은 생성하지 않습니다.
+
+### Industries
+
+업계에서 인기 있는 콘텐츠를 찾으려면 이 필터를 사용하세요. 이 필터는 선택한 업계의 조직이 지난 한 달 동안 적극적으로 활용한 콘텐츠를 표시합니다.
+
+참고: 이 필터는 Platform 및 Community Repos에서 탐지를 검색할 때만 적용할 수 있습니다.
+
+### Log Source Product
+
+각 Sigma 규칙은 쿼리할 특정 로그가 필요합니다. 로그 데이터를 수집하는 제품을 선택하여 데이터 요구 사항이 일치하는 규칙을 확인하세요.
+
+또는 Sigma 언어에 익숙한 고급 사용자는 Sigma Product, Sigma Service, Sigma Category 필터를 사용하여 필요한 로그 소스에 대한 더 일반적인 필터링을 구성할 수 있습니다.
+
+### Author
+
+DRL 라이선스에 따라 Sigma 규칙의 author 필드에 지정된 특정 작성자가 만든 콘텐츠를 검색합니다.
+
+### Actors, Tools, and Techniques
+
+TDM의 거의 모든 Sigma 규칙은 MITRE ATT&CK 프레임워크에 매핑됩니다. 우선순위를 정한 특정 행위자, 도구, 기법 및 하위 기법별로 필터링하여 관련 Sigma 규칙을 확인하세요.
+
+### Use Case
+
+가장 관련성 높은 탐지 콘텐츠를 찾으려면 사용 사례를 정의하세요. 각 콘텐츠 항목에는 사용 사례를 나타내는 하나 이상의 아이콘이 제목 옆에 있습니다.
+
+| Icon | Use Case | Description |
+| --- | --- | --- |
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/16.png)
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/17.png)
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/18.png)
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/19.png)
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/20.png)
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/21.png)
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/22.png)
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/23.png)
+
+### Show Hidden
+
+팀이 Search 결과에서 숨긴 콘텐츠를 표시하려면 이 필터를 활성화하세요. 필터가 활성화되면 Only hidden 확인란을 설정하여 Search 결과에서 숨긴 규칙만 표시할 수도 있습니다.
+
+참고: 이 필터는 Platform Repos에서 탐지를 검색할 때만 적용할 수 있습니다.
+
+### Translate Status
+
+이 필터는 대량 번역 흐름을 거친 콘텐츠에 적용되며, 사용자 지정 저장소의 콘텐츠에 대한 자동 대량 번역 결과를 표시합니다.
+
+### Cloud
+
+특정 클라우드 플랫폼 내의 적대자 활동을 탐지하는 콘텐츠를 필터링합니다.
+
+### Content Type
+
+검색하려는 콘텐츠 유형을 선택하세요.
+
+- Content Pack: 특정 작업을 해결하기 위한 SIEM 네이티브 임시 SOC 콘텐츠, 스크립트, 목록, 대시보드 및 기타 항목 세트.
+- Query: 위협 헌팅용 Sigma 규칙 및 모든 번역(오탐을 생성할 수 있음).
+- Alert: 실시간 탐지용 Sigma 규칙 및 번역(오탐이 거의 없음).
+- Premium App: 특정 사용 사례를 위해 SOC Prime 팀이 만든 제한된 수의 사용자 지정 애플리케이션.
+
+> **Note:**
+- Sigma 규칙에는 Queries와 Alerts 두 가지 유형이 있습니다. 모든 구독 플랜에서 사용할 수 있습니다. 다른 모든 콘텐츠 유형은 Enterprise 플랜에서만 액세스할 수 있습니다.
+- 이 필터는 Platform Repos에서 탐지를 검색할 때만 적용할 수 있습니다.
+
+### Content Action State
+
+조직이 이전에 취한 작업별로 콘텐츠를 필터링합니다. 현재 네 가지 작업 상태를 사용할 수 있습니다.
+
+- Viewed
+- Downloaded
+- Downloaded via API
+- Deployed(규칙을 수동으로 다운로드하고 설치한 경우, Code 탭의 체크 표시 아이콘을 사용하여 규칙을 배포됨으로 표시한 경우에만 이 상태가 표시됨)
+
+Include/Exclude 토글을 사용하여 원하는 상태를 표시하거나 필터링합니다.
+
+### Excluded in Scans
+
+Attack Detective 스캔에서 제외된 콘텐츠만 표시하려면 이 필터를 활성화하세요.
+
+### Severity
+
+Severity 콘텐츠 검색 필터는 트리거된 탐지 규칙의 중요도를 설명합니다. 다음 Severity 옵션을 사용할 수 있습니다.
+
+- Critical: 사고를 나타내는 매우 관련성 높은 이벤트. Critical 이벤트는 즉시 검토해야 합니다.
+- High: 내부 경보를 트리거하고 즉각적인 검토가 필요한 관련 이벤트.
+- Medium: 더 자주 수동으로 검토해야 하는 관련 이벤트.
+- Low: 주목할 만한 이벤트이지만 거의 사고는 아닙니다. Low 심각도 이벤트는 많은 수이거나 다른 이벤트와 결합될 때 관련성이 있을 수 있습니다. 즉각적인 대응은 필요하지 않지만 정기적인 검토가 권장됩니다.
+- Informational: 규칙은 태그 지정 등으로 이벤트를 보강하기 위한 것입니다. 많은 수의 이벤트가 일치할 것으로 예상되므로 이러한 규칙으로 경보를 트리거해서는 안 됩니다.
+
+### Sigma Type
+
+Sigma 규칙은 다음 세 가지 카테고리 중 하나에 속합니다.
+
+- IOC Sigma: 이미 발생한 취약점 또는 공격을 탐지하는 IOC 기반 규칙.
+- Threat Hunting Sigma: 위협 헌팅 및 선제적 사이버 방어를 위한 행동 기반 규칙.
+- Compliance: 규정 준수 표준에 대한 불일치를 탐지하는 규칙.
+
+### Sigma Status
+
+Sigma 규칙 상태별로 필터링합니다.
+
+- Stable: 안정적인 것으로 간주되며 프로덕션 시스템 또는 실시간 탐지용 대시보드에서 사용할 수 있는 규칙.
+- Test/Testing: 거의 안정적이지만 일부 미세 조정이 필요할 수 있는 규칙.
+- Experimental: 오탐 결과를 자주 생성하지만 여전히 관련 이벤트를 식별할 수 있는 규칙.
+
+### Sigma Product
+
+특정 제품의 모든 로그 출력을 선택하는 Sigma 로그 소스 식별자, 예: Linux, Windows, Cisco 등. [Sigma specification](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#log-source)에서 자세히 알아보세요.
+
+### Sigma Service
+
+제품 로그의 하위 집합만 선택하는 Sigma 로그 소스 식별자, 예: sysmon, ldapd, dhcp. [Sigma specification](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#log-source)에서 자세히 알아보세요.
+
+### Sigma Category
+
+특정 제품 그룹이 작성한 모든 로그 파일을 선택하는 Sigma 로그 소스 식별자, 예: process_creation, file_access 등. [Sigma specification](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#log-source)에서 자세히 알아보세요.
+
+### Tactics
+
+하나 이상의 [MITRE ATT&CK tactics](https://attack.mitre.org/tactics/enterprise/)를 선택하여 해당 내용을 다루는 콘텐츠를 필터링합니다.
+
+### Data Sources
+
+하나 이상의 [MITRE ATT&CK data sources](https://attack.mitre.org/datasources/)를 선택하여 PowerShell 로그, 인증 로그 등 해당 로그를 기반으로 한 항목별로 콘텐츠를 필터링합니다.
+
+### Data Components
+
+하나 이상의 [MITRE ATT&CK data components](https://attack.mitre.org/datasources/)를 선택하여 Application Log Content, Certificate Registration 등 이러한 로그를 기반으로 한 항목별로 콘텐츠를 필터링합니다.
+
+### CVE ID
+
+규칙과 관련된 하나 이상의 CVE ID를 선택합니다.
+
+### OS
+
+특정 플랫폼 내의 적대자 활동을 탐지하는 콘텐츠를 필터링합니다.
+
+## Rule Details and Available Actions
+
+---
+
+검색 결과의 각 규칙 타일은 규칙/쿼리에 대한 주요 세부 정보를 제공합니다. 타일 위에 마우스를 올리면 추가 정보를 보거나 클릭하여 [Detection Rule](https://help.socprime.com/en/articles/13744779-detection-rule-page) 페이지로 이동하여 속성 설명을 확인할 수 있습니다.
+
+오른쪽에는 규칙의 작업 상태에 따라 Viewed, Downloaded, Downloaded via API 또는 Deployed 아이콘을 볼 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/24.png)
+
+규칙의 가용성은 이름 아래 특수 레이블로 표시됩니다.
+
+- Free Access: 무료 구독 플랜에서 바로 사용할 수 있는 Sigma 규칙, 예: GitHub의 오픈 소스 SigmaHQ 저장소 또는 Corelight와 함께 개발된 Sigma 규칙
+- Promo: 프로모션의 일부로 무료로 사용할 수 있는 Sigma 규칙
+- Unlocked: Premium 잔액을 사용하여 잠금 해제된 Sigma 규칙
+- Premium: Premium 잔액을 사용하여 잠금 해제할 수 있는 Sigma 규칙
+- Wait to Unlock: Premium Sigma 규칙은 구독 플랜에 따라 달라지는 대기 시간이 지나야만 잠금 해제할 수 있습니다. 예: Community 플랜에서는 대기 시간이 3일입니다.
+- Enterprise Only: Enterprise 플랜에서만 사용할 수 있는 콘텐츠
+
+다른 모든 속성에 대한 설명은 [Detection Rule](https://help.socprime.com/en/articles/13744779-detection-rule-page) 페이지에서 확인할 수 있습니다.
+
+### Hiding in Search Results
+
+---
+
+Search 결과에서 특정 규칙을 전체 팀에 대해 숨길 수 있습니다. Search 페이지에서 규칙 타일의 눈 아이콘을 클릭하여 규칙을 숨기세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/25.png)
+
+또는 Detection Rule 페이지에서 세 점을 클릭하고 Hide in search Results를 선택하여 규칙을 숨길 수 있습니다.
+
+대량 작업을 사용하여 여러 규칙을 숨기는 방법을 알아보려면 이 섹션으로 이동하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/26.png)
+
+규칙이 숨겨지면 아이콘 상태가 변경됩니다. 다시 클릭하면 규칙 숨김을 해제합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/27.png)
+
+> **Tip:** 결과에서 숨긴 규칙과 숨기지 않은 규칙을 모두 보려면 Show hidden 필터를 활성화하세요(필터 패널에 표시되지 않으면 More Expert Filters를 클릭하고 이 필터 옆에 확인 표시를 설정하세요.) 필터가 활성화되면 Only hidden 확인란을 설정하여 Search 결과에서 숨긴 규칙만 표시할 수도 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/28.png)
+
+참고: Search 결과에서 규칙을 숨겨도 분석에는 영향을 미치지 않습니다. 예를 들어 숨긴 규칙이 배포됨으로 표시된 경우 MITRE ATT&CK® Coverage 및 Log Source Coverage에서 배포된 것으로 포함됩니다.
+
+### Hunt
+
+---
+
+SIEM, EDR 또는 Data Lake에서 최신 위협을 빠르게 헌팅할 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/29.png)
+
+모달에서 다음 정보를 입력하세요.
+
+- Data Plane: Data Plane 이름을 지정하세요. 새 Data Plane 통합을 설정하려면 드롭다운에서 Create New Data Plane을 선택하세요.
+- Query Type: 쿼리 유형을 지정하세요.
+- Config: Data Plane이 비표준 데이터 스키마를 사용하는 경우 드롭다운에서 기본 데이터 스키마를 선택하세요.
+- Custom Field Mapping: Data Plane이 비표준 데이터 스키마를 사용하는 경우 Custom Field Mapping 프로필을 선택하세요. 새 프로필을 설정하려면 드롭다운에서 Create New Data Plane을 선택하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/30.png)
+
+### Marking a Rule as Deployed
+
+---
+
+규칙을 배포한 후 Detection rule 페이지에서 바로 배포됨으로 표시할 수 있습니다(작업 상태를 Deployed로 변경). 규칙을 배포됨으로 표시하는 것은 조직의 인사이트에 포함되도록 하는 데 중요합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/31.png)
+
+규칙이 배포된 Platform을 선택하거나 Tenant 또는 Data Plane을 선택하세요. 기본적으로 드롭다운은 이전 선택을 제안합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/32.png)
+
+Add를 클릭하세요.
+
+수동으로 또는 자동으로(Automation을 통해 배포한 후) 배포됨으로 표시된 규칙의 아이콘을 클릭하면 모든 플랫폼이 배포 해제됨으로 표시됩니다(이전에 수동으로 배포됨으로 표시된 플랫폼과 Automation을 통해 규칙이 배포된 플랫폼 모두).
+
+Detection Code 탭에서 개별 번역을 배포됨으로 표시할 수도 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/33.png)
+
+또는 Search 페이지에서 대량 작업을 사용하여 규칙을 배포됨으로 표시할 수 있습니다. 자세한 내용은 이 섹션을 참조하세요.
+
+## Premium Sigma Rule Balance
+
+---
+
+Sigma 규칙 및 모든 번역에 대한 위협 인텔리전스와 메타데이터는 연구에 도움이 되도록 항상 사용할 수 있습니다. 일부 Sigma 규칙의 코드도 무료로 사용할 수 있습니다. 이러한 무료 규칙은 다음 레이블로 표시됩니다.
+
+- Free Access. 무료 구독 플랜에서 바로 사용할 수 있는 Sigma 규칙, 예: GitHub의 오픈 소스 SigmaHQ 저장소 또는 Corelight와 함께 개발된 Sigma 규칙.
+- Promo. SOC Prime이 프로모션의 일부로 공개한 Sigma 규칙.
+
+그러나 대부분의 규칙은 Premium으로 제공됩니다. Premium Sigma 규칙 코드에 액세스하려면 Premium Sigma rule 잔액을 사용하여 잠금 해제해야 합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/34.png)
+
+동일한 조직에 속한 모든 사용자는 공유 Premium Sigma rule 잔액과 잠금 해제된 규칙에 대한 액세스 권한을 갖습니다. 조직의 한 사용자가 규칙을 잠금 해제하면 다른 모든 사용자도 사용할 수 있게 됩니다.
+
+Enterprise 플랜에서는 구독에 Premium Sigma 규칙의 사전 설정 잔액이 포함됩니다.
+
+Sigma 규칙이 출시되면 특정 대기 시간이 지난 후에만 잠금 해제할 수 있습니다.
+
+- Enterprise: 즉시
+- Community: 3일
+
+사용할 수 없는 동안 Sigma 규칙은 Wait to Unlock 상태입니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/35.png)
+
+## Unlocking Sigma Rules
+
+---
+
+Premium Sigma 규칙을 잠금 해제할 때마다 Premium Sigma rule 잔액이 1씩 감소합니다.
+
+Premium Sigma 규칙을 잠금 해제하려면 규칙 페이지의 Code 탭을 여세요. 처음 규칙을 잠금 해제할 때 확인 프롬프트가 표시됩니다. 이후에는 추가 확인 없이 규칙이 자동으로 잠금 해제됩니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/36.png)
+
+규칙이 잠금 해제되면 잔액 카운터 아래에 팝업이 나타납니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/37.png)
+
+잠금 해제 후 Sigma 규칙 및 모든 번역에 대한 전체 액세스 권한을 즉시 얻을 수 있습니다. 규칙의 액세스 상태가 Unlocked로 변경됩니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/38.png)
+
+> **Note:**
+- 규칙 페이지에서 잠금 해제한 규칙은 TDM뿐만 아니라 Uncoder AI에서도 사용할 수 있습니다.
+- 이전 구독 모델의 플랜에서는 일부 콘텐츠 가용성 메커니즘(예: 대기 시간 또는 Sigma rule 잔액)이 다를 수 있습니다.
+- Premium Sigma 규칙은 CCM의 Dynamic Lists 및 API를 통해서도 잠금 해제할 수 있습니다.
+- Enterprise 수준 구독에서는 팀의 Manager 역할이 특정 사용자의 규칙 잠금 해제 권한을 [부여하거나 취소](https://help.socprime.com/en/articles/7731214-permission-control)할 수 있습니다.
+
+Content Availability 필터의 Unlocked 옵션을 사용하여 잠금 해제한 모든 규칙을 확인할 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/39.png)
+
+## Bulk Actions with Rules
+
+---
+
+확인 표시로 특정 Sigma 규칙을 선택하고 선택한 규칙에 대해 대량 작업을 수행할 수 있습니다.
+
+- Add to List
+- Fork to My Repo
+- Hide in Search Results(Platform Repos의 콘텐츠에만 적용)
+- Mark as Deployed
+- Translate To(Custom Repos의 콘텐츠에만 적용)
+- Delete(Custom Repos의 콘텐츠에만 적용)
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/40.png)
+
+참고:
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/41.png)
+
+액세스 권한이 있고 대량 작업을 적용할 수 있는 콘텐츠만 선택할 수 있습니다. 따라서 Content Pack은 List에 추가하거나 사용자 지정 저장소로 포크할 수 없으므로 선택할 수 없습니다. 마찬가지로 잠긴 규칙이나 Wait to Unlock 상태의 규칙은 선택할 수 없습니다.
+
+### Add to List
+
+---
+
+여러 규칙을 하나 이상의 Static Lists에 추가할 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/42.png)
+
+모달에서 콘텐츠를 추가할 Lists 옆의 확인란을 선택하고 Save를 클릭하세요. 새 List를 만들려면 Create New Content List를 클릭하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/43.png)
+
+이 대량 작업은 사용 가능한 선택한 콘텐츠 항목(Unlocked, Promo, Free Access 상태)에만 적용됩니다. 사용할 수 없는 콘텐츠는 건너뜁니다.
+
+### Fork to My Repo
+
+---
+
+TDM에서 사용 가능한 Sigma 규칙 또는 번역을 [사용자 지정 저장소](https://help.socprime.com/en/articles/8517297-my-repositories)로 복사할 수 있습니다. 이 작업을 포킹이라고 합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/44.png)
+
+모든 페이지의 검색 결과에서 모든 탐지 규칙을 포크할 수도 있습니다. 이를 위해 규칙 옆의 확인란을 하나 이상 선택하여 Select All Items 버튼을 표시하고, 클릭하여 모든 규칙을 선택한 다음 Fork to My Repo를 선택하세요. 모든 탐지 선택은 Fork to My Repo 작업에만 사용할 수 있습니다.
+
+이 기능은 사용자의 구독 플랜에 따라 사용할 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/45.png)
+
+모달에서 다음 정보를 입력하세요.
+
+- Repository: 규칙을 포크할 저장소를 지정하세요.
+- Translation: 포크할 번역을 지정하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/46.png)
+
+선택에 잠긴 규칙이 포함된 경우 모달에 사용 가능한 규칙과 잠긴 규칙 수가 표시됩니다. 사용 가능한 규칙만 포크하려면 Fork Available Only를 선택하세요. Premium 규칙을 포함하려면 Unlock & Fork All을 선택하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/47.png)
+
+콘텐츠 항목을 포크하면 메타데이터도 복사됩니다. Sigma 규칙의 번역을 포크하면 원본 Sigma 규칙이 번역과 함께 복사됩니다.
+
+참고: 이 대량 작업은 사용 가능한 선택한 콘텐츠 항목(Unlocked, Promo, Free Access 상태)에만 적용됩니다. 사용할 수 없는 콘텐츠는 건너뜁니다.
+
+### Hide in Search Results
+
+---
+
+Search 결과에서 선택한 규칙을 전체 팀에 대해 숨길 수 있습니다. 이 작업은 Platform Repository의 콘텐츠에만 적용됩니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/48.png)
+
+모달에서 Confirm을 클릭하여 작업을 확인하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/49.png)
+
+이 대량 작업은 적용 가능한 선택한 콘텐츠 항목에만 적용됩니다. 로직은 다음과 같습니다.
+
+- 선택한 콘텐츠 항목 중 하나 이상이 숨겨지지 않은 경우 버튼은 Hide in Search Results로 표시됩니다. 클릭하면 선택한 숨겨지지 않은 모든 콘텐츠 항목이 숨겨지고 선택한 숨겨진 콘텐츠 항목은 숨겨진 상태로 유지됩니다.
+- 선택한 모든 콘텐츠 항목이 숨겨진 경우 버튼은 Unhide in Search Results로 표시됩니다. 클릭하면 선택한 모든 숨겨진 콘텐츠 항목의 숨김이 해제됩니다.
+
+규칙을 숨기는 대체 옵션에 대한 자세한 내용은 이 섹션을 참조하세요.
+
+### Mark as Deployed
+
+---
+
+규칙을 배포한 후 배포됨으로 표시할 수 있습니다(작업 상태를 Deployed로 변경). 방법은 다음과 같습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/50.png)
+
+이 대량 작업은 적용 가능한 선택한 콘텐츠 항목에만 적용됩니다. 로직은 다음과 같습니다.
+
+- 선택한 콘텐츠 항목 중 하나 이상에 배포됨으로 표시된 번역이 없는 경우 버튼은 Mark as Deployed로 표시됩니다. 클릭하고 번역 선택을 확인하면 선택한 번역이 선택한 모든 콘텐츠 항목에 대해 배포됨으로 표시됩니다. 선택한 번역이 일부 콘텐츠 항목에 없는 경우 해당 콘텐츠 항목에 존재하는 선택한 번역만 배포됨으로 표시됩니다.
+- 선택한 모든 콘텐츠 항목에 배포됨으로 표시된 번역이 하나 이상 있는 경우 버튼은 Mark as Undeployed로 표시됩니다. 클릭하면 선택한 모든 콘텐츠 항목의 모든 번역이 배포 해제됨으로 표시됩니다.
+
+규칙을 배포됨으로 표시하는 대체 옵션에 대한 자세한 내용은 이 섹션을 참조하세요.
+
+### Translate To
+
+---
+
+Translate To 옵션을 사용하여 여러 규칙을 한 번에 번역할 수 있습니다. 이 옵션은 Custom Repositories의 콘텐츠에만 적용됩니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/51.png)
+
+모달에서 입력 패널의 규칙 소스 언어와 출력 패널의 번역 대상 언어를 선택하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/52.png)
+
+Translate를 선택하세요.
+
+Translation Results 모달은 성공적으로 번역된 콘텐츠, 부분적으로 번역된 콘텐츠 또는 번역에 실패한 콘텐츠의 비율을 보여주며 번역 결과를 요약합니다. View all을 선택하여 번역 상태에 대한 자세한 정보를 확인하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/53.png)
+
+규칙이 성공적으로 번역되면 규칙 타일에 Translated 레이블이 나타납니다. 레이블 위에 마우스를 올리고 Go to Uncoder를 선택하여 Uncoder AI에서 번역된 규칙을 확인하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/54.png)
+
+### Delete
+
+---
+
+Custom Repository에서 여러 규칙을 한 번에 삭제할 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/55.png)
+
+모달에서 Delete를 클릭하여 작업을 확인하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/search/56.png)
+
+규칙 및 관련 위협에 대한 자세한 내용은 [Detection Rule Page](https://help.socprime.com/en/articles/13744779-detection-rule-page) 가이드를 참조하세요.

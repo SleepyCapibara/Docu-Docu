@@ -1,0 +1,176 @@
+---
+sidebar_position: 1
+title: Active Threats in Threat Detection Marketplace
+sidebar_label: Active Threats
+description: Use Active Threats in SOC Prime's Threat Detection Marketplace to discover real-time CTI and review detections, attack flows, and AI-enriched threat context within minutes.
+keywords: [Active Threats, Threat Detection Marketplace, CTI, MITRE ATT&CK, detections, SOC Prime]
+authors:
+  - Eugene
+original_author: Eugene
+last_update:
+  date: 2026-05-18
+  author: Eugene
+display_date: Updated over 3 weeks ago
+---
+
+import DocAuthors from '@site/src/components/DocAuthors';
+
+# Active Threats
+
+<DocAuthors authors={["Eugene"]} date="Updated over 3 weeks ago" />
+
+This guide provides step-by-step instructions for using Active Threats in the Threat Detection Marketplace, including discovering threats that provide real-time CTI and reviewing detailed threat information, detections, and AI-enriched context, allowing security teams to identify and address threats within minutes.
+
+## Accessing the Active Threats
+
+1. Access your SOC Prime account and navigate to the Threat Detection Marketplace.
+2. Make sure you’re on the Active Threats module: Active Threats acts as a home page for Threat Detection Marketplace.
+
+## Visualization Dashboards
+
+At the top of the page users can find dashboards displaying current metrics on active threats. The view is collapsed by default. To expand the view, select the View Dashboard button.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/01.png)
+
+The dashboards present the following:
+
+Note: If there are no relevant updates during some calendar week(s), the corresponding column(s) won’t be visible on the chart.
+
+- Top 3 Techniques Used: A list of the most common MITRE ATT&CK techniques in recent threats, which helps prioritize mitigation tactics.
+- Top 3 Active Actors: The top three threat actors active in the last period, providing insights into adversary patterns and tactics.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/02.png)
+
+## Active Threats Feed
+
+The Active Threats feed displays a list of the most recently identified threat news items, with the newest threats appearing at the top.
+
+Use the search bar at the top to quickly find the needed news items. Enter a query in a human language. The system processes your request, displays the related news items, and generates a summary based on relevant source articles. Select Research in Uncoder to view the full text of the summary and explore threats details relevant to your query.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/03.png)
+
+Each news item tile contains the following information about the threat:
+
+Note: If there are multiple options for Threat Type, Affected Industry, or Affected Geography, the first option is displayed, followed by the number of additional options in brackets. Hover over the corresponding field to view all options.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/04.png)
+
+The Threat of the Month tile includes AI Summary, Attack Flow, Detections, and Simulations, along with counters showing the number of available items in each section. Click any section in the tile to navigate directly to the corresponding area on the Threat of the Month details page.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/05.png)
+
+## Active Threats News Item Page
+
+By selecting a threat news item, you will be redirected to the page containing the detailed, actionable information about the threat.
+
+The top of the page includes:
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/06.png)
+
+This tag is applied if at least one rule has at least one translation of type Query.
+
+Alert: Rule-triggered signal indicating activity to review or escalate.
+
+This tag is applied if at least one rule has at least one translation of type Alert.
+
+ETL: Data pipeline stage: extract, normalize, and load telemetry.
+
+This tag is applied if at least one rule is defined with `sigma type: IOC`.
+
+AIDR: GenAI protection gateway that runs rule/similarity/code/ML/LLM checks to detect & block prompt-injection and harmful content before it hits AI apps.
+
+This tag is applied if at least one rule has a Semgrep translation.
+
+Share: Select the Share button to share the news item.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/07.png)
+
+On the left, four tabs provide detailed information about the threat. Switch between the tabs to explore available details.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/08.png)
+
+## AI Summary
+
+The AI Summary tab provides a high-level view of the threat context. Use this tab to quickly assess the threat’s relevance and initial response actions. Here’s how to use each section:
+
+- Summary: Review the AI-generated summary to understand the threat’s primary characteristics.
+- Investigation: This section contains recommended actions for investigating the threat.
+- Mitigation: This section contains recommended actions for mitigating the threat according to the best security practices. Use this as a quick reference to implement defensive measures.
+- Response: This section contains recommended response actions to minimize the risks of the threat. Use this as a quick reference to implement defensive measures.
+
+On the right, the AI Summary tab displays the following threat attributes:
+
+- Actor description
+- Associated groups
+
+- Sub(technique) description
+- Related tactics
+
+- Tool description
+- Associated software
+
+Note: Some threat attributes may not be displayed, depending on data availability.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/09.png)
+
+## Attack Flow
+
+This tab provides an AI-generated visualization of the adversary activity helping better understand how the threat operates and track the sequences of behaviors that adversaries employ to achieve their goals. The threat visualization is presented in diagram and matrix formats.
+
+To view the diagram representation, select the Flow tab. You can do the following:
+
+- Drag and drop the blocks
+- Open the visualization in full screen
+- Change scale
+- Return to the starting point
+- Export the visualization as MMD
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/10.png)
+
+To view the matrix representation, select the Matrix tab. You can do the following:
+
+- Open the visualization in full screen
+- Return to the starting point
+- Export the visualization as MMD
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/11.png)
+
+## Detections
+
+This tab provides the list of the detections that can identify the selected threat. The detections are grouped into the following categories:
+
+- Behavior Rules: Detections created by human experts.
+- IOC Queries: IOC queries automatically generated using the SOC Prime proprietary algorithms.
+- AI Rules: Detections created by the SOC Prime AI models.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/12.png)
+
+Hover over the rule tile to see if the rule has already been deployed.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/13.png)
+
+The Behavior Rules might include key references about the threat. To access the links, hover over the rule tile, select External Research, and click the links to dive into the context.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/14.png)
+
+To explore the detection details, hover over the detection tile, click the View button, and you will be redirected to the rule/query page with the following tabs:
+
+- Detection Intelligence: Provides threat intel and relevant metadata, including media links, threat timeline, false positives, audit configuration and triage recommendations, short and full summaries, decision trees, binaries, tags, and MITRE ATT&CK coverage data.
+- Detection Code: Displays the rule/query code convertible to the available SIEM, EDR, and Data Lake language format to further run a rule/query in your environment.
+- Validation: The tab is available only for the AI Rules and represents the simulation of malicious activity that the rule is intended to detect.
+
+## Simulations
+
+This tab provides the list of simulations of malicious activity that the AI Rules are intended to detect. Hover over the rule tile and select the View button to view the simulation details.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/15.png)
+
+At the bottom of the page, you can see related threats, if any. Click View all active threats to return to the Active Threats feed.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/active-threats/16.png)
+
+## Best Practices for Using Active Threats
+
+1. Monitor Regularly: Regularly check the feed to stay updated on new threats, vulnerabilities, and threat actor activity.
+2. Prioritize Based on Threat Relevance: Use the industry and geography-specific insights to assess the relevance of each threat to your organization.
+3. Implement Detection Rules: Apply detection rules from the Detections tab to enable immediate monitoring for active threats.

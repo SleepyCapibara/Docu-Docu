@@ -1,0 +1,22 @@
+{
+  "logo.alt": {
+    "message": "SOC Prime",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Product Docs": {
+    "message": "Product Docs",
+    "description": "Navbar item with label Product Docs"
+  },
+  "item.label.FAQs": {
+    "message": "FAQs",
+    "description": "Navbar item with label FAQs"
+  },
+  "item.label.Release Notes": {
+    "message": "Release Notes",
+    "description": "Navbar item with label Release Notes"
+  },
+  "item.label.SOC Prime": {
+    "message": "SOC Prime",
+    "description": "Navbar item with label SOC Prime"
+  }
+}

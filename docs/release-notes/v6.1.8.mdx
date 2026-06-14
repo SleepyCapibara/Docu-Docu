@@ -1,0 +1,114 @@
+---
+sidebar_position: 3
+title: SOC Prime Platform Release Notes 6.1.8
+description: SOC Prime Platform 6.1.8 release notes — ECS translations for Coralogix, QRadar CEP Custom, Google SecOps WIF, cookie consent, Active Threats sorting, and translation fixes.
+keywords: [SOC Prime, release notes, 6.1.8, Coralogix, QRadar, Google SecOps, Active Threats]
+authors:
+  - Nataliia Pukaliak
+original_author: Nataliia Pukaliak
+last_update:
+  date: 2026-04-14
+  author: Nataliia Pukaliak
+display_date: April 14, 2026
+---
+
+import DocAuthors from '@site/src/components/DocAuthors';
+
+# SOC Prime Platform Product Release Notes 6.1.8
+
+<DocAuthors authors={["Nataliia Pukaliak"]} date="April 14, 2026" />
+
+April 14, 2026
+
+© 2026 SOC Prime Inc.
+
+All rights reserved. This product and documentation related are protected by copyright and distributed under licenses restricting their use, copying, distribution, and decompilation. No part of this product or documentation related may be reproduced in any form or by any means without the prior written authorization of SOC Prime. While every precaution has been taken in the preparation of this book, SOC Prime assumes no responsibility for errors or omissions. This publication and features described herein are subject to change without notice.
+
+---
+
+## Coralogix
+
+With the latest SOC Prime release, we’ve added an alternative translation `ECS` for Coralogix Alert and Coralogix Query. The `ECS` alternative translation can now be selected:
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/01.png)
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/02.png)
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/03.png)
+
+## QRadar
+
+We’ve added an alternative translation `CEP Custom` for QRadar Query. The `CEP Custom` alternative translation can now be selected:
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/04.png)
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/05.png)
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/06.png)
+
+---
+
+With the latest release, we’ve implemented a cookie consent mechanism across all SOC Prime web properties to ensure compliance with GDPR and PECR requirements. Users can now accept or reject cookies via the consent banner, as well as manage their preferences. A dedicated Cookie Preferences panel allows users to view all cookie categories and customize their settings using toggle controls.
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/07.png)
+
+---
+
+We have implemented a new WIF integration based on keyless authentication for Google SecOps. Following this update, a new option has been added to the Data Plane setup, allowing users to select the Cloud Chronicle API with WIF environment type, select where the Data Plane will be used and configure the required parameters accordingly.
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/08.png)
+
+---
+
+With the latest SOC Prime release, we’ve made significant improvements to the Platform UI to enhance clarity and usability.
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/09.png)
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/10.png)
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/11.png)
+
+---
+
+## Active Threats Updates
+
+We’ve enhanced the Active Threats module by improving how detections are sorted. When opening an Active Threat details page and navigating to the Detections tab, detections across all sub-tabs (Behavior Rules, IOC Queries, and AI Rules), are now sorted by date, with the newest items displayed at the top.
+
+![Product screenshot](/img/docs/release-notes/v6.1.8/12.png)
+
+---
+
+With the latest release, we’ve made visual improvements to the Scan and Data Audit PDF reports in Attack Detective to make them easier to read, navigate, and identify critical findings.
+
+- Enhanced sorting functionality in Scan PDF reports to make it easier to identify the most critical and most active detections. Detections are now sorted by severity level (Critical → Low) and within each severity level, by hit count, from highest to lowest.
+- To improve readability, we’ve added visual separators in Data Audit PDF reports, making it easier to distinguish between events.
+
+---
+
+We’ve introduced several improvements to ensure more accurate translations across certain platforms.
+
+## Elastic
+
+To improve the quality of translations into the Elastic Stack Detection Rule (Lucene) format, we’ve ensured that the `reference` field is empty when there is no `case id`.
+
+## Crowdstrike
+
+We’ve addressed the Crowdstrike keyword translation issue by enclosing `keyword` values with double quotes (`"`).
+
+## Tanium
+
+We’ve improved the quality of Tanium Query translations by improving escaping `\\`.
+
+---
+
+- Fixed an issue in the New mode where content in the editor was sometimes not recognized when running AI tasks after drilling down from the Detection Code tab of the Detection Rule page.
+- Resolved an issue where clicking the Revoke button in Uncoder AI sometimes incorrectly triggered the Publish this content? pop-up instead of the Rule successfully revoked message.
+
+- Improved wording and text consistency in the Attack Detective Scan Setup and Two-Factor Authentication Setup pages.
+- Improved connector line behavior in Attack Flow by adjusting the line placement algorithm.
+- Fixed an issue in Uncoder AI where, in some cases, the side menu was partially cut off when viewing results of the Active Threats Search task.
+- Fixed an issue in Advanced Search where the Translate To button was sometimes not visible when selecting detections for bulk actions.
+- Resolved an issue where the underlines of the Generate, Translate, and Improve tabs in Uncoder AI were sometimes displayed incorrectly.
+- Adjusted zoom level for small Relation Graph on the Detection Rule page to improve visibility.
+- Fixed an issue where the Unlock all Premium rules option was displayed out of the dropdown borders on the Lists page.
+- Blocked action buttons in the three-dot menu for DEMO Audits in Attack Detective, and fixed an issue where the tooltip for those actions was sometimes incorrectly positioned.

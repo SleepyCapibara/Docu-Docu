@@ -2,9 +2,6 @@ name: Test
 
 on:
   pull_request:
-  push:
-    branches:
-      - main
 
 jobs:
   test:
@@ -12,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -20,6 +19,9 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Check translations are up to date
+        run: npm run i18n:check
 
       - name: Build website
         run: npm run build

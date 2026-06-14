@@ -1,0 +1,182 @@
+---
+sidebar_position: 2
+title: SOC Prime Platform Release Notes 6.2.0
+description: SOC Prime Platform 6.2.0 release notes — Uncoder AI redesign with Agentic and Deep Threat Research, custom content history, new platform header, and translation improvements.
+keywords: [SOC Prime, release notes, 6.2.0, Uncoder AI, Agentic Threat Research, Deep Threat Research]
+authors:
+  - Nataliia Pukaliak
+original_author: Nataliia Pukaliak
+last_update:
+  date: 2026-05-18
+  author: Nataliia Pukaliak
+display_date: May 18, 2026
+---
+
+import DocAuthors from '@site/src/components/DocAuthors';
+
+# SOC Prime Platform Product Release Notes 6.2.0
+
+<DocAuthors authors={["Nataliia Pukaliak"]} date="May 18, 2026" />
+
+May 18, 2026
+
+© 2026 SOC Prime Inc.
+
+All rights reserved. This product and documentation related are protected by copyright and distributed under licenses restricting their use, copying, distribution, and decompilation. No part of this product or documentation related may be reproduced in any form or by any means without the prior written authorization of SOC Prime. While every precaution has been taken in the preparation of this book, SOC Prime assumes no responsibility for errors or omissions. This publication and features described herein are subject to change without notice.
+
+---
+
+With the latest SOC Prime release, we’ve redesigned the interface of Uncoder AI to improve usability and make detection engineering workflows more intuitive and efficient. This update is part of an ongoing redesign, with additional improvements and enhancements planned for upcoming releases.
+
+## Agentic Threat Research
+
+As part of Uncoder AI redesign, the previous New mode has been renamed to Agentic Threat Research mode and it now provides enhanced AI-assisted workspace for threat analysis and research.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/01.png)
+
+Agentic Threat Research allows users to create chats and projects, manage them as needed, and group chats into projects to define a shared context. Within a project, users can provide instructions which are automatically applied across all chats in that project. This ensures consistent AI responses and reduces the need to re-enter the same information.
+
+To define a shared context across related conversations, users need to follow these steps:
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/02.png)
+
+Set Instructions – Within each project, define Instructions in a dedicated field.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/03.png)
+
+Start a chat – Start typing prompt in the chat directly in the project. All subsequent chats created within the same project will also automatically inherit and apply the provided instructions.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/04.png)
+
+Users can provide input either through the chat for custom prompts or by pasting threat reports, detection rules/queries, or other long inputs in the Code Editor.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/05.png)
+
+The Clear Editor button removes all content from the Code Editor in a single click.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/06.png)
+
+To make navigation more efficient, we’ve introduced a search bar that allows users to quickly find both chats and projects.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/07.png)
+
+In addition, the AI tools (e.g. Attack Flow, Short/Full Summary, Decision Tree etc) have been reorganized into three categories:
+
+- Generate
+- Discover
+- Analyze
+
+Users can now access the AI tools by selecting one of those categories and then choosing a relevant tool within it.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/08.png)
+
+## New Agentic AI Tool
+
+In addition to existing AI tools in Uncoder AI, we’ve introduced a new comprehensive AI-powered analysis tool – Deep Threat Research that provides complete threat intelligence in a single request. Users can paste the text of a threat report and receive comprehensive threat intelligence that includes:
+
+- Summary – Concise threat overview
+- Investigation – Recommended actions for investigating the threat
+- Mitigation – Recommended actions for mitigating the threat according to the best security practices
+- Response – Recommended response actions to minimize the risks of the threat
+- Actors – Threat actors related to the threat
+- Sub-techniques – MITRE ATT&CK techniques used by adversaries in this threat context
+- Detection Level – Detection type associated with the threat
+- Attack Flow – Visualization of the adversary activity
+- Found on TDM – Relevant detections from the SOC Prime Platform
+- Generated – Relevant AI-generated detections
+- Simulation – Simulations of malicious activity
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/09.png)
+
+To use this AI tool, users should follow the steps below:
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/10.png)
+
+## Translation
+
+As part of the Uncoder AI redesign, the previously named Classic mode has been renamed to Translation.
+
+Additionally, for improved usability, the IOC Query option has been moved from the Generate tab to the dropdown menu in the Translation tab, where users can now convert IOCs from text or files into ready-to-use queries.
+
+---
+
+## History for Custom Content
+
+With this SOC Prime release, we’ve introduced the ability to monitor and track the history of custom content. A new History tab has been added to the Detection Rule page, providing visibility into the user who performed the action, the type of action performed on the rule (created, edited, deployed, downloaded, added to or removed from a Content List, etc.), timestamp, and the list of affected platforms.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/11.png)
+
+## Threat of the Month Block Update
+
+With the latest release, we’ve enhanced the Threat of the Month block in Active Threats to provide more detailed threat information, making it easier for users to quickly understand a threat and navigate relevant content. The updated block now includes AI Summary, Attack Flow, Detections, and Simulations, along with counters showing the number of available items in each section. Clicking any section within the block takes users directly to the corresponding area on the Threat of the Month details page.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/12.png)
+
+## New Platform Header
+
+With this release, we’ve rebuilt the platform header across all pages, introducing a standardized dropdown menu with a list of SOC Prime products to improve navigation and usability.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/13.png)
+
+## Detect Flow Landing Page
+
+We’ve introduced a dedicated Detect Flow landing page accessible directly from the products dropdown in the platform header. The new page provides an overview of Detect Flow capabilities and includes the Ready for More? contact modal allowing users to submit their information and connect with our team regarding product offerings.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/14.png)
+
+## WIF Support for Google SecOps
+
+We’ve extended WIF support for Google SecOps to include Attack Detective. To use this feature, users should select the Attack Detective option when configuring the Data Plane for Google SecOps to enable investigations in Attack Detective.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/15.png)
+
+---
+
+## Improved Table Design
+
+The latest SOC Prime release included the improvement of table design in the Blog articles to make them look consistent and unified, with a standard design and layout across all articles.
+
+![Product screenshot](/img/docs/release-notes/v6.2.0/16.png)
+
+---
+
+We’ve introduced a set of improvements to ensure more accurate translations across the platforms.
+
+## Google SecOps
+
+Improved a translation from Google SecOps to Crowdstrike Endpoint Security by adjusting rule syntax for correct conversion.
+
+## Coralogix
+
+Improved ECS alt translation for Coralogix by removing index condition from the query.
+
+## FireEye
+
+Updated the date format used during FireEye Rule (XML) translation.
+
+## LimaCharlie
+
+Improved the error message displayed when translating Sigma rules to LimaCharlie for cases where the Sigma rule contains an unsupported logsource product. The updated message now clearly lists the currently supported logsource products.
+
+## Microsoft Sentinel
+
+Fixed an issue with Microsoft Sentinel where sometimes the KQL tokenizer did not correctly parse the `|` character which impacted reverse translation from Microsoft Sentinel to other platforms.
+
+## CrowdStrike Next-Gen SIEM Falcon LogScale
+
+- Improved error handling during translation from CrowdStrike Next-Gen SIEM Falcon LogScale to Sigma by adding a clearer error message that indicates when the query is missing and specifies the field where it is expected.
+- Fixed an issue in the alternative CIM Config for CrowdStrike Next-Gen SIEM Falcon LogScale where fields containing the `#` character were translated incorrectly.
+
+## Other Improvements
+
+Fixed an issue where incorrect informational messages were displayed in translation errors in cases where translation was not possible.
+
+---
+
+- Fixed an issue where, in some cases, content graphic was not displayed on the page without selecting Search Profile.
+- Fixed charts to correctly reflect the data in the Coverage, Content for Log Sources, and Explored and Deployed Trend sections.
+- Fixed an issue where sometimes two empty rows appeared in the exported Log Source Coverage CSV file.
+
+- Fixed an issue where sometimes new values were not applied to all fields in CrowdStrike query.
+- Fixed an issue where sometimes value mapping was not applied to fields using the `like` operator in Hunters query.
+- Fixed an issue where sometimes custom source wasn’t applied to QRadar query.

@@ -1,23 +1,32 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
 .heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+  padding: 0;
 }
 
 @media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
+  .heroBanner :global(.docu-hero__inner) {
+    padding: var(--docu-space-16) var(--docu-space-4);
+  }
+
+  .heroBanner :global(.docu-hero__title) {
+    font-size: var(--docu-text-3xl);
+  }
+
+  .heroBanner :global(.docu-hero__subtitle) {
+    font-size: var(--docu-text-lg);
   }
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  gap: var(--docu-space-4);
+}
+
+@media screen and (max-width: 576px) {
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons :global(.docu-btn) {
+    width: 100%;
+  }
 }

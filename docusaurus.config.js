@@ -10,9 +10,36 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'SOC Prime Documentation',
+  tagline:
+    'Detection intelligence turbocharged with AI — product guides, FAQs, and release notes.',
   favicon: 'img/favicon.ico',
+
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/Docu-Docu/img/favicon-32.png',
+        sizes: '32x32',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'icon',
+        href: '/Docu-Docu/img/favicon-192.png',
+        sizes: '192x192',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'apple-touch-icon',
+        href: '/Docu-Docu/img/apple-touch-icon.png',
+      },
+    },
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -37,7 +64,13 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'uk', 'es', 'ko'],
+    localeConfigs: {
+      en: {label: 'English', htmlLang: 'en'},
+      uk: {label: 'Українська', htmlLang: 'uk'},
+      es: {label: 'Español', htmlLang: 'es'},
+      ko: {label: '한국어', htmlLang: 'ko'},
+    },
   },
 
   presets: [
@@ -47,6 +80,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -63,28 +98,43 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/socprime-social-card.svg',
       colorMode: {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'My Site',
+        title: '',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'SOC Prime',
           src: 'img/logo.svg',
+          srcDark: 'img/logo-dark.svg',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'productSidebar',
             position: 'left',
-            label: 'Documentation',
+            label: 'Product Docs',
           },
-          //{to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            type: 'docSidebar',
+            sidebarId: 'faqSidebar',
+            position: 'left',
+            label: 'FAQs',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'releaseNotesSidebar',
+            position: 'left',
+            label: 'Release Notes',
+          },
+          {
+            href: 'https://socprime.com/',
+            label: 'SOC Prime',
+            position: 'right',
+          },
+          {
+            type: 'localeDropdown',
             position: 'right',
           },
         ],
@@ -93,11 +143,36 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Product Docs',
+                to: '/docs/product/threat-detection-marketplace/active-threats',
+              },
+              {
+                label: 'FAQs',
+                to: '/docs/faq/coralogix-data-plane-credentials',
+              },
+              {
+                label: 'Release Notes',
+                to: '/docs/release-notes/v6.2.0',
+              },
+            ],
+          },
+          {
+            title: 'SOC Prime',
+            items: [
+              {
+                label: 'Website',
+                href: 'https://socprime.com/',
+              },
+              {
+                label: 'Help Center',
+                href: 'https://help.socprime.com/',
+              },
+              {
+                label: 'Threat Detection Marketplace',
+                href: 'https://tdm.socprime.com/',
               },
             ],
           },
@@ -105,30 +180,37 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/socprime',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/Cj76AjsSzd',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/soc-prime',
+              },
+              {
+                label: 'YouTube',
+                href: 'https://www.youtube.com/@socprime6652',
+              },
+              {
+                label: 'Facebook',
+                href: 'https://www.facebook.com/socprime',
               },
               {
                 label: 'X',
-                href: 'https://x.com/docusaurus',
+                href: 'https://twitter.com/SOC_Prime',
               },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/SleepyCapibara/Docu-Docu',
+                label: 'Bluesky',
+                href: 'https://bsky.app/profile/socprime.com',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SOC Prime, Inc. SOC Prime, SOC Prime Logo and Threat Detection Marketplace are registered trademarks of SOC Prime, Inc.`,
       },
       prism: {
         theme: prismThemes.github,

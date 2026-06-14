@@ -1,0 +1,114 @@
+---
+sidebar_position: 3
+title: Notas de la versión 6.1.8 de la plataforma SOC Prime
+description: Notas de la versión 6.1.8 de la plataforma SOC Prime — traducciones ECS para Coralogix, QRadar CEP Custom, Google SecOps WIF, consentimiento de cookies, ordenación de Active Threats y correcciones de traducción.
+keywords: [SOC Prime, release notes, 6.1.8, Coralogix, QRadar, Google SecOps, Active Threats]
+authors:
+  - Nataliia Pukaliak
+original_author: Nataliia Pukaliak
+last_update:
+  date: 2026-04-14
+  author: Nataliia Pukaliak
+display_date: 14 de abril de 2026
+---
+
+import DocAuthors from '@site/src/components/DocAuthors';
+
+# Notas de la versión del producto SOC Prime Platform 6.1.8
+
+<DocAuthors authors={["Nataliia Pukaliak"]} date="14 de abril de 2026" />
+
+14 de abril de 2026
+
+© 2026 SOC Prime Inc.
+
+Todos los derechos reservados. Este producto y la documentación relacionada están protegidos por derechos de autor y se distribuyen bajo licencias que restringen su uso, copia, distribución y descompilación. Ninguna parte de este producto o de la documentación relacionada puede reproducirse en ninguna forma ni por ningún medio sin la autorización previa por escrito de SOC Prime. Aunque se han tomado todas las precauciones en la preparación de este documento, SOC Prime no asume responsabilidad por errores u omisiones. Esta publicación y las funciones descritas en ella están sujetas a cambios sin previo aviso.
+
+---
+
+## Coralogix
+
+Con la última versión de SOC Prime, hemos agregado una traducción alternativa `ECS` para Coralogix Alert y Coralogix Query. La traducción alternativa `ECS` ya puede seleccionarse:
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/01.png)
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/02.png)
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/03.png)
+
+## QRadar
+
+Hemos agregado una traducción alternativa `CEP Custom` para QRadar Query. La traducción alternativa `CEP Custom` ya puede seleccionarse:
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/04.png)
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/05.png)
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/06.png)
+
+---
+
+Con la última versión, hemos implementado un mecanismo de consentimiento de cookies en todas las propiedades web de SOC Prime para garantizar el cumplimiento de los requisitos del GDPR y PECR. Los usuarios ahora pueden aceptar o rechazar cookies mediante el banner de consentimiento, así como gestionar sus preferencias. Un panel dedicado de Cookie Preferences permite a los usuarios ver todas las categorías de cookies y personalizar su configuración mediante controles de alternancia.
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/07.png)
+
+---
+
+Hemos implementado una nueva integración WIF basada en autenticación sin claves para Google SecOps. Tras esta actualización, se ha agregado una nueva opción a la configuración de Data Plane, que permite a los usuarios seleccionar Cloud Chronicle API con el tipo de entorno WIF, elegir dónde se utilizará el Data Plane y configurar los parámetros requeridos en consecuencia.
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/08.png)
+
+---
+
+Con la última versión de SOC Prime, hemos realizado mejoras significativas en la interfaz de usuario de la plataforma para mejorar la claridad y la usabilidad.
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/09.png)
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/10.png)
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/11.png)
+
+---
+
+## Actualizaciones de Active Threats
+
+Hemos mejorado el módulo Active Threats optimizando la forma en que se ordenan las detecciones. Al abrir una página de detalles de Active Threat y navegar a la pestaña Detections, las detecciones en todas las subpestañas (Behavior Rules, IOC Queries y AI Rules) ahora se ordenan por fecha, con los elementos más recientes en la parte superior.
+
+![Captura de pantalla del producto](/img/docs/release-notes/v6.1.8/12.png)
+
+---
+
+Con la última versión, hemos realizado mejoras visuales en los informes PDF de Scan y Data Audit en Attack Detective para facilitar su lectura, navegación e identificación de hallazgos críticos.
+
+- Funcionalidad de ordenación mejorada en los informes PDF de Scan para facilitar la identificación de las detecciones más críticas y activas. Las detecciones ahora se ordenan por nivel de gravedad (Critical → Low) y, dentro de cada nivel de gravedad, por recuento de coincidencias, de mayor a menor.
+- Para mejorar la legibilidad, hemos agregado separadores visuales en los informes PDF de Data Audit, lo que facilita distinguir entre eventos.
+
+---
+
+Hemos introducido varias mejoras para garantizar traducciones más precisas en determinadas plataformas.
+
+## Elastic
+
+Para mejorar la calidad de las traducciones al formato Elastic Stack Detection Rule (Lucene), hemos garantizado que el campo `reference` esté vacío cuando no hay `case id`.
+
+## Crowdstrike
+
+Hemos solucionado el problema de traducción de la palabra clave de Crowdstrike encerrando los valores de `keyword` entre comillas dobles (`"`).
+
+## Tanium
+
+Hemos mejorado la calidad de las traducciones de Tanium Query mejorando el escape de `\\`.
+
+---
+
+- Se corrigió un problema en el modo New en el que a veces no se reconocía el contenido del editor al ejecutar tareas de IA después de profundizar desde la pestaña Detection Code de la página Detection Rule.
+- Se resolvió un problema en el que hacer clic en el botón Revoke en Uncoder AI a veces activaba incorrectamente la ventana emergente Publish this content? en lugar del mensaje Rule successfully revoked.
+
+- Se mejoró la redacción y la coherencia del texto en las páginas Attack Detective Scan Setup y Two-Factor Authentication Setup.
+- Se mejoró el comportamiento de las líneas conectoras en Attack Flow ajustando el algoritmo de colocación de líneas.
+- Se corrigió un problema en Uncoder AI en el que, en algunos casos, el menú lateral quedaba parcialmente cortado al ver los resultados de la tarea Active Threats Search.
+- Se corrigió un problema en Advanced Search en el que a veces el botón Translate To no era visible al seleccionar detecciones para acciones masivas.
+- Se resolvió un problema en el que a veces los subrayados de las pestañas Generate, Translate e Improve en Uncoder AI se mostraban incorrectamente.
+- Se ajustó el nivel de zoom del Relation Graph pequeño en la página Detection Rule para mejorar la visibilidad.
+- Se corrigió un problema en el que la opción Unlock all Premium rules se mostraba fuera de los bordes del menú desplegable en la página Lists.
+- Se bloquearon los botones de acción en el menú de tres puntos para DEMO Audits en Attack Detective y se corrigió un problema en el que el tooltip de esas acciones a veces se posicionaba incorrectamente.

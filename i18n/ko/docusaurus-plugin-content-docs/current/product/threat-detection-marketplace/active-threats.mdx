@@ -1,0 +1,176 @@
+---
+sidebar_position: 1
+title: Threat Detection Marketplace의 Active Threats
+sidebar_label: Active Threats
+description: SOC Prime의 Threat Detection Marketplace에서 Active Threats를 사용하여 실시간 CTI를 제공하는 위협을 발견하고, 탐지, 공격 흐름, AI로 보강된 위협 컨텍스트를 몇 분 안에 검토하세요.
+keywords: [Active Threats, Threat Detection Marketplace, CTI, MITRE ATT&CK, detections, SOC Prime]
+authors:
+  - Eugene
+original_author: Eugene
+last_update:
+  date: 2026-05-18
+  author: Eugene
+display_date: 3주 이상 전 업데이트
+---
+
+import DocAuthors from '@site/src/components/DocAuthors';
+
+# Active Threats
+
+<DocAuthors authors={["Eugene"]} date="3주 이상 전 업데이트" />
+
+이 가이드는 Threat Detection Marketplace에서 Active Threats를 사용하는 단계별 지침을 제공합니다. 실시간 CTI를 제공하는 위협을 발견하고, 상세한 위협 정보, 탐지, AI로 보강된 컨텍스트를 검토하여 보안 팀이 몇 분 안에 위협을 식별하고 대응할 수 있도록 합니다.
+
+## Active Threats 액세스
+
+1. SOC Prime 계정에 액세스하고 Threat Detection Marketplace로 이동합니다.
+2. Active Threats 모듈에 있는지 확인합니다. Active Threats는 Threat Detection Marketplace의 홈 페이지 역할을 합니다.
+
+## Visualization Dashboards
+
+페이지 상단에서 사용자는 활성 위협에 대한 현재 지표를 표시하는 대시보드를 찾을 수 있습니다. 보기는 기본적으로 접혀 있습니다. 보기를 확장하려면 View Dashboard 버튼을 선택합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/01.png)
+
+대시보드는 다음을 표시합니다.
+
+참고: 특정 달력 주에 관련 업데이트가 없으면 해당 열은 차트에 표시되지 않습니다.
+
+- Top 3 Techniques Used: 최근 위협에서 가장 일반적인 MITRE ATT&CK 기법 목록으로, 완화 전술의 우선순위를 정하는 데 도움이 됩니다.
+- Top 3 Active Actors: 최근 기간 동안 활동한 상위 3개 위협 행위자로, 적대자 패턴과 전술에 대한 인사이트를 제공합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/02.png)
+
+## Active Threats Feed
+
+Active Threats 피드는 가장 최근에 식별된 위협 뉴스 항목 목록을 표시하며, 가장 새로운 위협이 상단에 나타납니다.
+
+상단의 검색 바를 사용하여 필요한 뉴스 항목을 빠르게 찾을 수 있습니다. 자연어로 쿼리를 입력합니다. 시스템이 요청을 처리하고 관련 뉴스 항목을 표시하며, 관련 소스 기사를 기반으로 요약을 생성합니다. Research in Uncoder를 선택하면 요약 전문을 보고 쿼리와 관련된 위협 세부 정보를 탐색할 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/03.png)
+
+각 뉴스 항목 타일에는 위협에 대한 다음 정보가 포함됩니다.
+
+참고: Threat Type, Affected Industry 또는 Affected Geography에 여러 옵션이 있는 경우 첫 번째 옵션이 표시되고 괄호 안에 추가 옵션 수가 표시됩니다. 해당 필드 위에 마우스를 올리면 모든 옵션을 볼 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/04.png)
+
+Threat of the Month 타일에는 AI Summary, Attack Flow, Detections, Simulations가 포함되며, 각 섹션에서 사용 가능한 항목 수를 보여주는 카운터도 함께 표시됩니다. 타일의 섹션을 클릭하면 Threat of the Month 세부 정보 페이지의 해당 영역으로 바로 이동합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/05.png)
+
+## Active Threats News Item Page
+
+위협 뉴스 항목을 선택하면 위협에 대한 상세하고 실행 가능한 정보가 포함된 페이지로 이동합니다.
+
+페이지 상단에는 다음이 포함됩니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/06.png)
+
+최소 하나의 규칙에 Query 유형의 번역이 하나 이상 있으면 이 태그가 적용됩니다.
+
+Alert: 검토하거나 에스컬레이션해야 할 활동을 나타내는 규칙 트리거 신호입니다.
+
+최소 하나의 규칙에 Alert 유형의 번역이 하나 이상 있으면 이 태그가 적용됩니다.
+
+ETL: 데이터 파이프라인 단계: 원격 측정 데이터를 추출, 정규화 및 로드합니다.
+
+최소 하나의 규칙이 `sigma type: IOC`로 정의되면 이 태그가 적용됩니다.
+
+AIDR: 규칙/유사성/코드/ML/LLM 검사를 실행하여 AI 앱에 도달하기 전에 프롬프트 인젝션 및 유해 콘텐츠를 탐지하고 차단하는 GenAI 보호 게이트웨이입니다.
+
+최소 하나의 규칙에 Semgrep 번역이 있으면 이 태그가 적용됩니다.
+
+Share: Share 버튼을 선택하여 뉴스 항목을 공유합니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/07.png)
+
+왼쪽에 위협에 대한 상세 정보를 제공하는 네 개의 탭이 있습니다. 탭을 전환하여 사용 가능한 세부 정보를 탐색하세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/08.png)
+
+## AI Summary
+
+AI Summary 탭은 위협 컨텍스트의 고수준 보기를 제공합니다. 이 탭을 사용하여 위협의 관련성과 초기 대응 조치를 빠르게 평가하세요. 각 섹션 사용 방법은 다음과 같습니다.
+
+- Summary: AI 생성 요약을 검토하여 위협의 주요 특성을 이해합니다.
+- Investigation: 이 섹션에는 위협 조사를 위한 권장 조치가 포함됩니다.
+- Mitigation: 이 섹션에는 모범 보안 관행에 따른 위협 완화를 위한 권장 조치가 포함됩니다. 방어 조치를 구현하기 위한 빠른 참조로 사용하세요.
+- Response: 이 섹션에는 위협 위험을 최소화하기 위한 권장 대응 조치가 포함됩니다. 방어 조치를 구현하기 위한 빠른 참조로 사용하세요.
+
+오른쪽에는 AI Summary 탭에 다음 위협 속성이 표시됩니다.
+
+- Actor description
+- Associated groups
+
+- Sub(technique) description
+- Related tactics
+
+- Tool description
+- Associated software
+
+참고: 데이터 가용성에 따라 일부 위협 속성이 표시되지 않을 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/09.png)
+
+## Attack Flow
+
+이 탭은 적대자 활동의 AI 생성 시각화를 제공하여 위협이 어떻게 작동하는지 더 잘 이해하고 적대자가 목표를 달성하기 위해 사용하는 행동 시퀀스를 추적하는 데 도움이 됩니다. 위협 시각화는 다이어그램 및 매트릭스 형식으로 표시됩니다.
+
+다이어그램 표현을 보려면 Flow 탭을 선택합니다. 다음을 수행할 수 있습니다.
+
+- 블록을 드래그 앤 드롭
+- 전체 화면으로 시각화 열기
+- 배율 변경
+- 시작 지점으로 돌아가기
+- 시각화를 MMD로 내보내기
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/10.png)
+
+매트릭스 표현을 보려면 Matrix 탭을 선택합니다. 다음을 수행할 수 있습니다.
+
+- 전체 화면으로 시각화 열기
+- 시작 지점으로 돌아가기
+- 시각화를 MMD로 내보내기
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/11.png)
+
+## Detections
+
+이 탭은 선택한 위협을 식별할 수 있는 탐지 목록을 제공합니다. 탐지는 다음 카테고리로 그룹화됩니다.
+
+- Behavior Rules: 인간 전문가가 만든 탐지.
+- IOC Queries: SOC Prime 독점 알고리즘을 사용하여 자동 생성된 IOC 쿼리.
+- AI Rules: SOC Prime AI 모델이 만든 탐지.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/12.png)
+
+규칙 타일 위에 마우스를 올리면 규칙이 이미 배포되었는지 확인할 수 있습니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/13.png)
+
+Behavior Rules에는 위협에 대한 주요 참조가 포함될 수 있습니다. 링크에 액세스하려면 규칙 타일 위에 마우스를 올리고 External Research를 선택한 다음 링크를 클릭하여 컨텍스트를 자세히 살펴보세요.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/14.png)
+
+탐지 세부 정보를 탐색하려면 탐지 타일 위에 마우스를 올리고 View 버튼을 클릭하면 다음 탭이 있는 규칙/쿼리 페이지로 이동합니다.
+
+- Detection Intelligence: 미디어 링크, 위협 타임라인, 오탐, 감사 구성 및 트리아지 권장 사항, 짧은 및 전체 요약, 의사결정 트리, 바이너리, 태그, MITRE ATT&CK 커버리지 데이터를 포함한 위협 인텔리전스 및 관련 메타데이터를 제공합니다.
+- Detection Code: 환경에서 규칙/쿼리를 실행하기 위해 사용 가능한 SIEM, EDR, Data Lake 언어 형식으로 변환 가능한 규칙/쿼리 코드를 표시합니다.
+- Validation: AI Rules에만 사용할 수 있는 탭으로, 규칙이 탐지하도록 의도된 악성 활동의 시뮬레이션을 나타냅니다.
+
+## Simulations
+
+이 탭은 AI Rules가 탐지하도록 의도된 악성 활동 시뮬레이션 목록을 제공합니다. 규칙 타일 위에 마우스를 올리고 View 버튼을 선택하여 시뮬레이션 세부 정보를 봅니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/15.png)
+
+페이지 하단에서 관련 위협(있는 경우)을 볼 수 있습니다. View all active threats를 클릭하여 Active Threats 피드로 돌아갑니다.
+
+![제품 스크린샷](/img/docs/threat-detection-marketplace/active-threats/16.png)
+
+## Active Threats 사용 모범 사례
+
+1. 정기적으로 모니터링: 피드를 정기적으로 확인하여 새로운 위협, 취약점 및 위협 행위자 활동에 대한 최신 정보를 유지하세요.
+2. 위협 관련성에 따른 우선순위 지정: 업계 및 지역별 인사이트를 사용하여 각 위협이 조직에 미치는 관련성을 평가하세요.
+3. 탐지 규칙 구현: Detections 탭의 탐지 규칙을 적용하여 활성 위협에 대한 즉각적인 모니터링을 활성화하세요.

@@ -5,13 +5,21 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
+    "start:uk": "docusaurus start --locale uk",
+    "start:es": "docusaurus start --locale es",
+    "start:ko": "docusaurus start --locale ko",
+    "start:all": "docusaurus build && docusaurus serve",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "i18n:translate": "node scripts/i18n-translate.js --sync-structure",
+    "i18n:check": "node scripts/i18n-translate.js --check",
+    "i18n:seed-cache": "node scripts/i18n-seed-cache.js",
+    "i18n:apply-ui": "node scripts/i18n-apply-ui.js"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.1",

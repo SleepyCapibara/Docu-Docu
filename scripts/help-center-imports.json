@@ -1,0 +1,73 @@
+{
+  "docRoot": "docs/product",
+  "imageRoot": "static/img/docs",
+  "sections": {
+    "threat-detection-marketplace": {
+      "label": "Threat Detection Marketplace",
+      "position": 3,
+      "description": "Guides for using the Threat Detection Marketplace."
+    }
+  },
+  "articles": [
+    {
+      "url": "https://help.socprime.com/en/articles/10067617-active-threats",
+      "slug": "active-threats",
+      "section": "threat-detection-marketplace",
+      "sidebarPosition": 1,
+      "startMarker": "This guide provides step-by-step instructions",
+      "author": "Eugene",
+      "updated": "Updated over 3 weeks ago"
+    },
+    {
+      "url": "https://help.socprime.com/en/articles/5820444-search",
+      "slug": "search",
+      "section": "threat-detection-marketplace",
+      "sidebarPosition": 2,
+      "startMarker": "In Search, you can explore",
+      "subtitle": "Search Types | Applying Search Profiles | Sorting and filtering | Understanding rule details",
+      "author": "Sergey Bayrachny",
+      "updated": "Updated this week"
+    },
+    {
+      "url": "https://help.socprime.com/en/articles/15165225-soc-prime-platform-product-release-notes-6-2-0",
+      "slug": "v6.2.0",
+      "docRoot": "docs",
+      "section": "release-notes",
+      "sidebarPosition": 2,
+      "startMarker": "All rights reserved. This product and documentation related are protected by copyright",
+      "author": "Nataliia Pukaliak",
+      "updated": "May 18, 2026"
+    },
+    {
+      "url": "https://help.socprime.com/en/articles/14623955-soc-prime-platform-product-release-notes-6-1-8",
+      "slug": "v6.1.8",
+      "docRoot": "docs",
+      "section": "release-notes",
+      "sidebarPosition": 3,
+      "startMarker": "All rights reserved. This product and documentation related are protected by copyright",
+      "author": "Nataliia Pukaliak",
+      "updated": "April 14, 2026"
+    },
+    {
+      "url": "https://help.socprime.com/en/articles/12165535-how-to-get-credentials-for-coralogix-data-plane",
+      "slug": "coralogix-data-plane-credentials",
+      "docRoot": "docs",
+      "section": "faq",
+      "sidebarPosition": 3,
+      "startMarker": "Select the value in the <b>Region</b> dropdown in the Data Plane settings",
+      "author": "Sergey Bayrachny",
+      "updated": "September 5, 2025"
+    },
+    {
+      "url": "https://help.socprime.com/en/articles/6231954-set-your-email-notifications-on-soc-prime",
+      "slug": "email-notifications",
+      "docRoot": "docs",
+      "section": "faq",
+      "sidebarPosition": 4,
+      "startMarker": "Email notifications can be a great tool to get all important updates",
+      "subtitle": "A guide on how to personalise email notifications you get from SOC Prime.",
+      "author": "Eugene",
+      "updated": "February 2, 2023"
+    }
+  ]
+}

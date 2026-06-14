@@ -1,0 +1,659 @@
+---
+sidebar_position: 2
+title: Búsqueda en Threat Detection Marketplace
+sidebar_label: Search
+description: Busque en el Threat Detection Marketplace de SOC Prime con búsqueda Standard, Lucene y Light. Aplique filtros y perfiles de búsqueda, ordene resultados y gestione reglas de detección.
+keywords: [Search, Threat Detection Marketplace, Sigma rules, Lucene, search profile, filters, SOC Prime]
+authors:
+  - Sergey Bayrachny
+original_author: Sergey Bayrachny
+last_update:
+  date: 2026-06-08
+  author: Sergey Bayrachny
+display_date: Actualizado esta semana
+---
+
+import DocAuthors from '@site/src/components/DocAuthors';
+
+# Search
+
+Tipos de búsqueda | Aplicación de perfiles de búsqueda | Ordenación y filtrado | Comprensión de los detalles de reglas
+
+<DocAuthors authors={["Sergey Bayrachny"]} date="Actualizado esta semana" />
+
+- Standard
+- Lucene
+- Light Search
+
+- Save Filters As Search Profile
+- Filters
+
+- Hiding in Search Results
+- Hunt
+- Marking a Rule as Deployed
+
+- Add to List
+- Fork to my Repo
+- Hide in Search Results
+- Mark as Deployed
+- Translate To
+- Delete
+
+En Search, puede explorar Threat Detection Marketplace (TDM), la colección más grande del mundo de reglas de detección y consultas de caza.
+
+Cada pieza de contenido se escribe inicialmente en Sigma, el lenguaje común para la defensa cibernética, y luego se traduce automáticamente a los formatos nativos de diversos SIEM, EDR y XDR. Las reglas Sigma se asignan a MITRE ATT&CK® y se enriquecen con inteligencia sobre las amenazas relacionadas.
+
+Las reglas de detección se clasifican y muestran como listados con detalles clave. Puede explorar, buscar y filtrar reglas Sigma.
+
+Para garantizar información precisa en el [Dashboard](https://help.socprime.com/en/articles/5820372-dashboard), [Log Source Coverage](https://help.socprime.com/en/articles/5820378-log-source-coverage) y [MITRE ATT&CK Coverage](https://help.socprime.com/en/articles/5820381-mitre-att-ck-coverage) de su organización, marque las reglas como implementadas si las descarga e instala manualmente. Para marcar una regla como implementada, vaya a su pestaña Detection Code y haga clic en el icono de marca de verificación en el menú de acciones de la derecha. Siga esta sección para obtener más información.
+
+Para automatizar la búsqueda, personalización e implementación de reglas, configure las siguientes funciones y módulos:
+
+- [Search Profile](https://help.socprime.com/en/articles/6261210-search-profiles)
+- [Custom Field Mapping](https://help.socprime.com/en/articles/6261215-custom-field-mapping)
+- [Data Planes](https://help.socprime.com/en/articles/6261097-data-planes)
+- [Automation](https://help.socprime.com/en/articles/6261236-automation-getting-started)
+- [API](https://help.socprime.com/en/articles/6265791-api)
+
+Para acceder a la página Search, vaya a Threat Detection Marketplace y seleccione la pestaña Search.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/01.png)
+
+## Barra de búsqueda
+
+---
+
+La barra de búsqueda se encuentra en la esquina superior izquierda de la página. Puede elegir entre tres modos de búsqueda: Standard, Lucene y Light.
+
+### Standard
+
+Este modo está habilitado de forma predeterminada. Realice una búsqueda de texto completo estándar en todo el contenido de Threat Detection Marketplace.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/02.png)
+
+Cuando comience a escribir la consulta, aparecerán sugerencias. Seleccione una de ellas o termine de escribir y haga clic en el icono de la lupa o pulse Enter (Windows)/Return (Mac).
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/03.png)
+
+Los resultados sugeridos pueden basarse en coincidencias en los siguientes atributos:
+
+- Configs for alternative translations
+- Log source products
+- Event IDs
+- Sigma type
+
+Search muestra las estadísticas principales sobre sus resultados de búsqueda actuales.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/04.png)
+
+### Lucene
+
+Para habilitar este modo, haga clic en la flecha hacia arriba junto a Standard y seleccione la opción Lucene en el menú desplegable.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/05.png)
+
+Utilice la sintaxis Lucene para componer consultas sofisticadas: filtre contenido, combine términos de búsqueda utilizando diferentes operadores lógicos y mucho más. Para obtener más información sobre el uso de Lucene, seleccione el icono de signo de interrogación a la derecha de la etiqueta Lucene. Para ver la lista de todos los campos disponibles junto con sus tipos y valores posibles, vaya a la sección [Lucene](https://help.socprime.com/en/articles/6265772-lucene-syntax) de esta guía.
+
+### Light Search
+
+Para habilitar este modo, haga clic en la flecha hacia arriba junto a Standard y seleccione la opción Light Search en el menú desplegable.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/06.png)
+
+Con Light Search, puede encontrar detecciones introduciendo una consulta en lenguaje natural, que el sistema interpreta y enriquece con alias conocidos y referencias alternativas, lo que permite que la búsqueda coincida con todas las variaciones relevantes. Por ejemplo, si introduce el nombre del actor APT28, el sistema amplía automáticamente la consulta con sus alias conocidos, como Fancy Bear y Pawn Storm.
+
+Active el interruptor AI Boost para potenciar sus búsquedas con palabras clave relevantes del GPT de Open AI. Tenga en cuenta que, al utilizar AI Boost, su búsqueda se envía a un servicio externo, por lo que no introduzca datos sensibles.
+
+## Selección de repositorio
+
+---
+
+Puede buscar detecciones en tres repositorios disponibles. Seleccione el botón correspondiente debajo de la barra de búsqueda. De forma predeterminada, está seleccionada la opción Platform Repos.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/07.png)
+
+- SOC Prime: contenido creado por el equipo interno de SOC Prime
+- Threat Bounty: contenido creado por desarrolladores del Threat Bounty Program
+- SigmaHQ: contenido procedente del proyecto SigmaHQ de código abierto en GitHub
+- Microsoft Sentinel: contenido para Microsoft Sentinel procedente del proyecto Azure-Sentinel en GitHub
+
+De forma predeterminada, se muestra el contenido de todos los repositorios del tipo seleccionado. Si desea ver y buscar contenido solo de repositorios específicos, elíjalos en el menú desplegable y haga clic en Apply.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/08.png)
+
+Puede buscar y filtrar contenido en repositorios personalizados de la misma forma que el contenido publicado en TDM. Además, el filtrado funcionará solo mientras los metadatos correspondientes estén presentes en el contenido personalizado.
+
+## Search Profile
+
+---
+
+Seleccione un Search Profile del menú desplegable para obtener instantáneamente resultados que coincidan con la infraestructura de su empresa, las fuentes de registro reales y los parámetros MITRE ATT&CK relevantes.
+
+Si el perfil se ha marcado como Default on Search en la página Search Profiles, al abrir Advanced Search, este perfil se aplicará automáticamente con sus parámetros configurados.
+
+Si no desea utilizar ningún Search Profile, elija la opción None. En caso de que aún no tenga Search Profiles configurados, None se aplica de forma predeterminada. Seleccione Create New Profile en el menú desplegable para crear un nuevo Search Profile o seleccione el icono de lápiz para editar la configuración del perfil. Para obtener más información, consulte la sección [Search Profiles](https://help.socprime.com/en/articles/6261210-search-profiles).
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/09.png)
+
+## Ordenación
+
+---
+
+De forma predeterminada, se aplica la ordenación Recommended. Las reglas Sigma se clasifican según nuestros algoritmos de recomendación que potencian el contenido más actualizado y de mayor calidad relevante para otros expertos en ciberseguridad.
+
+Puede aplicar otras opciones de ordenación:
+
+- Microsoft: contenido de Microsoft Sentinel clasificado según nuestros algoritmos de recomendación que potencian el contenido más actualizado y de mayor calidad relevante para otros expertos en ciberseguridad
+- Google SecOps: contenido de Google SecOps clasificado según nuestros algoritmos de recomendación que potencian el contenido más actualizado y de mayor calidad relevante para otros expertos en ciberseguridad
+- Top-Rated Alerts: las Alerts y Queries basadas en comportamiento más fiables para detectar la actividad maliciosa más grave
+- Name: contenido ordenado por su nombre
+- Type: contenido ordenado por su tipo (YARA Rules, Snort rules, Content Pack, Query, Alert, Red tests, Premium App, Playbook, Config)
+- Views: contenido ordenado por su número de visualizaciones
+- Downloads: contenido ordenado por su número de descargas
+- Released: contenido ordenado por su fecha de publicación
+- Updated: contenido ordenado por su fecha de actualización
+- Severity: contenido ordenado por su gravedad
+
+Además, puede alternar entre orden descendente (más relevante primero) y ascendente (menos relevante primero) haciendo clic en la flecha verde junto al nombre de la opción de ordenación seleccionada.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/10.png)
+
+## Panel de filtros
+
+---
+
+Con los filtros, puede reducir los resultados de búsqueda para ver solo lo relevante para su organización.
+
+De forma predeterminada, el Filter Panel está expandido. Para ocultarlo, haga clic en el icono Hide Filters.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/11.png)
+
+Para mostrar el panel de nuevo, haga clic en el icono Show Filters.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/12.png)
+
+Para agregar más filtros, haga clic en More Expert Filters en la esquina inferior izquierda y marque la casilla junto al filtro que desee utilizar.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/13.png)
+
+El filtro seleccionado aparecerá en el Filter Panel. Para eliminar un filtro del panel, haga clic en More Expert Filters y desmarque la casilla junto al filtro.
+
+### Save Filters As Search Profile
+
+---
+
+Cuando seleccione filtros para una búsqueda de detecciones, puede guardar el conjunto de filtros seleccionado como Search Profile. Esto le permite reutilizar los mismos filtros en búsquedas futuras aplicando el Search Profile guardado.
+
+Para guardar los filtros como Search Profile:
+
+Para eliminar todos los filtros seleccionados, seleccione Clear. Para eliminar un filtro específico, seleccione el icono de cruz junto a ese filtro.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/14.png)
+
+En el modal, proporcione el Profile Name y haga clic en Save.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/15.png)
+
+Nota: El filtro Content Availability se aplica solo a la búsqueda actual y no se guarda como Search Profile.
+
+Después de guardar los filtros como Search Profile, puede seleccionar este perfil del menú desplegable Search Profile a la izquierda. Para editar el perfil, haga clic en el icono de lápiz en el menú desplegable.
+
+Para obtener más información sobre Search Profile, vaya a [este artículo](https://help.socprime.com/en/articles/6261210-search-profiles).
+
+### Filters
+
+---
+
+### Role and Platform
+
+Habilite este filtro para buscar contenido según su rol profesional y la solución de seguridad especificada en la configuración de su cuenta o durante el onboarding.
+
+Haga clic en el icono Gear para editar su configuración de Role and Platform. Para obtener más información sobre la configuración de este filtro, consulte la sección [Role and Platform](https://help.socprime.com/en/articles/6259871-role-and-platform).
+
+### Content Availability
+
+Aplique este filtro para ver contenido con un estado de disponibilidad particular. Nota: este filtro no es relevante para los planes Old Model Enterprise.
+
+- Free Access: reglas Sigma disponibles en planes de suscripción gratuitos, por ejemplo reglas Sigma del repositorio SigmaHQ de código abierto en GitHub o reglas Sigma desarrolladas junto con Corelight
+- Promo: regla Sigma disponible gratuitamente para usted como parte de una promoción
+- Unlocked: reglas Sigma desbloqueadas con el saldo Premium Sigma rule de su equipo
+
+- Premium: reglas Sigma que puede desbloquear utilizando el saldo Premium de su equipo. Los usuarios con un plan Enterprise del nuevo modelo obtienen un saldo predefinido como parte de la suscripción
+- Wait to Unlock: reglas Sigma premium recién publicadas que estarán disponibles para desbloqueo después de que transcurra un tiempo de espera (depende de su plan)
+- Enterprise Only: Content Packs y Premium Apps
+
+Nota: Este filtro solo puede aplicarse al buscar detecciones en Platform Repos.
+
+### Detection Type
+
+Filtre las detecciones según la forma en que se han creado:
+
+- Human-Written Behavior Rules: Detecciones creadas por expertos humanos.
+- Auto-Generated IOC Queries: Todas las consultas IOC relacionadas con una amenaza o ataque particular que se generan automáticamente mediante algoritmos de SOC Prime basados en un informe de amenazas.
+- AI-Generated Rules: Todas las detecciones creadas por los modelos de IA de SOC Prime.
+
+Nota: Este filtro solo puede aplicarse al buscar detecciones en Platform Repos.
+
+### Platform
+
+Utilice este filtro para ver solo aquellas reglas Sigma que tienen traducciones para su plataforma de seguridad o que están traducidas al formato nativo específico que necesita.
+
+Cuándo puede necesitar este filtro:
+
+- Algunas reglas Sigma incluyen lógica de detección o fuentes de registro requeridas que actualmente hacen técnicamente imposible generar traducciones a ciertos formatos de plataformas de seguridad.
+- Las reglas Sigma vienen en dos tipos: Alerts destinadas a detección en tiempo real (rara vez generan falsos positivos) y Queries destinadas a caza de amenazas (pueden ser ruidosas sin ajuste según su infraestructura). No generamos reglas para alerts basadas en una regla Sigma de tipo Query.
+
+### Industries
+
+Utilice este filtro para encontrar contenido popular en su sector. Este filtro muestra contenido que las organizaciones del sector seleccionado han utilizado activamente durante el último mes.
+
+Nota: Este filtro solo puede aplicarse al buscar detecciones en Platform and Community Repos.
+
+### Log Source Product
+
+Cada regla Sigma requiere registros específicos contra los que consultar. Elija productos de los que recopile datos de registro para ver las reglas con requisitos de datos coincidentes.
+
+Alternativamente, los usuarios avanzados familiarizados con el lenguaje Sigma pueden configurar un filtrado más genérico por fuentes de registro requeridas utilizando los filtros Sigma Product, Sigma Service y Sigma Category.
+
+### Author
+
+Busque contenido creado por un autor particular especificado en el campo author de una regla Sigma según la licencia DRL.
+
+### Actors, Tools, and Techniques
+
+Prácticamente todas las reglas Sigma en TDM están asignadas al marco MITRE ATT&CK. Filtre por actores, herramientas, técnicas y sub-técnicas específicos que priorice para ver reglas Sigma relevantes.
+
+### Use Case
+
+Defina su caso de uso para encontrar el contenido de detección más relevante. Cada elemento de contenido tiene uno o varios iconos junto a su título para indicar su caso de uso.
+
+| Icon | Use Case | Description |
+| --- | --- | --- |
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/16.png)
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/17.png)
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/18.png)
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/19.png)
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/20.png)
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/21.png)
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/22.png)
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/23.png)
+
+### Show Hidden
+
+Habilite este filtro para mostrar el contenido que su equipo ha ocultado en los resultados de Search. Una vez habilitado el filtro, también puede marcar Only hidden para mostrar solo las reglas que se ocultaron en los resultados de Search.
+
+Nota: Este filtro solo puede aplicarse al buscar detecciones en Platform Repos.
+
+### Translate Status
+
+Este filtro es aplicable al contenido que pasó por el flujo de traducción masiva y muestra los resultados de las traducciones masivas automáticas de contenido en un repositorio personalizado.
+
+### Cloud
+
+Filtre contenido para detectar actividad de adversarios dentro de una plataforma en la nube particular.
+
+### Content Type
+
+Seleccione el tipo de contenido que desea buscar:
+
+- Content Pack: conjunto ad hoc nativo de SIEM de contenido SOC, scripts, listas, paneles y otros elementos destinados a resolver una tarea específica.
+- Query: regla Sigma y todas sus traducciones destinadas a caza de amenazas (pueden generar falsos positivos).
+- Alert: regla Sigma y sus traducciones destinadas a detección en tiempo real (rara vez generan falsos positivos).
+- Premium App: un número limitado de aplicaciones personalizadas creadas por el equipo de SOC Prime para casos de uso particulares.
+
+> **Note:**
+- Las reglas Sigma vienen en dos tipos, Queries y Alerts. Están disponibles en cualquier plan de suscripción. Todos los demás tipos de contenido solo pueden accederse con un plan Enterprise.
+- Este filtro solo puede aplicarse al buscar detecciones en Platform Repos.
+
+### Content Action State
+
+Filtre contenido por acciones que su organización haya realizado previamente sobre él. Actualmente hay cuatro estados de acción disponibles:
+
+- Viewed
+- Downloaded
+- Downloaded via API
+- Deployed (si ha descargado e instalado una regla manualmente, este estado se muestra solo si también ha marcado la regla como implementada utilizando el icono de marca de verificación en la pestaña Code)
+
+Utilice el interruptor Include/Exclude para mostrar o filtrar el estado deseado.
+
+### Excluded in Scans
+
+Habilite este filtro para mostrar solo el contenido excluido de los escaneos de Attack Detective.
+
+### Severity
+
+El filtro de búsqueda de contenido Severity describe la criticidad de la regla de detección activada. Las siguientes opciones de Severity están disponibles:
+
+- Critical: Evento muy relevante que indica un incidente. Los eventos Critical deben revisarse de inmediato
+- High: Evento relevante que debe activar una alerta interna y requiere una revisión rápida.
+- Medium: Evento relevante que debe revisarse manualmente con mayor frecuencia.
+- Low: Evento notable pero rara vez un incidente. Los eventos de baja gravedad pueden ser relevantes en grandes cantidades o en combinación con otros. No debería ser necesaria una reacción inmediata, pero se recomienda una revisión periódica.
+- Informational: La regla está destinada a enriquecer eventos, p. ej., etiquetándolos. No deberían activarse alertas con tales reglas porque se espera que un gran número de eventos coincidan con ellas.
+
+### Sigma Type
+
+Las reglas Sigma pertenecen a una de las siguientes tres categorías:
+
+- IOC Sigma: reglas basadas en IOC para detectar vulnerabilidades o ataques que ya han ocurrido.
+- Threat Hunting Sigma: reglas basadas en comportamiento para caza de amenazas y defensa cibernética proactiva.
+- Compliance: reglas para detectar discrepancias con respecto a los estándares de cumplimiento.
+
+### Sigma Status
+
+Filtre reglas Sigma por su estado:
+
+- Stable: reglas consideradas estables que pueden utilizarse en sistemas de producción o paneles para detección en tiempo real.
+- Test/Testing: reglas casi estables que pueden requerir algún ajuste fino.
+- Experimental: reglas que a menudo pueden producir resultados de falsos positivos pero aún pueden identificar eventos relevantes.
+
+### Sigma Product
+
+Un identificador de fuente de registro Sigma para seleccionar todas las salidas de registro de un producto determinado, por ejemplo, Linux, Windows, Cisco, etc. Obtenga más información en la [especificación Sigma](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#log-source).
+
+### Sigma Service
+
+Un identificador de fuente de registro Sigma para seleccionar solo un subconjunto de registros de un producto, por ejemplo, sysmon, ldapd, dhcp. Obtenga más información en la [especificación Sigma](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#log-source).
+
+### Sigma Category
+
+Un identificador de fuente de registro Sigma para seleccionar todos los archivos de registro escritos por un grupo determinado de productos, por ejemplo, process_creation, file_access, etc. Obtenga más información en la [especificación Sigma](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#log-source).
+
+### Tactics
+
+Seleccione una o varias [tácticas MITRE ATT&CK](https://attack.mitre.org/tactics/enterprise/) para filtrar contenido que las cubra.
+
+### Data Sources
+
+Seleccione una o varias [fuentes de datos MITRE ATT&CK](https://attack.mitre.org/datasources/) para filtrar contenido por elementos basados en los registros correspondientes, como registros de PowerShell, registros de autenticación, etc.
+
+### Data Components
+
+Seleccione uno o varios [componentes de datos MITRE ATT&CK](https://attack.mitre.org/datasources/) para filtrar contenido por elementos basados en estos registros, como Application Log Content, Certificate Registration, etc.
+
+### CVE ID
+
+Seleccione uno o varios CVE ID con los que estén relacionadas las reglas.
+
+### OS
+
+Filtre contenido para detectar actividad de adversarios dentro de una plataforma particular.
+
+## Detalles de reglas y acciones disponibles
+
+---
+
+Cada mosaico de regla en sus resultados de búsqueda proporciona detalles clave sobre la regla/consulta. Pase el cursor sobre un mosaico para ver información adicional o haga clic en él para ir a la página [Detection Rule](https://help.socprime.com/en/articles/13744779-detection-rule-page) y encontrar la descripción de los atributos allí.
+
+A la derecha, según el estado de acción de la regla, puede ver los siguientes iconos: Viewed, Downloaded, Downloaded via API o Deployed.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/24.png)
+
+La disponibilidad de la regla se muestra debajo de su nombre mediante una etiqueta especial:
+
+- Free Access: reglas Sigma disponibles en planes de suscripción gratuitos, por ejemplo reglas Sigma del repositorio SigmaHQ de código abierto en GitHub o reglas Sigma desarrolladas junto con Corelight
+- Promo: regla Sigma disponible gratuitamente para usted como parte de una promoción
+- Unlocked: regla Sigma desbloqueada utilizando su saldo Premium
+- Premium: regla Sigma que puede desbloquear utilizando su saldo Premium
+- Wait to Unlock: las reglas Sigma Premium están disponibles para desbloqueo solo después de un tiempo de espera que depende de su plan de suscripción. Por ejemplo, en el plan Community, el tiempo de espera es de 3 días
+- Enterprise Only: contenido disponible solo con un plan Enterprise
+
+Puede encontrar la descripción de todos los demás atributos en la página [Detection Rule](https://help.socprime.com/en/articles/13744779-detection-rule-page).
+
+### Hiding in Search Results
+
+---
+
+Puede ocultar una regla determinada en los resultados de Search para todo su equipo. Para ocultar una regla, en la página Search, haga clic en el icono del ojo en el mosaico de la regla.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/25.png)
+
+Alternativamente, puede ocultar una regla en la página Detection Rule haciendo clic en tres puntos y seleccionando Hide in search Results.
+
+Para obtener información sobre cómo ocultar varias reglas mediante acción masiva, vaya a esta sección.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/26.png)
+
+Una vez oculta la regla, el icono cambia de estado. Haga clic de nuevo para mostrar la regla.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/27.png)
+
+> **Tip:** Para ver tanto reglas ocultas como no ocultas en los resultados, habilite el filtro Show hidden (Si no se muestra en el panel de filtros, haga clic en More Expert Filters y marque la casilla junto a este filtro.) Una vez habilitado el filtro, también puede marcar Only hidden para mostrar solo las reglas que se ocultaron en los resultados de Search.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/28.png)
+
+Nota: Ocultar una regla de los resultados de Search no afecta a ningún análisis. Por ejemplo, si una regla oculta se ha marcado como implementada, se incluirá como implementada en MITRE ATT&CK® Coverage y Log Source Coverage.
+
+### Hunt
+
+---
+
+Puede cazar rápidamente las amenazas más recientes en su SIEM, EDR o Data Lake.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/29.png)
+
+En el modal, proporcione la siguiente información:
+
+- Data Plane: Especifique el nombre de su Data Plane. Para configurar una nueva integración de Data Plane, en el menú desplegable seleccione Create New Data Plane.
+- Query Type: Especifique un tipo de consulta.
+- Config: Si su Data Plane utiliza un esquema de datos no estándar, seleccione el esquema de datos predeterminado en el menú desplegable.
+- Custom Field Mapping: Si su Data Plane utiliza un esquema de datos no estándar, seleccione un perfil de Custom Field Mapping. Para configurar un nuevo perfil, en el menú desplegable seleccione Create New Data Plane.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/30.png)
+
+### Marking a Rule as Deployed
+
+---
+
+Una vez que haya implementado una regla, puede marcarla como implementada directamente en la página Detection rule (cambiar su Action State a Deployed). Marcar una regla como implementada es importante para que se incluya en la información de su organización.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/31.png)
+
+Seleccione Platforms en las que se ha implementado la regla o seleccione un Tenant o Data Plane. De forma predeterminada, el menú desplegable sugiere su selección anterior.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/32.png)
+
+Haga clic en Add.
+
+Si hace clic en el icono de una regla que se ha marcado como implementada manualmente o automáticamente (después de la implementación mediante Automation), todas las plataformas se marcarán como no implementadas (tanto las plataformas marcadas manualmente como implementadas anteriormente como las plataformas en las que se implementó la regla mediante Automation).
+
+También puede marcar individualmente una traducción separada como implementada en la pestaña Detection Code:
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/33.png)
+
+Alternativamente, puede marcar reglas como implementadas mediante acción masiva en la página Search. Siga esta sección para obtener más información.
+
+## Premium Sigma Rule Balance
+
+---
+
+La inteligencia de amenazas y los metadatos de las reglas Sigma junto con todas sus traducciones están siempre disponibles para ayudarle en su investigación. El código de algunas reglas Sigma también está disponible de forma gratuita. Dichas reglas gratuitas se marcan con las siguientes etiquetas:
+
+- Free Access. Reglas Sigma disponibles en planes de suscripción gratuitos, por ejemplo reglas Sigma del repositorio SigmaHQ de código abierto en GitHub o reglas Sigma desarrolladas junto con Corelight.
+- Promo. Reglas Sigma abiertas por SOC Prime como parte de una promoción.
+
+Sin embargo, la mayoría de las reglas se ofrecen como Premium. Para acceder al código de una regla Sigma Premium, debe desbloquearla utilizando su saldo Premium Sigma rule.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/34.png)
+
+Todos los usuarios que pertenecen a la misma organización comparten un saldo Premium Sigma rule y acceso a las reglas desbloqueadas. Cuando un usuario de la organización desbloquea una regla, queda disponible para todos los demás.
+
+En los planes Enterprise, un saldo predefinido de reglas Sigma Premium está incluido en la suscripción.
+
+Tenga en cuenta que cuando se publica una regla Sigma, solo puede desbloquearla después de un cierto tiempo de espera:
+
+- Enterprise: Instant
+- Community: 3 days
+
+Mientras no esté disponible, la regla Sigma tiene el estado Wait to Unlock.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/35.png)
+
+## Desbloqueo de reglas Sigma
+
+---
+
+El saldo Premium Sigma rule disminuye en uno cada vez que desbloquea una regla Sigma Premium.
+
+Para desbloquear una regla Sigma Premium, abra la pestaña Code en la página de la regla. Cuando desbloquea una regla por primera vez, puede ver un aviso de confirmación. Después de la primera vez, las reglas se desbloquearán automáticamente sin confirmación adicional.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/36.png)
+
+Cuando la regla se desbloquea, aparece una ventana emergente debajo del contador de saldo.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/37.png)
+
+Después del desbloqueo, obtiene acceso completo instantáneo a la regla Sigma y a todas sus traducciones. El estado de acceso de la regla cambia a Unlocked.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/38.png)
+
+> **Note:**
+- Las reglas desbloqueadas desde la página de la regla también están disponibles en TDM y en Uncoder AI.
+- En planes del modelo de suscripción anterior, algunos mecanismos de disponibilidad de contenido (p. ej., tiempo de espera o saldo de reglas Sigma) pueden ser diferentes.
+- Las reglas Sigma Premium también pueden desbloquearse mediante Dynamic Lists en CCM y mediante API.
+- Con una suscripción de nivel Enterprise, la capacidad de desbloquear reglas para un usuario determinado puede ser [concedida o revocada](https://help.socprime.com/en/articles/7731214-permission-control) por el rol Manager del equipo.
+
+Puede comprobar todas las reglas que ha desbloqueado utilizando la opción Unlocked del filtro Content Availability.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/39.png)
+
+## Acciones masivas con reglas
+
+---
+
+Puede seleccionar reglas Sigma específicas con marcas de verificación y realizar acciones masivas en las reglas seleccionadas:
+
+- Add to List
+- Fork to My Repo
+- Hide in Search Results (aplicable solo al contenido de Platform Repos)
+- Mark as Deployed
+- Translate To (aplicable solo al contenido de Custom Repos)
+- Delete (aplicable solo al contenido de Custom Repos)
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/40.png)
+
+Notas:
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/41.png)
+
+Solo puede seleccionar contenido al que tenga acceso y para el cual se puedan aplicar acciones masivas. Por lo tanto, es imposible seleccionar un Content Pack, ya que no puede agregarse a una List ni bifurcarse a un repositorio personalizado. Del mismo modo, no puede seleccionar una regla bloqueada o una regla con el estado Wait to Unlock.
+
+### Add to List
+
+---
+
+Puede agregar varias reglas a una o varias Static Lists.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/42.png)
+
+En el modal, seleccione las casillas junto a las Lists a las que desea agregar el contenido y haga clic en Save. Para crear una nueva List, haga clic en Create New Content List.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/43.png)
+
+Tenga en cuenta que esta acción masiva se aplica solo a los elementos de contenido seleccionados que están disponibles para usted (con estados como Unlocked, Promo, Free Access). El contenido no disponible se omite.
+
+### Fork to My Repo
+
+---
+
+Puede copiar cualquier regla Sigma o su traducción disponible para usted en TDM a su [repositorio personalizado](https://help.socprime.com/en/articles/8517297-my-repositories). Esta acción se denomina forking.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/44.png)
+
+También puede bifurcar todas las reglas de detección de sus resultados de búsqueda en todas las páginas. Para ello, seleccione al menos una casilla junto a una regla para revelar el botón Select All Items, haga clic en él para seleccionar todas las reglas y luego elija Fork to My Repo. Tenga en cuenta que seleccionar todas las detecciones está disponible solo para la acción Fork to My Repo.
+
+Esta función está disponible según el plan de suscripción de los usuarios.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/45.png)
+
+En el modal, proporcione la siguiente información:
+
+- Repository: Especifique el repositorio al que bifurcar las reglas.
+- Translation: Especifique qué traducciones bifurcar.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/46.png)
+
+Si la selección incluye reglas bloqueadas, el modal mostrará el número de reglas disponibles y bloqueadas. Para bifurcar solo las reglas disponibles, seleccione Fork Available Only. Para incluir reglas Premium, seleccione Unlock & Fork All.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/47.png)
+
+Cuando bifurca un elemento de contenido, sus metadatos también se copian. Cuando bifurca una traducción de una regla Sigma, la regla Sigma original se copia junto con la traducción.
+
+Nota: Esta acción masiva se aplica solo a los elementos de contenido seleccionados que están disponibles para usted (con estados como Unlocked, Promo, Free Access). El contenido no disponible se omite.
+
+### Hide in Search Results
+
+---
+
+Puede ocultar las reglas seleccionadas en los resultados de Search para todo su equipo. Esta acción es aplicable solo al contenido de Platform Repository.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/48.png)
+
+En el modal, confirme su acción haciendo clic en Confirm.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/49.png)
+
+Tenga en cuenta que esta acción masiva se aplica solo a los elementos de contenido seleccionados a los que es aplicable. La lógica es la siguiente:
+
+- Si al menos un elemento de contenido seleccionado no está oculto, el botón dice Hide in Search Results. Una vez hecho clic, todos los elementos de contenido seleccionados no ocultos quedan ocultos y los elementos de contenido ocultos seleccionados permanecen ocultos.
+- Si todos los elementos de contenido seleccionados están ocultos, el botón dice Unhide in Search Results. Una vez hecho clic, todos los elementos de contenido ocultos seleccionados quedan visibles.
+
+Obtenga más información sobre opciones alternativas para ocultar reglas en esta sección.
+
+### Mark as Deployed
+
+---
+
+Una vez que haya implementado reglas, puede marcarlas como implementadas (cambiar su Action State a Deployed). Para ello:
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/50.png)
+
+Tenga en cuenta que esta acción masiva se aplica solo a los elementos de contenido seleccionados a los que es aplicable. La lógica es la siguiente:
+
+- Si al menos un elemento de contenido seleccionado no tiene traducciones marcadas como implementadas, el botón dice Mark as Deployed. Una vez que haga clic y confirme la selección de traducciones, las traducciones seleccionadas se marcan como implementadas para todos los elementos de contenido seleccionados. Si una traducción seleccionada no está presente en algunos elementos de contenido, solo las traducciones seleccionadas que estén presentes se marcarán como implementadas en esos elementos de contenido.
+- Si todos los elementos de contenido seleccionados tienen al menos una traducción marcada como implementada, el botón dice Mark as Undeployed. Una vez hecho clic, todas las traducciones de todos los elementos de contenido seleccionados se marcan como no implementadas.
+
+Obtenga más información sobre opciones alternativas para marcar reglas como implementadas en esta sección.
+
+### Translate To
+
+---
+
+Puede traducir varias reglas a la vez utilizando la opción Translate To. Esta opción es aplicable solo al contenido de Custom Repositories.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/51.png)
+
+En el modal, seleccione el idioma de origen de las reglas en el panel de entrada y el idioma de destino para la traducción en el panel de salida.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/52.png)
+
+Seleccione Translate.
+
+El modal Translation Results resume el resultado de la traducción, mostrando el porcentaje de contenido que se tradujo correctamente, parcialmente o falló en la traducción. Seleccione View all para ver información detallada sobre los estados de traducción.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/53.png)
+
+Cuando las reglas se traducen correctamente, aparece una etiqueta Translated en el mosaico de la regla. Pase el cursor sobre la etiqueta y seleccione Go to Uncoder para ver una regla traducida en Uncoder AI.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/54.png)
+
+### Delete
+
+---
+
+Puede eliminar varias reglas a la vez de su Custom Repository.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/55.png)
+
+En el modal, confirme su acción haciendo clic en Delete.
+
+![Captura de pantalla del producto](/img/docs/threat-detection-marketplace/search/56.png)
+
+Siga la guía [Detection Rule Page](https://help.socprime.com/en/articles/13744779-detection-rule-page) para obtener más información sobre la regla y la amenaza relacionada.

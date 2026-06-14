@@ -1,0 +1,659 @@
+---
+sidebar_position: 2
+title: Search in Threat Detection Marketplace
+sidebar_label: Search
+description: Search the SOC Prime Threat Detection Marketplace with Standard, Lucene, and Light search. Apply filters and search profiles, sort results, and manage detection rules.
+keywords: [Search, Threat Detection Marketplace, Sigma rules, Lucene, search profile, filters, SOC Prime]
+authors:
+  - Sergey Bayrachny
+original_author: Sergey Bayrachny
+last_update:
+  date: 2026-06-08
+  author: Sergey Bayrachny
+display_date: Updated this week
+---
+
+import DocAuthors from '@site/src/components/DocAuthors';
+
+# Search
+
+Search Types | Applying Search Profiles | Sorting and filtering | Understanding rule details
+
+<DocAuthors authors={["Sergey Bayrachny"]} date="Updated this week" />
+
+- Standard
+- Lucene
+- Light Search
+
+- Save Filters As Search Profile
+- Filters
+
+- Hiding in Search Results
+- Hunt
+- Marking a Rule as Deployed
+
+- Add to List
+- Fork to my Repo
+- Hide in Search Results
+- Mark as Deployed
+- Translate To
+- Delete
+
+In Search, you can explore the Threat Detection Marketplace (TDM), the world's largest collection of detection rules and hunting queries.
+
+Each piece of content is initially written in Sigma, the common language for cyber defense, and then automatically translated into the native formats of various SIEMs, EDRs, and XDRs. Sigma rules are mapped to MITRE ATT&CK® and enriched with intelligence on the related threats.
+
+Detection rules are ranked and displayed as listings with key details. You can browse, search for, and filter Sigma rules.
+
+To ensure accurate insights in your organization’s [Dashboard](https://help.socprime.com/en/articles/5820372-dashboard), [Log Source Coverage](https://help.socprime.com/en/articles/5820378-log-source-coverage), and [MITRE ATT&CK Coverage](https://help.socprime.com/en/articles/5820381-mitre-att-ck-coverage), please mark rules as deployed if you download and install them manually. To mark a rule as deployed, go to its Detection Code tab and click the checkmark icon in the action menu on the right. Follow this section for more information.
+
+To automate rule search, customization, and deployment, set up the following features and modules:
+
+- [Search Profile](https://help.socprime.com/en/articles/6261210-search-profiles)
+- [Custom Field Mapping](https://help.socprime.com/en/articles/6261215-custom-field-mapping)
+- [Data Planes](https://help.socprime.com/en/articles/6261097-data-planes)
+- [Automation](https://help.socprime.com/en/articles/6261236-automation-getting-started)
+- [API](https://help.socprime.com/en/articles/6265791-api)
+
+To access the Search page, go to the Threat Detection Marketplace and select the Search tab.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/01.png)
+
+## Search Bar
+
+---
+
+The search bar is located in the upper left corner of the page. You can choose between three search modes: Standard, Lucene, and Light.
+
+### Standard
+
+This mode is enabled by default. Make a standard full-text search throughout all content in the Threat Detection Marketplace.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/02.png)
+
+When you start typing the query, suggestions appear. Select one of them or finish typing and click the magnifying glass icon or press Enter (Windows)/Return (Mac).
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/03.png)
+
+Suggested results may be based on the matches in the following attributes:
+
+- Configs for alternative translations
+- Log source products
+- Event IDs
+- Sigma type
+
+Search shows the core statistics on your current search results.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/04.png)
+
+### Lucene
+
+To enable this mode, click the up arrow next to Standard, and pick the Lucene option in the dropdown.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/05.png)
+
+Use Lucene syntax to compose sophisticated queries: filter out content, combine search terms using different logical operators, and much more. To learn more about using Lucene, select the question mark icon on the right of the Lucene label. To see the list of all available fields along with their types and possible values, go to the [Lucene](https://help.socprime.com/en/articles/6265772-lucene-syntax) section of this Guide.
+
+### Light Search
+
+To enable this mode, click the up arrow next to Standard, and pick the Light Search option in the dropdown.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/06.png)
+
+Using Light Search, you can find detections by entering a natural language query, which the system interprets and enriches with known aliases and alternative references, enabling the search to match all relevant variations. For example, if you enter the actor name APT28, the system automatically expands the query with its known aliases, such as Fancy Bear and Pawn Storm.
+
+Turn on the AI Boost toggle to boost your searches with relevant keywords from Open AI's GPT. Note that, when using AI Boost, your search is sent to an external service, so don't enter any sensitive data.
+
+## Repository Selection
+
+---
+
+You can search for detections in three available repositories. Select the corresponding button under the search bar. By default, the Platform Repos option is selected.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/07.png)
+
+- SOC Prime: content authored by the in-house SOC Prime team
+- Threat Bounty: content authored by developers from the Threat Bounty Program
+- SigmaHQ: content sourced from the open-source SigmaHQ project on GitHub
+- Microsoft Sentinel: content for Microsoft Sentinel sourced from the Azure-Sentinel project on GitHub
+
+By default, content from all repositories of the selected type is displayed. If you want to see and search content only from specific repositories, choose them in the dropdown and click Apply.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/08.png)
+
+You can search for and filter content in custom repositories the same way as the content published on TDM. Additionally, filtering will work only as long as corresponding metadata is present in the custom content.
+
+## Search Profile
+
+---
+
+Select a Search Profile from the dropdown menu to instantly get the results that match your company’s infrastructure, actual log sources, and relevant MITRE ATT&CK parameters.
+
+If the profile has been marked as Default on Search on the Search Profiles page, when opening the Advanced Search, this profile will be automatically applied with its configured parameters.
+
+If you don't wish to use any Search Profile, choose the None option. In case you have no Search Profiles configured yet, None is applied by default. Select Create New Profile in the dropdown menu to create a new Search Profile or select a pencil icon to edit the profile's settings. To learn more, see the [Search Profiles](https://help.socprime.com/en/articles/6261210-search-profiles) section.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/09.png)
+
+## Sorting
+
+---
+
+By default, the Recommended sorting is applied. Sigma rules are ranked based on our recommendation algorithms that boost the most up-to-date and high-quality content relevant to other cybersecurity experts.
+
+You can apply other sorting options:
+
+- Microsoft: Microsoft Sentinel content ranked based on our recommendation algorithms that boost the most up-to-date and high-quality content relevant to other cybersecurity experts
+- Google SecOps: Google SecOps content ranked based on our recommendation algorithms that boost the most up-to-date and high-quality content relevant to other cybersecurity experts
+- Top-Rated Alerts: the most reliable behavior-based Alerts and Queries to detect the most severe malicious activity
+- Name: content sorted by its name
+- Type: content sorted by its type (YARA Rules, Snort rules, Content Pack, Query, Alert, Red tests, Premium App, Playbook, Config)
+- Views: content sorted by its number of views
+- Downloads: content sorted by its number of downloads
+- Released: content sorted by its release date
+- Updated: content sorted by its update date
+- Severity: content sorted by its severity
+
+Additionally, you can switch between descending (most relevant first) and ascending (least relevant first) order by clicking the green arrow by the selected sorting option name.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/10.png)
+
+## Filter Panel
+
+---
+
+With filters, you can narrow down the search results to see only what is relevant to your organization.
+
+By default, the Filter Panel is expanded. To hide it, click the Hide Filters icon.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/11.png)
+
+To show the panel again, click the Show Filters icon.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/12.png)
+
+To add more filters, click More Expert Filters at the bottom left corner and set the checkbox next to the filter you'd like to use.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/13.png)
+
+The selected filter will appear on the Filter Panel. To remove a filter from the panel, click More Expert Filters and clear the checkbox next to the filter.
+
+### Save Filters As Search Profile
+
+---
+
+When you select filters for a detection search, you can save the selected filter set as a Search Profile. This allows you to reuse the same filters in future searches by applying the saved Search Profile.
+
+To save the filters as a Search Profile:
+
+To remove all selected filters, select Clear. To remove a specific filter, select the cross icon next to that filter.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/14.png)
+
+In the modal, provide the Profile Name and click Save.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/15.png)
+
+Note: The Content Availability filter is applied only to the current search and is not saved as a Search Profile.
+
+After saving filters as a Search Profile, you can select this profile from the Search Profile dropdown on the left. To edit the profile, click the pencil icon in the dropdown.
+
+To learn more about Search Profile, go to [this article](https://help.socprime.com/en/articles/6261210-search-profiles).
+
+### Filters
+
+---
+
+### Role and Platform
+
+Enable this filter to search for content based on your professional role and security solution specified in your account settings or during the onboarding.
+
+Click the Gear icon to edit your Role and Platform settings. To learn more about setting up this filter, see the [Role and Platform](https://help.socprime.com/en/articles/6259871-role-and-platform) section.
+
+### Content Availability
+
+Apply this filter to see content with a particular availability status. Note: this filter is not relevant for Old Model Enterprise plans.
+
+- Free Access: Sigma rules readily available under free subscription plans, for example Sigma rules from open-source SigmaHQ repository on GitHub or Sigma rules developed together with Corelight
+- Promo: Sigma rule freely available to you as part of a promotion
+- Unlocked: Sigma rules unlocked with your team's Premium Sigma rule balance
+
+- Premium: Sigma rules you can unlock using your team's Premium balance. Users with a new model Enterprise plan get a pre-defined balance as part of the subscription
+- Wait to Unlock: newly released premium Sigma rules that will become available for unlocking after a waiting time passes (depends on your plan)
+- Enterprise Only: Content Packs and Premium Apps
+
+Note: This filter can be applied only when searching for the detections in Platform Repos.
+
+### Detection Type
+
+Filter the detections by the way they’ve been created:
+
+- Human-Written Behavior Rules: Detections created by human experts.
+- Auto-Generated IOC Queries: All IOC queries related to a particular threat or attack which are automatically generated using SOC Prime algorithms based on a threat report.
+- AI-Generated Rules: All detections created by SOC Prime AI models.
+
+Note: This filter can be applied only when searching for the detections in Platform Repos.
+
+### Platform
+
+Use this filter to see only those Sigma rules that have translations for your security platform or are translated into a specific native format you need.
+
+When you may need this filter:
+
+- Some Sigma rules include detection logic or required log sources that currently make it technically impossible to generate translations into certain security platform formats.
+- Sigma rules come in two types: Alerts intended for real-time detection (rarely generate false positives) and Queries intended for threat hunting (may be noisy without tuning according to your infrastructure). We do not generate rules for alerts based on a Sigma rule of the Query type.
+
+### Industries
+
+Use this filter to find popular content in your industry. This filter shows content that organizations in the selected industry have actively utilized during the last month.
+
+Note: This filter can be applied only when searching for the detections in Platform and Community Repos.
+
+### Log Source Product
+
+Each Sigma rule requires specific logs to query against. Choose products from which you collect log data to see the rules with matching data requirements.
+
+Alternatively, advanced users well-acquainted with the Sigma language can configure more generic filtering by required log sources using the Sigma Product, Sigma Service, and Sigma Category filters.
+
+### Author
+
+Search for content created by a particular author specified in the author field of a Sigma rule as per the DRL license.
+
+### Actors, Tools, and Techniques
+
+Virtually all Sigma rules in the TDM are mapped to the MITRE ATT&CK framework. Filter by specific actors, tools, techniques, and sub-techniques you prioritize to see relevant Sigma rules.
+
+### Use Case
+
+Define your use case to find the most relevant detection content. Each content item has one or multiple icons next to its title to indicate what use case it is.
+
+| Icon | Use Case | Description |
+| --- | --- | --- |
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/16.png)
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/17.png)
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/18.png)
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/19.png)
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/20.png)
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/21.png)
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/22.png)
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/23.png)
+
+### Show Hidden
+
+Enable this filter to show the content that has been hidden in Search results by your team. Once the filter is enabled, you can also set the checkmark Only hidden to show only those rules that were hidden in Search results.
+
+Note: This filter can be applied only when searching for the detections in Platform Repos.
+
+### Translate Status
+
+This filter is applicable for content that was run through the bulk translation flow and shows the results of the automatic bulk translations of content in a custom repository.
+
+### Cloud
+
+Filter for content to detect adversary activity within a particular cloud platform.
+
+### Content Type
+
+Select the type of content you want to search for:
+
+- Content Pack: SIEM-native ad-hoc set of SOC content, scripts, lists, dashboards, and other items intended to solve a specific task.
+- Query: Sigma rule and all its translations intended for threat hunting (may generate false positives).
+- Alert: Sigma rule and its translations intended for real-time detection (rarely generate false positives).
+- Premium App: A limited number of custom applications created by the SOC Prime team for particular use cases.
+
+> **Note:**
+- Sigma rules come in two types, Queries and Alerts. They are available under any subscription plan. All other content types can be accessed only under an Enterprise plan.
+- This filter can be applied only when searching for the detections in Platform Repos.
+
+### Content Action State
+
+Filter content by actions your organization has taken on it before. There are four action states available now:
+
+- Viewed
+- Downloaded
+- Downloaded via API
+- Deployed (if you've downloaded and installed a rule manually, this state is shown only if you also have marked the rule as deployed using the checkmark icon on the Code tab)
+
+Use the Include/Exclude toggle to show or filter out the desired state.
+
+### Excluded in Scans
+
+Enable this filter to show only the content excluded from the Attack detective scans.
+
+### Severity
+
+Severity content search filter describes the criticality of the triggered detection rule. The following Severity options are available:
+
+- Critical: Highly relevant event that indicates an incident. Critical events should be reviewed immediately
+- High: Relevant event that should trigger an internal alert and requires a prompt review.
+- Medium: Relevant event that should be reviewed manually on a more frequent basis.
+- Low: Notable event but rarely an incident. Low-severity events can be relevant in high numbers or in combination with others. An immediate reaction shouldn't be necessary, but a regular review is recommended.
+- Informational: The rule is intended to enrich events, e.g., by tagging them. No alerts should be triggered by such rules because a large number of events are expected to match them.
+
+### Sigma Type
+
+Sigma rules fall into one of the following three categories:
+
+- IOC Sigma: IOC-based rules for detecting vulnerabilities or attacks that have already occurred.
+- Threat Hunting Sigma: behavior-based rules for threat hunting and proactive cyber defense.
+- Compliance: rules for detecting mismatches against the compliance standards.
+
+### Sigma Status
+
+Filter Sigma rules by their status:
+
+- Stable: rules that are considered stable and may be used in production systems or dashboards for real-time detection.
+- Test/Testing: almost stable rules that may require some fine-tuning.
+- Experimental: rules that may often produce false-positive results but still can identify relevant events.
+
+### Sigma Product
+
+A Sigma log source identifier to select all log outputs of a certain product, for example, Linux, Windows, Cisco, etc. Learn more in [Sigma specification](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#log-source).
+
+### Sigma Service
+
+A Sigma log source identifier to select only a subset of a product's logs, for example, sysmon, ldapd, dhcp. Learn more in [Sigma specification](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#log-source).
+
+### Sigma Category
+
+A Sigma log source identifier to select all log files written by a certain group of products, for example, process_creation, file_access, etc. Learn more in [Sigma specification](https://github.com/SigmaHQ/sigma-specification/blob/main/Sigma_specification.md#log-source).
+
+### Tactics
+
+Select one or multiple [MITRE ATT&CK tactics](https://attack.mitre.org/tactics/enterprise/) to filter content covering them.
+
+### Data Sources
+
+Select one or multiple [MITRE ATT&CK data sources](https://attack.mitre.org/datasources/) to filter content by items based on the corresponding logs like PowerShell logs, authentication logs, etc.
+
+### Data Components
+
+Select one or multiple [MITRE ATT&CK data components](https://attack.mitre.org/datasources/) to filter content by items based on these logs like Application Log Content, Certificate Registration, etc.
+
+### CVE ID
+
+Select one or multiple CVE IDs the rules are related to.
+
+### OS
+
+Filter for content to detect adversary activity within a particular platform.
+
+## Rule Details and Available Actions
+
+---
+
+Each rule tile in your search results provides key details about the rule/query. Hover over a tile to see additional information or click it to go to the [Detection Rule](https://help.socprime.com/en/articles/13744779-detection-rule-page) page and find the description of attributes there.
+
+On the right, depending on the rule’s action state, you can view the following icons: Viewed, Downloaded, Downloaded via API, or Deployed.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/24.png)
+
+The rule's availability is shown under its name by a special label:
+
+- Free Access: Sigma rules readily available under free subscription plans, for example Sigma rules from open-source SigmaHQ repository on GitHub or Sigma rules developed together with Corelight
+- Promo: Sigma rule freely available to you as part of a promotion
+- Unlocked: Sigma rule unlocked using your Premium balance
+- Premium: Sigma rule you can unlock using your Premium balance
+- Wait to Unlock: Premium Sigma rules become available for unlocking only after a waiting time that depends on your subscription plan. For example, under the Community plan, the waiting time is 3 days
+- Enterprise Only: Content available only under an Enterprise plan
+
+You can find the description of all other attributes on the [Detection Rule](https://help.socprime.com/en/articles/13744779-detection-rule-page) page.
+
+### Hiding in Search Results
+
+---
+
+You can hide a given rule in the Search results for your entire team. To hide a rule, on the Search page, click the eye icon on the rule’s tile.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/25.png)
+
+Alternatively, you can hide a rule on the Detection Rule page by clicking three dots and selecting Hide in search Results.
+
+To learn how to hide multiple rules using bulk action, go to this section.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/26.png)
+
+Once the rule is hidden, the icon changes its state. Click it again to unhide the rule.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/27.png)
+
+> **Tip:** To see both hidden and non-hidden rules in the results, enable the Show hidden filter (If it isn't displayed in the filters panel, click More Expert Filters and set a checkmark next to this filter.) Once the filter is enabled, you can also set the checkmark Only hidden to show only those rules that were hidden in Search results.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/28.png)
+
+Note: Hiding a rule from Search results does not affect any analytics. For example, if a hidden rule has been marked as deployed, it will be included as deployed in MITRE ATT&CK® Coverage and Log Source Coverage.
+
+### Hunt
+
+---
+
+You can quickly hunt for the latest threats in your SIEM, EDR, or Data Lake.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/29.png)
+
+In the modal, provide the following information:
+
+- Data Plane: Specify your Data Plane name. To set up a new Data Plane integration, in the dropdown select Create New Data Plane.
+- Query Type: Specify a query type.
+- Config: If your Data Plane uses a non-standard data schema, select the default data schema in the dropdown.
+- Custom Field Mapping: If your Data Plane uses a non-standard data schema, select a Custom Field Mapping profile.To set up a new profile, in the dropdown select Create New Data Plane.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/30.png)
+
+### Marking a Rule as Deployed
+
+---
+
+Once you've deployed a rule, you can mark it as deployed right on the Detection rule page (change its Action State to Deployed). Marking a rule as deployed is important for it to be included in your organization's insights.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/31.png)
+
+Select Platforms into which the rule has been deployed or select a Tenant or Data Plane. By default, the dropdown suggests your previous selection.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/32.png)
+
+Click Add.
+
+If you click the icon for a rule that has been marked as deployed manually or automatically (after deployment via Automation), all platforms will be marked as undeployed (both platforms manually marked as deployed before and platforms into which the rule was deployed via Automation).
+
+You can also individually mark a separate translation as deployed on the Detection Code tab:
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/33.png)
+
+Alternatively, you can mark rules as deployed using bulk action on the Search page. Follow this section to learn more.
+
+## Premium Sigma Rule Balance
+
+---
+
+Threat intelligence and metadata for Sigma rules together with all their translations are always available to help you in your research. The code of some Sigma rules is also available for free. Such free rules are marked with the following labels:
+
+- Free Access. Sigma rules readily available under free subscription plans, for example Sigma rules from open-source SigmaHQ repository on GitHub or Sigma rules developed together with Corelight.
+- Promo. Sigma rules opened by SOC Prime as part of a promotion.
+
+However, most rules are offered as Premium. To access a Premium Sigma rule's code, you need to unlock it using your Premium Sigma rule balance.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/34.png)
+
+All users that belong to the same organization have a shared Premium Sigma rule balance and access to the unlocked rules. When one user from the organization unlocks a rule, it becomes available to all the others.
+
+Under the Enterprise plans, a preset balance of Premium Sigma rules is included into the subscription.
+
+Note that when a Sigma rule is released, you can unlock it only after a certain waiting time:
+
+- Enterprise: Instant
+- Community: 3 days
+
+While unavailable, the Sigma rule has the Wait to Unlock status.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/35.png)
+
+## Unlocking Sigma Rules
+
+---
+
+The Premium Sigma rule balance is decreased by one each time you unlock a Premium Sigma rule.
+
+To unlock a Premium Sigma rule, open the Code tab on the rule's page. When you unlock a rule for the first time, you can see a prompt for confirmation. After the first time, rules will be unlocked automatically without extra confirmation.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/36.png)
+
+When the rule is unlocked, a popup appears under the balance counter.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/37.png)
+
+After unlocking, you instantly get full access to the Sigma rule and all its translations. The access status of the rule changes to Unlocked.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/38.png)
+
+> **Note:**
+- The rules unlocked from the rule's page become available across TDM as well as in Uncoder AI.
+- Under plans of the previous subscription model, some content availability mechanisms (e. g. waiting time or Sigma rule balance) may be different.
+- Premium Sigma rules can also be unlocked via Dynamic Lists in CCM and via API.
+- Under an Enterprise-level subscription, the ability to unlock rules for a given user can be [granted or revoked](https://help.socprime.com/en/articles/7731214-permission-control) by the team's Manager role.
+
+You can check all the rules you've unlocked using the Unlocked option of the Content Availability filter.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/39.png)
+
+## Bulk Actions with Rules
+
+---
+
+You can select specific Sigma rules with checkmarks and perform bulk actions on the selected rules:
+
+- Add to List
+- Fork to My Repo
+- Hide in Search Results (applicable only to content from Platform Repos)
+- Mark as Deployed
+- Translate To (applicable only to content from Custom Repos)
+- Delete (applicable only to content from Custom Repos)
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/40.png)
+
+Notes:
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/41.png)
+
+You can select only content that you have access to and for which bulk actions can be applied. So, it's impossible to select a Content Pack since it cannot be added to a List or forked to a custom repo. Similarly, you cannot select a locked rule or a rule with the Wait to Unlock status.
+
+### Add to List
+
+---
+
+You can add multiple rules to one or multiple Static Lists.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/42.png)
+
+In the modal, select the checkboxes next to the Lists you want to add the content to and click Save. To create a new List, click Create New Content List.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/43.png)
+
+Note that this bulk action is applied only to those selected content items that are available to you (with such statuses as Unlocked, Promo, Free Access). Unavailable content is skipped.
+
+### Fork to My Repo
+
+---
+
+You can copy any Sigma rule or its translation available to you on TDM to your [custom repository](https://help.socprime.com/en/articles/8517297-my-repositories). This action is referred to as forking.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/44.png)
+
+You can also fork all detection rules from your search results across all pages. For this, select at least one checkbox next to a rule to reveal the Select All Items button, click it to select all rules, and then choose Fork to My Repo. Please note that selecting all detections is available only for the Fork to My Repo action.
+
+This feature is available according to the users’ subscription plan.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/45.png)
+
+In the modal, provide the following information:
+
+- Repository: Specify the repository to fork the rules to.
+- Translation: Specify which translations to fork.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/46.png)
+
+If the selection includes rules that are locked, the modal will display the number of available and locked rules. To fork only available rules, select Fork Available Only. To include Premium rules, select Unlock & Fork All.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/47.png)
+
+When you fork a content item, its metadata is also copied. When you fork a translation of a Sigma rule, the original Sigma rule is copied together with the translation.
+
+Note: This bulk action is applied only to those selected content items that are available to you (with such statuses as Unlocked, Promo, Free Access). Unavailable content is skipped.
+
+### Hide in Search Results
+
+---
+
+You can hide the selected rules in the Search results for your entire team. This action is applicable only for content from Platform Repository.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/48.png)
+
+In the modal, confirm your action by clicking Confirm.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/49.png)
+
+Note that this bulk action is applied only to those selected content items to which it is applicable. The logic is as follows:
+
+- If at least one selected content item is not hidden, the button reads Hide in Search Results. Once clicked, all selected non-hidden content items become hidden and the selected hidden content items stay hidden.
+- If all selected content items are hidden, the button reads Unhide in Search Results. Once clicked, all selected hidden content items become unhidden.
+
+Learn more about alternative options for hiding rules in this section.
+
+### Mark as Deployed
+
+---
+
+Once you've deployed rules, you can mark them as deployed (change their Action State to Deployed). To do it:
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/50.png)
+
+Note that this bulk action is applied only to those selected content items to which it is applicable. The logic is as follows:
+
+- If at least one selected content item has no translations marked as deployed, the button reads Mark as Deployed. Once you click it and confirm the selection of translations, the selected translations are marked as deployed for all selected content items. If a selected translation is not present in some content items, only selected translations that are present will be marked as deployed in those content items.
+- If all selected content items have at least one translation marked as deployed, the button reads Mark as Undeployed. Once clicked, all translations of all selected content items are marked as undeployed.
+
+Learn more about alternative options for marking rules as deployed in this section.
+
+### Translate To
+
+---
+
+You can translate multiple rules at once using the Translate To option. This option is applicable only for the content from Custom Repositories.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/51.png)
+
+In the modal, select the source language of the rules in the input panel and the target language for the translation in the output panel.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/52.png)
+
+Select Translate.
+
+The Translation Results modal summarizes the translation outcome, showing the percentage of content that was successfully translated, partially translated, or failed in translation. Select View all to view detailed information for translation statuses.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/53.png)
+
+When rules are successfully translated, a Translated label appears on the rule tile. Hover over the label and select Go to Uncoder to view a translated rule in Uncoder AI.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/54.png)
+
+### Delete
+
+---
+
+You can delete multiple rules at once from your Custom Repository.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/55.png)
+
+In the modal, confirm your action by clicking Delete.
+
+![Product screenshot](/img/docs/threat-detection-marketplace/search/56.png)
+
+Follow the [Detection Rule Page](https://help.socprime.com/en/articles/13744779-detection-rule-page) guide to learn more about the rule and the related threat.

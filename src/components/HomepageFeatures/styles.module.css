@@ -1,11 +1,23 @@
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+  background: var(--docu-color-bg);
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.featureGrid {
+  max-width: var(--docu-container-max);
+  margin: 0 auto;
+}
+
+.featureCard {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.featureCard :global(.docu-badge) {
+  align-self: flex-start;
+  margin-bottom: var(--docu-space-4);
+}
+
+.featureCard :global(.docu-card__link) {
+  margin-top: auto;
 }

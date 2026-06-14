@@ -1,0 +1,128 @@
+{
+  "uk": {
+    "code.json": {
+      "SOC Prime Platform": "Платформа SOC Prime",
+      "Product Docs": "Документація продукту",
+      "FAQs": "Запитання та відповіді",
+      "Release Notes": "Примітки до випуску",
+      "homepage.meta.description": "Документація продуктів SOC Prime, поширені запитання та примітки до випусків для Threat Detection Marketplace, Uncoder AI та DetectFlow.",
+      "homepage.section.title": "Розвідка загроз для команд SecOps",
+      "homepage.section.subtitle": "Ознайомтеся з посібниками Threat Detection Marketplace, швидко знаходьте відповіді та відстежуйте оновлення платформи в кожному релізі.",
+      "homepage.feature.tdm.badge": "Продукт",
+      "homepage.feature.tdm.title": "Threat Detection Marketplace",
+      "homepage.feature.tdm.description": "Посібники з пошуку контенту для виявлення загроз, керування активними загрозами та розгортання правил на основі Sigma у вашому стеку безпеки.",
+      "homepage.feature.tdm.linkLabel": "Переглянути документацію продукту",
+      "homepage.feature.faq.badge": "Підтримка",
+      "homepage.feature.faq.title": "Запитання та відповіді",
+      "homepage.feature.faq.description": "Відповіді на поширені запитання про платформу, інтеграції, сповіщення та усунення несправностей для щоденних робочих процесів SecOps.",
+      "homepage.feature.faq.linkLabel": "Переглянути FAQ",
+      "homepage.feature.rn.badge": "Оновлення",
+      "homepage.feature.rn.title": "Примітки до випуску",
+      "homepage.feature.rn.description": "Історія версій і журнали змін платформи SOC Prime, щоб ваша команда була в курсі останніх можливостей.",
+      "homepage.feature.rn.linkLabel": "Останній реліз"
+    },
+    "navbar.json": {
+      "item.label.Product Docs": "Документація продукту",
+      "item.label.FAQs": "Запитання та відповіді",
+      "item.label.Release Notes": "Примітки до випуску"
+    },
+    "footer.json": {
+      "link.title.Documentation": "Документація",
+      "link.item.label.Product Docs": "Документація продукту",
+      "link.item.label.FAQs": "Запитання та відповіді",
+      "link.item.label.Release Notes": "Примітки до випуску",
+      "link.item.label.Website": "Вебсайт",
+      "link.item.label.Help Center": "Центр допомоги",
+      "link.title.Community": "Спільнота",
+      "copyright": "Copyright © 2026 SOC Prime, Inc. SOC Prime, SOC Prime Logo and Threat Detection Marketplace are registered trademarks of SOC Prime, Inc."
+    },
+    "current.json": {
+      "sidebar.productSidebar.category.Threat Detection Marketplace": "Threat Detection Marketplace",
+      "sidebar.productSidebar.category.Threat Detection Marketplace.link.generated-index.description": "Посібники з використання Threat Detection Marketplace."
+    }
+  },
+  "es": {
+    "code.json": {
+      "SOC Prime Platform": "Plataforma SOC Prime",
+      "Product Docs": "Documentación del producto",
+      "FAQs": "Preguntas frecuentes",
+      "Release Notes": "Notas de la versión",
+      "homepage.meta.description": "Documentación de productos SOC Prime, preguntas frecuentes y notas de la versión para Threat Detection Marketplace, Uncoder AI y DetectFlow.",
+      "homepage.section.title": "Inteligencia de detección para equipos SecOps",
+      "homepage.section.subtitle": "Explore las guías de Threat Detection Marketplace, encuentre respuestas rápidamente y siga las actualizaciones de la plataforma en cada versión.",
+      "homepage.feature.tdm.badge": "Producto",
+      "homepage.feature.tdm.title": "Threat Detection Marketplace",
+      "homepage.feature.tdm.description": "Guías para obtener contenido de detección, gestionar amenazas activas e implementar reglas basadas en Sigma en su stack de seguridad.",
+      "homepage.feature.tdm.linkLabel": "Ver documentación del producto",
+      "homepage.feature.faq.badge": "Soporte",
+      "homepage.feature.faq.title": "Preguntas frecuentes",
+      "homepage.feature.faq.description": "Respuestas a preguntas habituales sobre la plataforma, integraciones, notificaciones y resolución de problemas para flujos de trabajo SecOps diarios.",
+      "homepage.feature.faq.linkLabel": "Ver preguntas frecuentes",
+      "homepage.feature.rn.badge": "Actualizaciones",
+      "homepage.feature.rn.title": "Notas de la versión",
+      "homepage.feature.rn.description": "Historial de versiones y registros de cambios de la plataforma SOC Prime para que su equipo esté al día con las últimas funciones.",
+      "homepage.feature.rn.linkLabel": "Última versión"
+    },
+    "navbar.json": {
+      "item.label.Product Docs": "Documentación del producto",
+      "item.label.FAQs": "Preguntas frecuentes",
+      "item.label.Release Notes": "Notas de la versión"
+    },
+    "footer.json": {
+      "link.title.Documentation": "Documentación",
+      "link.item.label.Product Docs": "Documentación del producto",
+      "link.item.label.FAQs": "Preguntas frecuentes",
+      "link.item.label.Release Notes": "Notas de la versión",
+      "link.item.label.Website": "Sitio web",
+      "link.item.label.Help Center": "Centro de ayuda",
+      "link.title.Community": "Comunidad",
+      "copyright": "Copyright © 2026 SOC Prime, Inc. SOC Prime, SOC Prime Logo and Threat Detection Marketplace are registered trademarks of SOC Prime, Inc."
+    },
+    "current.json": {
+      "sidebar.productSidebar.category.Threat Detection Marketplace": "Threat Detection Marketplace",
+      "sidebar.productSidebar.category.Threat Detection Marketplace.link.generated-index.description": "Guías para usar Threat Detection Marketplace."
+    }
+  },
+  "ko": {
+    "code.json": {
+      "SOC Prime Platform": "SOC Prime 플랫폼",
+      "Product Docs": "제품 문서",
+      "FAQs": "자주 묻는 질문",
+      "Release Notes": "릴리스 노트",
+      "homepage.meta.description": "Threat Detection Marketplace, Uncoder AI, DetectFlow를 위한 SOC Prime 제품 문서, FAQ 및 릴리스 노트.",
+      "homepage.section.title": "SecOps 팀을 위한 탐지 인텔리전스",
+      "homepage.section.subtitle": "Threat Detection Marketplace 가이드를 탐색하고, 빠르게 답변을 찾으며, 모든 릴리스의 플랫폼 업데이트를 추적하세요.",
+      "homepage.feature.tdm.badge": "제품",
+      "homepage.feature.tdm.title": "Threat Detection Marketplace",
+      "homepage.feature.tdm.description": "탐지 콘텐츠 소싱, 활성 위협 관리, 보안 스택 전반에 Sigma 기반 규칙 배포를 위한 가이드.",
+      "homepage.feature.tdm.linkLabel": "제품 문서 보기",
+      "homepage.feature.faq.badge": "지원",
+      "homepage.feature.faq.title": "자주 묻는 질문",
+      "homepage.feature.faq.description": "일상적인 SecOps 워크플로를 위한 플랫폼, 통합, 알림 및 문제 해결에 대한 일반적인 질문에 대한 답변.",
+      "homepage.feature.faq.linkLabel": "FAQ 보기",
+      "homepage.feature.rn.badge": "업데이트",
+      "homepage.feature.rn.title": "릴리스 노트",
+      "homepage.feature.rn.description": "팀이 최신 기능을 파악할 수 있도록 SOC Prime 플랫폼의 버전 기록 및 변경 로그.",
+      "homepage.feature.rn.linkLabel": "최신 릴리스"
+    },
+    "navbar.json": {
+      "item.label.Product Docs": "제품 문서",
+      "item.label.FAQs": "자주 묻는 질문",
+      "item.label.Release Notes": "릴리스 노트"
+    },
+    "footer.json": {
+      "link.title.Documentation": "문서",
+      "link.item.label.Product Docs": "제품 문서",
+      "link.item.label.FAQs": "자주 묻는 질문",
+      "link.item.label.Release Notes": "릴리스 노트",
+      "link.item.label.Website": "웹사이트",
+      "link.item.label.Help Center": "고객 센터",
+      "link.title.Community": "커뮤니티",
+      "copyright": "Copyright © 2026 SOC Prime, Inc. SOC Prime, SOC Prime Logo and Threat Detection Marketplace are registered trademarks of SOC Prime, Inc."
+    },
+    "current.json": {
+      "sidebar.productSidebar.category.Threat Detection Marketplace": "Threat Detection Marketplace",
+      "sidebar.productSidebar.category.Threat Detection Marketplace.link.generated-index.description": "Threat Detection Marketplace 사용 가이드."
+    }
+  }
+}

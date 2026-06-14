@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.productSidebar.category.Threat Detection Marketplace": {
+    "message": "Threat Detection Marketplace",
+    "description": "The label for category 'Threat Detection Marketplace' in sidebar 'productSidebar'"
+  },
+  "sidebar.productSidebar.category.Threat Detection Marketplace.link.generated-index.description": {
+    "message": "Посібники з використання Threat Detection Marketplace.",
+    "description": "The generated-index page description for category 'Threat Detection Marketplace' in sidebar 'productSidebar'"
+  }
+}
