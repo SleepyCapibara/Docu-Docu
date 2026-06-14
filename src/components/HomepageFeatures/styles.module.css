@@ -1,5 +1,12 @@
 .features {
-  background: var(--docu-color-bg);
+  background: transparent;
+  padding: 0 0 var(--docu-space-16);
+  margin-top: var(--docu-space-6);
+}
+
+[data-theme='dark'] .features {
+  padding-bottom: var(--docu-space-6);
+  margin-top: var(--docu-space-6);
 }
 
 .featureGrid {
@@ -11,13 +18,11 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  text-decoration: none;
+  color: inherit;
 }
 
-.featureCard :global(.docu-badge) {
-  align-self: flex-start;
-  margin-bottom: var(--docu-space-4);
-}
-
-.featureCard :global(.docu-card__link) {
-  margin-top: auto;
+.featureCard:hover {
+  text-decoration: none;
+  color: inherit;
 }

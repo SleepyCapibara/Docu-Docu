@@ -5,6 +5,9 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import {createRequire} from 'module';
+
+const require = createRequire(import.meta.url);
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -72,6 +75,24 @@ const config = {
       ko: {label: '한국어', htmlLang: 'ko'},
     },
   },
+
+  themes: [
+    [
+      // Local (offline) search. Builds the index at build time, no external service.
+      // https://github.com/easyops-cn/docusaurus-search-local
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      /** @type {import('@easyops-cn/docusaurus-search-local').PluginOptions} */
+      ({
+        hashed: true,
+        // Languages with dedicated stemmers. Ukrainian ('uk') has no lunr stemmer,
+        // but its pages are still indexed and searchable per-locale.
+        language: ['en', 'es', 'ko'],
+        indexBlog: false,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      }),
+    ],
+  ],
 
   presets: [
     [

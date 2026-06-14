@@ -43,10 +43,10 @@
   --ifm-navbar-link-color: var(--docu-color-text-muted);
   --ifm-navbar-link-hover-color: var(--docu-color-brand-500);
 
-  --ifm-footer-background-color: var(--docu-color-brand-900);
-  --ifm-footer-color: rgba(248, 250, 252, 0.8);
-  --ifm-footer-link-color: rgba(248, 250, 252, 0.9);
-  --ifm-footer-link-hover-color: var(--docu-color-accent-400);
+  --ifm-footer-background-color: var(--docu-color-navy-900);
+  --ifm-footer-color: rgba(228, 230, 235, 0.7);
+  --ifm-footer-link-color: rgba(228, 230, 235, 0.85);
+  --ifm-footer-link-hover-color: var(--docu-color-brand-400);
   --ifm-footer-title-color: #ffffff;
 
   --ifm-menu-color: var(--docu-color-text-muted);
@@ -67,50 +67,50 @@
 
   --ifm-hr-border-color: var(--docu-color-border);
 
-  --ifm-button-border-radius: var(--docu-radius-lg);
+  --ifm-button-border-radius: var(--docu-radius-btn);
   --ifm-button-padding-horizontal: var(--docu-space-6);
   --ifm-button-padding-vertical: var(--docu-space-3);
 
-  --docusaurus-highlighted-code-line-bg: rgba(26, 111, 212, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(74, 193, 142, 0.12);
 }
 
 /* ── Infima / Docusaurus variable mapping (dark) ───────────────────── */
 [data-theme='dark'] {
-  --ifm-color-primary: var(--docu-color-accent-400);
-  --ifm-color-primary-dark: var(--docu-color-accent-500);
-  --ifm-color-primary-darker: var(--docu-color-accent-600);
-  --ifm-color-primary-darkest: #0e7490;
-  --ifm-color-primary-light: #67e8f9;
-  --ifm-color-primary-lighter: #a5f3fc;
-  --ifm-color-primary-lightest: #cffafe;
+  --ifm-color-primary: var(--docu-color-brand-400);
+  --ifm-color-primary-dark: var(--docu-color-brand-500);
+  --ifm-color-primary-darker: var(--docu-color-brand-600);
+  --ifm-color-primary-darkest: var(--docu-color-brand-700);
+  --ifm-color-primary-light: var(--docu-color-brand-300);
+  --ifm-color-primary-lighter: var(--docu-color-brand-200);
+  --ifm-color-primary-lightest: var(--docu-color-brand-100);
 
   --ifm-background-color: var(--docu-color-bg);
   --ifm-background-surface-color: var(--docu-color-bg-elevated);
   --ifm-font-color-base: var(--docu-color-text);
   --ifm-font-color-secondary: var(--docu-color-text-muted);
 
-  --ifm-link-color: var(--docu-color-accent-400);
-  --ifm-link-hover-color: var(--docu-color-accent-500);
+  --ifm-link-color: var(--docu-color-brand-300);
+  --ifm-link-hover-color: var(--docu-color-brand-200);
 
-  --ifm-navbar-background-color: var(--docu-color-bg-elevated);
+  --ifm-navbar-background-color: rgba(26, 30, 47, 0.85);
   --ifm-navbar-shadow: 0 1px 0 var(--docu-color-border);
   --ifm-navbar-link-color: var(--docu-color-text-muted);
-  --ifm-navbar-link-hover-color: var(--docu-color-accent-400);
+  --ifm-navbar-link-hover-color: var(--docu-color-brand-400);
 
-  --ifm-footer-background-color: #060a14;
+  --ifm-footer-background-color: #141724;
   --ifm-footer-color: var(--docu-color-text-muted);
   --ifm-footer-link-color: var(--docu-color-text-muted);
-  --ifm-footer-link-hover-color: var(--docu-color-accent-400);
+  --ifm-footer-link-hover-color: var(--docu-color-brand-400);
   --ifm-footer-title-color: var(--docu-color-text);
 
   --ifm-menu-color: var(--docu-color-text-muted);
-  --ifm-menu-color-active: var(--docu-color-accent-400);
-  --ifm-menu-color-background-active: rgba(34, 211, 238, 0.1);
+  --ifm-menu-color-active: var(--docu-color-brand-400);
+  --ifm-menu-color-background-active: rgba(74, 193, 142, 0.12);
   --ifm-menu-color-background-hover: var(--docu-color-surface-hover);
 
   --ifm-code-background: var(--docu-color-bg-muted);
 
-  --docusaurus-highlighted-code-line-bg: rgba(34, 211, 238, 0.12);
+  --docusaurus-highlighted-code-line-bg: rgba(74, 193, 142, 0.14);
 }
 
 /* ── Global polish ─────────────────────────────────────────────────── */
